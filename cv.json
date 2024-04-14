@@ -1,0 +1,41 @@
+{
+  "basics": {
+    "name": "Olivarez Alexis Emanuel",
+    "label": "Front End Developer",
+    "image": "",
+    "email": "olivarezalexis749@gmail.com",
+    "phone": "+54 3794 155659",
+    "github": "https://github.com/Alexisxde",
+    "description": "apasionado por la programación y listo para embarcarme en mi primera aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo increíble junto a un equipo.",
+    "location": {
+      "postalCode": "3400",
+      "city": "Corrientes",
+      "region": "Argentina"
+    }
+  },
+  "education": {
+    "institution": "Universidad Nacional del Nordeste",
+    "url": "https://www.unne.edu.ar/",
+    "area": "Licenciatura en Sistemas de Información",
+    "startDate": "2021-03-23",
+    "endDate": "Cursando"
+  },
+  "certificates": [
+    {
+      "name": "Segundo Tramo - Front End Developer",
+      "date": "2023-10-04",
+      "issuer": "Argentina Programa 4.0",
+      "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
+      "url": "https://drive.google.com/file/d/1Oa61SheZMXWdqgDZ5rWSfgP8G8-otBxt/view?usp=drivesdk",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut deserunt, veritatis totam aspernatur numquam illum? Ullam, accusantium doloremque quidem eum laborum blanditiis consequuntur eius iure ducimus aspernatur sequi nulla."
+    },
+    {
+      "name": "Tercer Tramo - Back End Developer",
+      "date": "2023-10-04",
+      "issuer": "Argentina Programa 4.0",
+      "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
+      "url": "https://drive.google.com/file/d/13jSrBjJmljwkc3vNPZFLkTppgGy--5Ua/view?usp=drivesdk",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut deserunt, veritatis totam aspernatur numquam illum? Ullam, accusantium doloremque quidem eum laborum blanditiis consequuntur eius iure ducimus aspernatur sequi nulla."
+    }
+  ]
+}
