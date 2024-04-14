@@ -5,6 +5,5 @@ import tailwind from '@astrojs/tailwind'
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://alexisxde.github.io',
-  base: 'https://github.com/Alexisxde/alexisxde.github.io'
+  site: 'https://alexisxde.github.io'
 })
