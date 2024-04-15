@@ -2,13 +2,13 @@
   "basics": {
     "name": "Olivarez Alexis Emanuel",
     "label": "Front End Developer",
-    "image": "",
+    "image": "/me.webp",
     "email": "olivarezalexis749@gmail.com",
     "phone": "+54 3794 155659",
     "github": "https://github.com/Alexisxde",
-    "description": "apasionado por la programación y listo para embarcarme en mi primera aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo increíble junto a un equipo.",
+    "summary": "Apasionado por la programación y listo para embarcarme en mi primera aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo increíble junto a un equipo.",
+    "description": "Mi verdadera pasión por el diseño y desarrollo web surgió de manera autodidacta. Me encanta el front-end. Estoy constantemente buscando nuevas formas de mejorar mis habilidades y mantenerme al día con las últimas tendencias en diseño y desarrollo front-end. Mi objetivo es seguir creciendo y desarrollándome profesionalmente, aportando mi creatividad y dedicación.",
     "location": {
-      "postalCode": "3400",
       "city": "Corrientes",
       "region": "Argentina"
     }
@@ -27,7 +27,7 @@
       "issuer": "Argentina Programa 4.0",
       "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
       "url": "https://drive.google.com/file/d/1Oa61SheZMXWdqgDZ5rWSfgP8G8-otBxt/view?usp=drivesdk",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut deserunt, veritatis totam aspernatur numquam illum? Ullam, accusantium doloremque quidem eum laborum blanditiis consequuntur eius iure ducimus aspernatur sequi nulla."
+      "description": "Certificado por completar la primer parte del proyecto de desarrollo front-end de una lista de tareas utilizando React y TailwindCSS, este proyecto destacó mi capacidad para diseñar y desarrollar interfaces de usuario dinámicas y modernas."
     },
     {
       "name": "Tercer Tramo - Back End Developer",
@@ -35,7 +35,7 @@
       "issuer": "Argentina Programa 4.0",
       "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
       "url": "https://drive.google.com/file/d/13jSrBjJmljwkc3vNPZFLkTppgGy--5Ua/view?usp=drivesdk",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aut deserunt, veritatis totam aspernatur numquam illum? Ullam, accusantium doloremque quidem eum laborum blanditiis consequuntur eius iure ducimus aspernatur sequi nulla."
+      "description": "Certificado por completar la segunda parte del proyecto de desarrollo back-end de una lista de tareas, donde adquirí habilidades básicas en desarrollo back-end. Durante el curso, colaboré con compañeros en el uso de Django y SQLite3 para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web completas. Esta colaboración fue especialmente enriquecedora, ya que mi enfoque principal es la interfaz de usuario, y esta experiencia me permitió comprender mejor el lado del desarrollo back-end."
     }
   ]
 }

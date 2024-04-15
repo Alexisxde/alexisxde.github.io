@@ -14,19 +14,19 @@ import { certificates } from '@cv'
       certificates.map(({name, issuer, institution, url, description}) => {
         return (
         <h3 class='font-semibold text-md mb-1'>{name}</h3>
-        <span class="mb-1">{issuer}</span>
+        <span class='mb-1'>{issuer}</span>
         <div class='flex justify-between items-center w-full text-md'>
           <span>{institution}</span>
-          <span class="inline-flex justify-center items-center hover:text-gray-600 cursor-pointer">
+          <span class='inline-flex justify-center items-center hover:text-gray-600 cursor-pointer print:hidden'>
             <PaperClip/>
             <a 
               href={`${url}`} 
-              target="_blank">
+              target='_blank'>
               Ver certificado
             </a>
           </span>
         </div>
-        <p class="text-sm my-2">{description}</p>
+        <p class='text-sm my-2'>{description}</p>
       )
     })
   }
