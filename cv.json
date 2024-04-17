@@ -17,7 +17,7 @@
     "institution": "Universidad Nacional del Nordeste",
     "url": "https://www.unne.edu.ar/",
     "area": "Licenciatura en Sistemas de Información",
-    "startDate": "2021-03-23",
+    "startDate": "2022-03-23",
     "endDate": "Cursando"
   },
   "certificates": [
@@ -35,7 +35,7 @@
       "issuer": "Argentina Programa 4.0",
       "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
       "url": "https://drive.google.com/file/d/13jSrBjJmljwkc3vNPZFLkTppgGy--5Ua/view?usp=drivesdk",
-      "description": "Certificado por completar la segunda parte del proyecto de desarrollo back-end de una lista de tareas, donde adquirí habilidades básicas en desarrollo back-end. Durante el curso, colaboré con compañeros en el uso de Django y SQLite3 para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web completas. Esta colaboración fue especialmente enriquecedora, ya que mi enfoque principal es la interfaz de usuario, y esta experiencia me permitió comprender mejor el lado del desarrollo back-end."
+      "description": "Certificado por completar la segunda parte del proyecto de desarrollo back-end de una lista de tareas, donde adquirí habilidades básicas en desarrollo back-end. Durante el curso colaboré con compañeros en el uso de Django y SQLite3 para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web completas. Esta colaboración fue especialmente enriquecedora, ya que mi enfoque principal es la interfaz de usuario, y esta experiencia me permitió comprender mejor el lado del desarrollo back-end."
     }
   ]
 }

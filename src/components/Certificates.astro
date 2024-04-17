@@ -14,9 +14,9 @@ import { certificates } from '@cv'
       certificates.map(({name, issuer, institution, url, description}) => {
         return (
         <h3 class='font-semibold text-md mb-1'>{name}</h3>
-        <span class='mb-1'>{issuer}</span>
+        <span class='mb-1'>{institution}</span>
         <div class='flex justify-between items-center w-full text-md'>
-          <span>{institution}</span>
+          <span>{issuer}</span>
           <span class='inline-flex justify-center items-center hover:text-gray-600 cursor-pointer print:hidden'>
             <PaperClip/>
             <a 
