@@ -1,23 +1,28 @@
 ---
 /* @import components */
-import Section from '@/components/Section.astro';
+import Section from '@/components/Section.astro'
 
 /* @import json */
-import { education } from '@cv'
-
-const { institution, startDate, endDate, area, url } = education
-const starYear = new Date(startDate).getFullYear()
+import { education as educations } from '@cv'
 ---
 
-<Section title='Educación'>
-  <a 
-    href={`${url}`} 
-    target='_blank' 
-    class='font-semibold text-md mb-1'>
-    {institution}
-  </a>
-  <div class='flex justify-between items-center w-full text-sm'>
-    <span>{area}</span>
-    <span>{starYear} - {endDate}</span>
-  </div>
+<Section title="Educación">
+  {
+    educations.map(({ institution, startDate, endDate, area, url }) => {
+      const starYear = new Date(startDate).getFullYear()
+      return (
+        <>
+          <a href={`${url}`} target="_blank" class="font-semibold text-md mb-1">
+            {institution}
+          </a>
+          <div class="flex justify-between items-center w-full text-sm">
+            <span>{area}</span>
+            <span>
+              {starYear} - {endDate}
+            </span>
+          </div>
+        </>
+      )
+    })
+  }
 </Section>

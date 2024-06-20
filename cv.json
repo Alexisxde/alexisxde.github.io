@@ -13,13 +13,15 @@
       "region": "Argentina"
     }
   },
-  "education": {
-    "institution": "Universidad Nacional del Nordeste",
-    "url": "https://www.unne.edu.ar/",
-    "area": "Licenciatura en Sistemas de Información",
-    "startDate": "2022-03-23",
-    "endDate": "Cursando"
-  },
+  "education": [
+    {
+      "institution": "Universidad Nacional del Nordeste",
+      "url": "https://www.unne.edu.ar/",
+      "area": "Licenciatura en Sistemas de Información",
+      "startDate": "2022-03-23",
+      "endDate": "Cursando"
+    }
+  ],
   "certificates": [
     {
       "name": "Segundo Tramo - Front End Developer",

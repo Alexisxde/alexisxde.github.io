@@ -1,82 +1,241 @@
 ---
 /* @import components */
-import Section from '@/components/Section.astro';
+import Section from '@/components/Section.astro'
 
 /* @import icons */
-import Github from '@/icons/Github.astro';
-import Css from '@/icons/Css.astro';
-import Codeigniter from '@/icons/Codeigniter.astro';
-import Php from '@/icons/Php.astro';
-import React from '@/icons/React.astro';
-import TailwindCss from '@/icons/TailwindCss.astro';
-import Django from '@/icons/Django.astro';
-import AstroLogo from '@/icons/AstroLogo.astro';
+import Github from '@/icons/Github.astro'
+import Codeigniter from '@/icons/Codeigniter.astro'
+import Php from '@/icons/Php.astro'
+import React from '@/icons/React.astro'
+import TailwindCSS from '@/icons/TailwindCSS.astro'
+import Django from '@/icons/Django.astro'
+import AstroLogo from '@/icons/AstroLogo.astro'
+import MySQL from '@/icons/MySQL.astro'
+import Sqlite3 from '@/icons/Sqlite3.astro'
 ---
 
-<Section title='Proyectos'>
-  <div class='flex flex-col'>
-    <!-- Sneakers Store -->
-    <div class='mb-3'>
-      <div class='flex justify-between items-center gap-2 mb-1'>
-        <p>
-          <span class='font-semibold text-md mb-1'>Sneakers Store</span>
-        </p>
-        <span class='text-green-600 text-sm print:hidden'>En desarrollo...</span>
+<Section title="Proyectos">
+  <div class="flex flex-col">
+    <!-- CineSpectra -->
+    <div class="mb-3">
+      <div class="flex justify-between items-center gap-2">
+        <span class="font-semibold text-md">Cine Spectra</span>
+        <a
+          href="https://cinespectra-dd8h.onrender.com/"
+          class="text-green-600 text-sm text-center text-pretty print:hidden"
+          >En desarrollo</a
+        >
       </div>
-      <div class='flex flex-row w-full text-sm mb-1'>
-        <p class='text-pretty'>Utilicé mis habilidades previas en React como punto de partida, aprovechando las prácticas aprendidas para abordar los desafíos del proyecto. Esta experiencia me permitió explorar unos de los frameworks de PHP y expandir mi conjunto de habilidades en el desarrollo web. También me proporcionó una valiosa experiencia práctica en el diseño UX/UI, la adaptación a diferentes dispositivos y la optimización del rendimiento, lo que me permitió desarrollar habilidades sólidas en el desarrollo web front-end.</p>
-        <span class='inline-flex justify-center items-center hover:text-gray-600 cursor-pointer ml-3 mb-2'>
-        <a class='font-bold bg-black text-white rounded-full p-2 print:hidden' href='https://github.com/Alexisxde/sneakers-store' target='_blank'><Github/></a>
-        </span>
-      </div>
-      <div class='flex justify-start items-center gap-5'>
-        <span class='text-black'><Php/></span>
-        <span class='text-black'><Codeigniter/></span>
-        <span class='text-black'><Css/></span>
+      <div class="flex flex-col w-full text-sm mb-1">
+        <div class="text-pretty">
+          Desarrollo de una aplicación web que recopila y muestra tráilers de
+          películas utilizando la API de
+          <a
+            href="https://developer.themoviedb.org/"
+            class="underline"
+            target="_blank">The Movie Database</a
+          > (TMDb).
+        </div>
+        <div class="text-pretty">
+          <span class="font-semibold">Progreso actual:</span>
+          <ul class="list-disc pl-5 ml-5">
+            <li>Diseño inicial de la interfaz de usuario.</li>
+            <li>
+              Configuración e integración de Axios para realizar peticiones a la
+              API de TMDb y obtener tráilers y datos de películas.
+            </li>
+          </ul>
+        </div>
+        <div class="text-pretty">
+          <span class="font-semibold">Objetivos a futuro:</span>
+          <ul class="list-disc pl-5 ml-5">
+            <li>
+              Completar la integración de la API de TMDb para obtener tráilers y
+              datos de películas.
+            </li>
+            <li>
+              Implementar funcionalidades avanzadas como búsqueda y filtrado de
+              películas.
+            </li>
+            <li>
+              Optimizar el rendimiento y la experiencia de usuario de la
+              aplicación.
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-between items-center my-1 mx-6">
+          <div class="inline-flex items-center gap-4 h-7">
+            <React />
+            <TailwindCSS />
+          </div>
+          <span
+            class="inline-flex justify-center items-center hover:text-gray-600">
+            <a
+              class="font-bold bg-black text-white rounded-full p-2 print:hidden"
+              href="https://github.com/Alexisxde/CineSpectra"
+              target="_blank"><Github /></a
+            >
+          </span>
+        </div>
       </div>
     </div>
+    <hr class="mb-5" />
+    <!-- Sneakers Store -->
+    <div class="mb-3">
+      <div class="flex justify-between items-center gap-2">
+        <span class="font-semibold text-md">Sneakers Store</span>
+        <a
+          href="https://sneakers-test.000webhostapp.com/"
+          class="text-green-600 text-sm text-center text-pretty print:hidden"
+          >Online</a
+        >
+      </div>
+      <div class="flex flex-col w-full text-sm mb-1">
+        <div class="text-pretty">
+          Desarrollo de un ecommerce con funcionalidades completas para la
+          gestión de zapatillas, clientes y pedidos.
+        </div>
+        <div class="text-pretty">
+          <span class="font-semibold">Aspectos destacados:</span>
+          <ul class="list-disc pl-5 ml-5">
+            <li>
+              Implementación de funciones CRUD para la gestión de zapatillas,
+              clientes y pedidos.
+            </li>
+            <li>
+              Integración de un sistema de autenticación y gestión de usuarios.
+            </li>
+            <li>Funcionalidades completas de carrito de compras.</li>
+            <li>Sistema de gestión de zapatillas, clientes y pedidos.</li>
+            <li>Uso ocasional de Bootstrap para componentes y estilos.</li>
+            <li>Utilización actual de DataTables para la gestión de datos.</li>
+            <li>Diseño responsivo y amigable para el usuario.</li>
+          </ul>
+        </div>
+        <div class="text-pretty">
+          <span class="font-semibold">Objetivos a futuro:</span>
+          <ul class="list-disc pl-5 ml-5">
+            <li>
+              Migración a React para mejorar la experiencia de usuario y
+              optimizar el rendimiento.
+            </li>
+            <li>
+              Implementación de funcionalidades de pago seguro para permitir
+              transacciones en línea.
+            </li>
+            <li>Eliminación progresiva de Bootstrap y DataTables.</li>
+          </ul>
+        </div>
+        <div class="flex justify-between items-center my-1 mx-6">
+          <div class="inline-flex items-center gap-4 h-7">
+            <Php />
+            <Codeigniter />
+            <MySQL />
+          </div>
+          <span
+            class="inline-flex justify-center items-center hover:text-gray-600">
+            <a
+              class="font-bold bg-black text-white rounded-full p-2 print:hidden"
+              href="https://github.com/Alexisxde/sneakers-store"
+              target="_blank"><Github /></a
+            >
+          </span>
+        </div>
+      </div>
+    </div>
+    <hr class="mb-5" />
     <!-- CV Landing Page -->
-    <div class='mb-3'>
-      <div class='flex justify-between items-center gap-2 mb-1'>
-        <p>
-          <span class='font-semibold text-md mb-1'>CV Landing Page</span>
-        </p>
-        <a 
-          href='https://alexisxde.github.io' 
-          class='text-green-600 text-sm print:hidden'
-          target='_blank'>
-            Online
+    <div class="mb-3">
+      <div class="flex justify-between items-center gap-2">
+        <span class="font-semibold text-md">CV Landing Page</span>
+        <a
+          href="https://alexisxde.github.io"
+          class="text-green-600 text-sm print:hidden"
+          target="_blank">
+          Online
         </a>
       </div>
-      <div class='flex flex-row w-full text-sm mb-1'>
-        <p class='text-pretty'>Landing Page interactiva de mi currículum vitae, con la capacidad de ser visualizada en línea y descargada como PDF, proporcionando una experiencia dinámica y profesional tanto en formato digital como impreso.</p>
-        <span class='inline-flex justify-center items-center hover:text-gray-600 cursor-pointer ml-3 mb-2'>
-        <a class='font-bold bg-black text-white rounded-full p-2 print:hidden' href='https://github.com/Alexisxde/alexisxde.github.io' target='_blank'><Github/></a>
-        </span>
-      </div>
-      <div class='flex justify-start items-center gap-5'>
-        <span class='text-black'><AstroLogo/></span>
-        <span class='text-black'><TailwindCss/></span>
+      <div class="flex flex-col w-full text-sm mb-1">
+        <div class="text-pretty">
+          Una landing page diseñada para presentar mis proyectos de manera
+          interactiva y profesional, con la capacidad de ser visualizada online
+          y descargada en formato PDF.
+        </div>
+        <div class="text-pretty">
+          <span class="font-semibold">Aspectos destacados:</span>
+          <ul class="list-disc pl-5 ml-5">
+            <li>Presentación interactiva de proyectos destacados.</li>
+            <li>Opción de descarga del CV en formato PDF.</li>
+            <li>
+              Diseñado para ser accesible desde dispositivos móviles y de
+              escritorio.
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-between items-center my-1 mx-6">
+          <div class="inline-flex items-center gap-4 h-7">
+            <AstroLogo />
+            <TailwindCSS />
+          </div>
+          <span
+            class="inline-flex justify-center items-center hover:text-gray-600">
+            <a
+              class="font-bold bg-black text-white rounded-full p-2 print:hidden"
+              href="https://github.com/Alexisxde/alexisxde.github.io"
+              target="_blank"><Github /></a
+            >
+          </span>
+        </div>
       </div>
     </div>
+    <hr class="mb-5" />
     <!-- Proyecto Integrador Argentina Programa 4.0 -->
-    <div class='mb-3'>
-      <div class='flex justify-between items-center gap-2 mb-1'>
-        <p>
-          <span class='font-semibold text-md mb-1'>Proyecto Integrador Argentina Programa 4.0</span>
-        </p>
-        <span class='text-green-600 text-sm text-center text-pretty print:hidden'>Entregado y Aprobado</span>
+    <div class="print:hidden mb-3">
+      <div class="flex justify-between items-center gap-2">
+        <span class="font-semibold text-md"
+          >Proyecto Integrador Argentina Programa 4.0</span
+        >
       </div>
-      <div class='flex flex-row w-full text-sm mb-1'>
-        <p class='text-pretty'>Desarrollo de un proyecto full stack durante mi curso, utilizando tecnologías como React para el frontend, Django para el backend y SQLite3 como base de datos. A pesar de los desafíos y la falta de colaboración de algunos compañeros, logramos completar exitosamente el proyecto, lo que me permitió aprobar el curso.</p>
-        <span class='inline-flex justify-center items-center hover:text-gray-600 cursor-pointer ml-3 mb-2'>
-        <a class='font-bold bg-black text-white rounded-full p-2 print:hidden' href='https://github.com/Alexisxde/tp-arg-programa' target='_blank'><Github/></a>
-        </span>
-      </div>
-      <div class='flex justify-start items-center gap-5'>
-        <span class='text-black'><React/></span>
-        <span class='text-black'><Django/></span>
-        <span class='text-black'><TailwindCss/></span>
+      <div class="flex flex-col w-full text-sm mb-1">
+        <div class="text-pretty">
+          Desarrollo de un proyecto full stack durante mi curso. A pesar de los
+          desafíos y la falta de colaboración de algunos compañeros, logramos
+          completar exitosamente el proyecto, lo que me permitió aprobar el
+          curso.
+        </div>
+        <div class="text-pretty">
+          <span class="font-semibold">Aspectos destacados:</span>
+          <ul class="list-disc pl-5 ml-5">
+            <li>
+              Implementación del backend para gestionar la lógica del servidor y
+              las operaciones CRUD.
+            </li>
+            <li>
+              Diseño y funcionalidad completados, lo que resultó en la
+              aprobación del curso.
+            </li>
+            <li>
+              Almacenamiento de datos en SQLite3, garantizando una base de datos
+              ligera y eficiente.
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-between items-center my-1 mx-6">
+          <div class="inline-flex items-center gap-4 h-7">
+            <React />
+            <Django />
+            <TailwindCSS />
+            <Sqlite3 />
+          </div>
+          <span
+            class="inline-flex justify-center items-center hover:text-gray-600">
+            <a
+              class="font-bold bg-black text-white rounded-full p-2 print:hidden"
+              href="https://github.com/Alexisxde/tp-arg-programa"
+              target="_blank"><Github /></a
+            >
+          </span>
+        </div>
       </div>
     </div>
   </div>
