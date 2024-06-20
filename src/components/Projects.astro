@@ -5,6 +5,7 @@ import Section from '@/components/Section.astro'
 /* @import icons */
 import Github from '@/icons/Github.astro'
 import Codeigniter from '@/icons/Codeigniter.astro'
+import Css from '@/icons/Css.astro'
 import Php from '@/icons/Php.astro'
 import React from '@/icons/React.astro'
 import TailwindCss from '@/icons/TailwindCss.astro'
@@ -26,7 +27,7 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
           target="_blank">En desarrollo</a
         >
       </div>
-      <div class="flex flex-col w-full text-sm mb-1">
+      <div class="flex flex-col w-full text-sm">
         <div class="text-pretty">
           Desarrollo de una aplicación web que recopila y muestra tráilers de
           películas utilizando la API de
@@ -63,19 +64,21 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
             </li>
           </ul>
         </div>
-        <div class="flex justify-between items-center my-1 mx-6">
-          <div class="inline-flex items-center gap-4 h-7">
+        <div class="hidden print:block">
+          <span class="font-semibold">Tecnologias: </span>
+          React, TailwindCSS.
+        </div>
+        <div
+          class="flex justify-between items-center my-1 mx-6 h-7 print:hidden">
+          <div class="inline-flex items-center gap-4">
             <React />
             <TailwindCss />
           </div>
-          <span
-            class="inline-flex justify-center items-center hover:text-gray-600">
-            <a
-              class="font-bold bg-black text-white rounded-full p-2 print:hidden"
-              href="https://github.com/Alexisxde/CineSpectra"
-              target="_blank"><Github /></a
-            >
-          </span>
+          <a
+            class="font-bold bg-black text-white rounded-full p-2"
+            href="https://github.com/Alexisxde/CineSpectra"
+            target="_blank"><Github /></a
+          >
         </div>
       </div>
     </div>
@@ -90,7 +93,7 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
           target="_blank">Online</a
         >
       </div>
-      <div class="flex flex-col w-full text-sm mb-1">
+      <div class="flex flex-col w-full text-sm">
         <div class="text-pretty">
           Desarrollo de un ecommerce con funcionalidades completas para la
           gestión de zapatillas, clientes y pedidos.
@@ -120,26 +123,29 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
               optimizar el rendimiento.
             </li>
             <li>
-              Implementación de funcionalidades de pago seguro para permitir
+              Implementación de funcionalidades de pago para permitir
               transacciones en línea.
             </li>
             <li>Eliminación progresiva de Bootstrap y DataTables.</li>
           </ul>
         </div>
-        <div class="flex justify-between items-center my-1 mx-6">
-          <div class="inline-flex items-center gap-4 h-7">
+        <div class="hidden print:block">
+          <span class="font-semibold">Tecnologias: </span>
+          PHP, Codeigniter 4, CSS, MySQL.
+        </div>
+        <div
+          class="flex justify-between items-center my-1 mx-6 h-7 print:hidden">
+          <div class="inline-flex items-center gap-4">
             <Php />
             <Codeigniter />
+            <Css />
             <MySQL />
           </div>
-          <span
-            class="inline-flex justify-center items-center hover:text-gray-600">
-            <a
-              class="font-bold bg-black text-white rounded-full p-2 print:hidden"
-              href="https://github.com/Alexisxde/sneakers-store"
-              target="_blank"><Github /></a
-            >
-          </span>
+          <a
+            class="font-bold bg-black text-white rounded-full p-2"
+            href="https://github.com/Alexisxde/sneakers-store"
+            target="_blank"><Github /></a
+          >
         </div>
       </div>
     </div>
@@ -155,7 +161,7 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
           Online
         </a>
       </div>
-      <div class="flex flex-col w-full text-sm mb-1">
+      <div class="flex flex-col w-full text-sm">
         <div class="text-pretty">
           Una landing page diseñada para presentar mis proyectos de manera
           interactiva y profesional, con la capacidad de ser visualizada online
@@ -172,19 +178,21 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
             </li>
           </ul>
         </div>
-        <div class="flex justify-between items-center my-1 mx-6">
-          <div class="inline-flex items-center gap-4 h-7">
+        <div class="hidden print:block">
+          <span class="font-semibold">Tecnologias: </span>
+          Astro, TailwindCSS.
+        </div>
+        <div
+          class="flex justify-between items-center my-1 mx-6 h-7 print:hidden">
+          <div class="inline-flex items-center gap-4">
             <AstroLogo />
             <TailwindCss />
           </div>
-          <span
-            class="inline-flex justify-center items-center hover:text-gray-600">
-            <a
-              class="font-bold bg-black text-white rounded-full p-2 print:hidden"
-              href="https://github.com/Alexisxde/alexisxde.github.io"
-              target="_blank"><Github /></a
-            >
-          </span>
+          <a
+            class="font-bold bg-black text-white rounded-full p-2"
+            href="https://github.com/Alexisxde/alexisxde.github.io"
+            target="_blank"><Github /></a
+          >
         </div>
       </div>
     </div>
@@ -196,7 +204,7 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
           >Proyecto Integrador Argentina Programa 4.0</span
         >
       </div>
-      <div class="flex flex-col w-full text-sm mb-1">
+      <div class="flex flex-col w-full text-sm">
         <div class="text-pretty">
           Desarrollo de un proyecto full stack durante mi curso. A pesar de los
           desafíos y la falta de colaboración de algunos compañeros, logramos
@@ -220,21 +228,18 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
             </li>
           </ul>
         </div>
-        <div class="flex justify-between items-center my-1 mx-6">
-          <div class="inline-flex items-center gap-4 h-7">
+        <div class="flex justify-between items-center my-1 mx-6 h-7">
+          <div class="inline-flex items-center gap-4">
             <React />
             <Django />
             <TailwindCss />
             <Sqlite3 />
           </div>
-          <span
-            class="inline-flex justify-center items-center hover:text-gray-600">
-            <a
-              class="font-bold bg-black text-white rounded-full p-2 print:hidden"
-              href="https://github.com/Alexisxde/tp-arg-programa"
-              target="_blank"><Github /></a
-            >
-          </span>
+          <a
+            class="font-bold bg-black text-white rounded-full p-2"
+            href="https://github.com/Alexisxde/tp-arg-programa"
+            target="_blank"><Github /></a
+          >
         </div>
       </div>
     </div>

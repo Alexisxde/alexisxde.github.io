@@ -27,8 +27,11 @@ const { city, region } = location
         >
         {summary}
       </p>
+      <span class="hidden text-black text-sm mb-2 print:block">
+        {city}, {region}
+      </span>
       <span
-        class="text-gray-600 text-sm inline-flex justify-center items-center gap-2 mb-2">
+        class="text-gray-600 text-sm inline-flex justify-center items-center gap-2 mb-2 print:hidden">
         <World />
         {city}, {region}
       </span>

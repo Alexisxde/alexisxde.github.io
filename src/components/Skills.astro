@@ -9,12 +9,14 @@ import JavaScript from '@/icons/JavaScript.astro'
 import React from '@/icons/React.astro'
 import Github from '@/icons/Github.astro'
 import Git from '@/icons/Git.astro'
-import VsCode from '@/icons/VsCode.astro'
 import TailwindCss from '@/icons/TailwindCss.astro'
 ---
 
 <Section title="Habilidades">
-  <div>
+  <div class="hidden print:block font-semibold ml-6">
+    HTML, CSS, JavaScript, React, TailwindCSS, Git, Github.
+  </div>
+  <div class="flex flex-wrap justify-center gap-1 print:hidden">
     <span
       class="inline-flex justify-center items-center gap-1 font-bold bg-black text-white rounded px-4 print:px-2 print:text-black print:bg-white"
       ><HTML />HTML</span
@@ -29,19 +31,15 @@ import TailwindCss from '@/icons/TailwindCss.astro'
     >
     <span
       class="inline-flex justify-center items-center gap-1 font-bold bg-black text-white rounded px-4 print:px-2 print:text-black print:bg-white"
+      ><React />React</span
+    >
+    <span
+      class="inline-flex justify-center items-center gap-1 font-bold bg-black text-white rounded px-4 print:px-2 print:text-black print:bg-white"
       ><TailwindCss />Tailwind CSS</span
     >
     <span
       class="inline-flex justify-center items-center gap-1 font-bold bg-black text-white rounded px-4 print:px-2 print:text-black print:bg-white"
       ><Git />Git</span
-    >
-    <span
-      class="inline-flex justify-center items-center gap-1 font-bold bg-black text-white rounded px-4 print:px-2 print:text-black print:bg-white"
-      ><VsCode />Visual Studio Code</span
-    >
-    <span
-      class="inline-flex justify-center items-center gap-1 font-bold bg-black text-white rounded px-4 print:px-2 print:text-black print:bg-white"
-      ><React />React</span
     >
     <span
       class="inline-flex justify-center items-center gap-1 font-bold bg-black text-white rounded px-4 print:px-2 print:text-black print:bg-white"
