@@ -1,8 +1,93 @@
-<main></main>
+<section class="hero">
+  <div class="hero__text">
+    <div class="hero__title">
+      Empresa de Telecomunicaciones de todos los Correntinos
+      <div class="hero__description">
+        Trabajamos para llevar Internet de alta velocidad.
+      </div>
+    </div>
+    <a class="hero__link" href="#">Conocé más</a>
+  </div>
+  <div class="hero__image">
+    <div class="elipce"></div>
+    <img class="hero__image-img" src="/logo_telco.png" alt="Telco Logo" />
+  </div>
+</section>
 
 <style>
-  main {
-    width: min(1395px, 100%);
+  .hero {
+    display: flex;
+    padding: 64px 64px 64px 64px;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
+  }
+
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 780px;
+  }
+
+  .hero__title {
+    color: var(--text__color);
+    font-family: Poppins;
+    font-size: clamp(2rem, 0.4rem + 5.3333vw, 3rem);
+    font-weight: 500;
+    text-wrap: balance;
+    animation: show-content 0.5s ease-out forwards;
+  }
+
+  .hero__description {
+    color: var(--text__gray);
+    font-family: Poppins;
+    font-size: 16px;
+    animation: show-content 0.75s ease-out forwards;
+  }
+
+  .hero__link {
+    color: #243600;
+    font-family: Poppins;
+    border-radius: 8px;
+    background-color: #01ae43;
+    padding: 8px 16px;
+  }
+
+  .hero__image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    margin-right: 64px;
+  }
+
+  .elipce {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 350px;
+    background: linear-gradient(141deg, #ccd500 15%, #009338 50%, #00b1eb 85%);
+    filter: blur(100px);
+  }
+
+  .hero__image-img {
+    width: 320px;
+    animation: show-content 0.75s ease-out forwards;
+  }
+
+  @keyframes show-content {
+    from {
+      transform: translateY(50px);
+      filter: blur(30px);
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+      filter: blur(0);
+    }
   }
 </style>

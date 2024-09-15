@@ -1,0 +1,86 @@
+---
+const trust = [
+  {
+    logo: 'unne.png',
+    name: 'Universidad Nacional del Nordeste',
+    link: 'https://www.unne.edu.ar/'
+  },
+  {
+    logo: 'municipalidad.png',
+    name: 'Municipalidad de Corrientes',
+    link: 'https://ciudaddecorrientes.gov.ar/'
+  }
+]
+---
+
+<section class="trust">
+  <div class="trust__title">Confian en Telco</div>
+  <div class="enterprises">
+    {
+      trust.map(({ logo, name, link }) => (
+        <article class="card">
+          <a href={link} target="_blank">
+            <img src={`/logos_empresas/${logo}`} alt={name} loading="lazy" />
+          </a>
+        </article>
+      ))
+    }
+    <article class="card card__hidden"></article>
+  </div>
+</section>
+
+<style>
+  .trust {
+    display: grid;
+    margin: 0 auto;
+    padding-inline: 32px;
+    width: 100%;
+    gap: 8px;
+    padding-bottom: 64px;
+  }
+
+  .trust__title {
+    font-size: 24px;
+    text-align: center;
+    background-color: var(--card__dark);
+    padding: 16px;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .enterprises {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    gap: 8px;
+  }
+
+  .card {
+    background-color: var(--card__dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    transition: background-color 350ms;
+
+    a {
+      img {
+        aspect-ratio: 1 / 0.5;
+        object-fit: contain;
+        filter: invert(1) grayscale(1);
+      }
+    }
+
+    &:has(a img):hover {
+      background-color: var(--text__color);
+
+      img {
+        filter: grayscale(0);
+      }
+    }
+  }
+
+  @media (width <= 968px) {
+    .card__hidden {
+      display: none;
+    }
+  }
+</style>

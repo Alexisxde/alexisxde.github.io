@@ -23,17 +23,22 @@ const { title, type, href } = Astro.props
   </body>
 </html>
 <style is:global>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
   * {
-    --text: #f2f2f8;
-    --color__black: #202127;
+    --text__color: #f2f2f8;
+    --bg__color: #1b1b1f;
+    --text__gray: #9a9a9a;
+    --card__dark: #202127;
   }
 
   body {
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
+    background-color: var(--bg__color);
+    color: var(--text__color);
+    max-width: 1395px;
+    margin: 0 auto;
   }
 </style>
