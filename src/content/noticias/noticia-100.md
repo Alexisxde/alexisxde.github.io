@@ -1,5 +1,5 @@
 ---
-id_new: 100
+id: 100
 img: https://telco.com.ar/storage/noticias/eDltBtonf3GN46xzjnkSqCzqdXhokMIxQb67soWo.jpeg
 title: El Arzobispado de Corrientes y TelCo facilitan el pago electrónico de cuotas escolares
 slug: el-arzobispado-de-corrientes-y-telco-facilitan-el-pago-electrónico-de-cuotas-escolares

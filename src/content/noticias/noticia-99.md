@@ -1,5 +1,5 @@
 ---
-id_new: 99
+id: 99
 img: https://telco.com.ar/storage/noticias/ngskCTF3vu6WBnpg3xS3bDPStt23TRCZUP1WtjHz.jpeg
 title: Recolector la alternativa de TelCo para transformar la gestión de Residuos en Corrientes
 slug: recolector-la-alternativa-de-telco-para-transformar-la-gestión-de-residuos-en-corrientes

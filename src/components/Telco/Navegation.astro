@@ -1,6 +1,5 @@
 ---
 import CaretDown from '@/icons/CaretDown.astro'
-import CaretRight from '@/icons/CaretRight.astro'
 import Facebook from '@/icons/Facebook.astro'
 import Instagram from '@/icons/Instagram.astro'
 import LinkedIn from '@/icons/LinkedIn.astro'
@@ -17,29 +16,27 @@ import Youtube from '@/icons/Youtube.astro'
       <div class="dropdown">
         <button class="dropdown-title">Institucional <CaretDown /></button>
         <div class="dropdown-menu">
-          <button>Telco</button>
-          <button>Autoridades</button>
-          <button>Politica de Calidad</button>
-          <button class="dropdown-title"
-            >Fortalecimiento de ISP <CaretRight /></button
-          >
+          <a href="#">Telco</a>
+          <a href="#">Autoridades</a>
+          <a href="#">Politica de Calidad</a>
+          <a href="#">Fortalecimiento de ISP</a>
         </div>
       </div>
       <div class="dropdown">
         <button class="dropdown-title">Productos <CaretDown /></button>
         <div class="dropdown-menu">
-          <button>Servicio</button>
-          <button class="dropdown-title">Desarrollo <CaretRight /></button>
-          <button>Formación</button>
+          <a href="#">Servicio</a>
+          <a href="#">Desarrollo</a>
+          <a href="#">Formación</a>
         </div>
       </div>
       <div class="dropdown">
         <button class="dropdown-title">Contáctanos <CaretDown /></button>
         <div class="dropdown-menu">
-          <button>Solicitud de cotización</button>
-          <button>Asistencia tecnica al cliente</button>
-          <button>Trabajá con nosotros</button>
-          <button>Consultas generales</button>
+          <a href="#">Solicitud de cotización</a>
+          <a href="#">Asistencia tecnica al cliente</a>
+          <a href="#">Trabajá con nosotros</a>
+          <a href="#">Consultas generales</a>
         </div>
       </div>
     </div>
@@ -93,7 +90,7 @@ import Youtube from '@/icons/Youtube.astro'
   .logo {
     display: flex;
     align-items: center;
-    width: 80px;
+    width: 60px;
     aspect-ratio: 16 / 9;
   }
 
@@ -251,22 +248,21 @@ import Youtube from '@/icons/Youtube.astro'
     transition: 0.3s;
   }
 
-  .dropdown-menu > button {
+  .dropdown-menu > a {
     color: var(--text);
     font-size: 14px;
     text-align: left;
     white-space: nowrap;
-    padding: 0;
+    padding: 8px;
     margin: 0;
     opacity: 0.6;
-    height: 40px;
   }
 
-  .dropdown:hover > button {
+  .dropdown:hover > a {
     opacity: 1;
   }
 
-  .dropdown-menu > button:hover {
+  .dropdown-menu > a:hover {
     opacity: 1;
   }
 

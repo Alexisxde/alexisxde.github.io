@@ -4,6 +4,16 @@ import ArrowRigth from '@/icons/ArrowRigth.astro'
 import { getCollection } from 'astro:content'
 
 const news = await getCollection('noticias')
+
+function formatearFecha(fecha) {
+  const dia = String(fecha.getDate()).padStart(2, '0') // Día (DD)
+  const mes = String(fecha.getMonth() + 1).padStart(2, '0') // Mes (MM, recuerda que los meses empiezan en 0)
+  const anio = fecha.getFullYear() // Año (AAAA)
+  const horas = String(fecha.getHours()).padStart(2, '0') // Horas (HH)
+  const minutos = String(fecha.getMinutes()).padStart(2, '0') // Minutos (MM)
+
+  return `${dia}/${mes}/${anio} ${horas}:${minutos}`
+}
 ---
 
 <section>
@@ -11,26 +21,32 @@ const news = await getCollection('noticias')
   <button id="prev"><ArrowLeft /></button>
   <div id="slider" class="slider">
     {
-      news.reverse().map(n => {
-        const { slug, data, body } = n
-        const { img, title } = data
+      news
+        .sort((a, b) => b.data.id - a.data.id)
+        .map(n => {
+          const { slug, data, body } = n
+          const { img, title, date } = data
+          const fechaFormateada = formatearFecha(date)
 
-        return (
-          <div class="card">
-            <img
-              transition:name={`img-${slug}`}
-              loading="lazy"
-              src={img}
-              alt={title}
-            />
-            <div class="card__body">
-              <span>{title}</span>
-              <p>{body}</p>
-              <a href={`/noticias/${slug}`}>Leer más</a>
+          return (
+            <div class="card">
+              <img
+                transition:name={`img-${slug}`}
+                loading="lazy"
+                src={img}
+                alt={title}
+              />
+              <div class="card__body">
+                <h3>{title}</h3>
+                <p>{body}</p>
+                <div>
+                  <span>{fechaFormateada}</span>
+                  <a href={`/noticias/${slug}`}>Leer más</a>
+                </div>
+              </div>
             </div>
-          </div>
-        )
-      })
+          )
+        })
     }
   </div>
   <button id="next"><ArrowRigth /></button>
@@ -69,10 +85,9 @@ const news = await getCollection('noticias')
     scroll-snap-align: start;
     flex-shrink: 0;
     overflow: hidden;
-    transition: transform 150ms ease-in-out;
 
-    &:hover {
-      transform: translateY(-5px);
+    &:hover img {
+      transform: scale(1.25);
     }
 
     img {
@@ -82,6 +97,7 @@ const news = await getCollection('noticias')
       object-fit: cover;
       mask-image: linear-gradient(180deg, #1a1a1a 35%, #1b1b1f00 100%);
       border-radius: 4px;
+      transition: transform 150ms ease-in-out;
     }
 
     .card__body {
@@ -92,15 +108,24 @@ const news = await getCollection('noticias')
       flex-direction: column;
       gap: 4px;
 
-      span,
+      h3,
       p {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         overflow: hidden;
       }
 
-      span {
+      h3,
+      a {
         color: #f2f2f8;
+      }
+
+      span {
+        font-size: 10px;
+        color: var(--text__gray);
+      }
+
+      h3 {
         font-size: 13px;
         -webkit-line-clamp: 2;
         line-clamp: 2;
@@ -113,12 +138,15 @@ const news = await getCollection('noticias')
         color: var(--text__gray);
       }
 
-      a {
-        color: #f2f2f8;
-        font-size: 10px;
-        text-decoration: underline;
+      div {
         display: flex;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+          font-size: 10px;
+          text-decoration: underline;
+        }
       }
     }
   }

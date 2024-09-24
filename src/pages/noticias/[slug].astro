@@ -2,6 +2,7 @@
 import Navegation from '@/components/Telco/Navegation.astro'
 import Layout from '@/layouts/Layout.astro'
 import { getCollection } from 'astro:content'
+
 export async function getStaticPaths() {
   const news = await getCollection('noticias')
   return news.map(n => ({
@@ -13,9 +14,6 @@ export async function getStaticPaths() {
 const { n } = Astro.props
 const { data, slug, body } = n
 const { title, img } = data
-
-const { Content } = await n.render()
-console.log(body)
 ---
 
 <Layout title={`TelCo - ${title}`} href="/telco_logo.png" type="image/png">
