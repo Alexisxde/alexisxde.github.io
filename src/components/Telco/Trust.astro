@@ -14,7 +14,7 @@ const trust = [
 ---
 
 <section class="trust">
-  <div class="trust__title">Confian en Telco</div>
+  <h2 class="trust__title">Confian en Telco</h2>
   <div class="enterprises">
     {
       trust.map(({ logo, name, link }) => (
@@ -36,13 +36,13 @@ const trust = [
     padding-inline: 32px;
     width: 100%;
     gap: 8px;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
   }
 
   .trust__title {
     font-size: 24px;
     text-align: center;
-    background-color: var(--card__dark);
+    background-color: var(--card);
     padding: 16px;
     border-radius: 16px 16px 0 0;
   }
@@ -54,7 +54,7 @@ const trust = [
   }
 
   .card {
-    background-color: var(--card__dark);
+    background-color: var(--card);
     display: flex;
     align-items: center;
     justify-content: center;
