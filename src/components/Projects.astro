@@ -3,16 +3,17 @@
 import Section from '@/components/Section.astro'
 
 /* @import icons */
-import Github from '@/icons/Github.astro'
+import AstroLogo from '@/icons/AstroLogo.astro'
 import Codeigniter from '@/icons/Codeigniter.astro'
 import Css from '@/icons/Css.astro'
+import Django from '@/icons/Django.astro'
+import Figma from '@/icons/Figma.astro'
+import Github from '@/icons/Github.astro'
+import MySQL from '@/icons/MySQL.astro'
 import Php from '@/icons/Php.astro'
 import React from '@/icons/React.astro'
-import TailwindCss from '@/icons/TailwindCss.astro'
-import Django from '@/icons/Django.astro'
-import AstroLogo from '@/icons/AstroLogo.astro'
-import MySQL from '@/icons/MySQL.astro'
 import Sqlite3 from '@/icons/Sqlite3.astro'
+import TailwindCss from '@/icons/TailwindCss.astro'
 ---
 
 <Section title="Proyectos">
@@ -20,7 +21,7 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
     <!-- CineSpectra -->
     <div class="mb-3">
       <div class="flex justify-between items-center gap-2">
-        <span class="font-semibold text-md">Cine Spectra</span>
+        <span class="font-semibold text-md">CineSpectra</span>
         <a
           href="https://cinespectra-dd8h.onrender.com/"
           class="text-green-600 text-sm text-center text-pretty print:hidden"
@@ -29,21 +30,32 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
       </div>
       <div class="flex flex-col w-full text-sm">
         <div class="text-pretty">
-          Desarrollo de una aplicación web que recopila y muestra tráilers de
-          películas utilizando la API de
-          <a
+          Desarrollo de una aplicación web que muestra tráilers de películas
+          utilizando la API de <a
             href="https://developer.themoviedb.org/"
             class="underline"
-            target="_blank">The Movie Database</a
-          > (TMDb).
+            target="_blank">The Movie Database.</a
+          >
         </div>
         <div class="text-pretty">
           <span class="font-semibold">Progreso actual:</span>
           <ul class="list-disc pl-5 ml-5">
-            <li>Diseño inicial de la interfaz de usuario.</li>
             <li>
-              Configuración e integración de Axios para realizar peticiones a la
-              API de TMDb y obtener tráilers y datos de películas.
+              Se desarrolló primero toda la lógica y las peticiones a la API,
+              creando una estructura funcional con un diseño preliminar
+              amigable.
+            </li>
+            <li>
+              Posteriormente, diseñé en Figma el modelo visual que quería que la
+              web siguiera.
+            </li>
+            <li>
+              Hasta el momento, la aplicación web está implementada solo en su
+              versión móvil.
+            </li>
+            <li>
+              La aplicación ya permite ver tráilers de películas y cuenta con un
+              buscador para encontrar títulos específicos.
             </li>
           </ul>
         </div>
@@ -51,12 +63,8 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
           <span class="font-semibold">Objetivos a futuro:</span>
           <ul class="list-disc pl-5 ml-5">
             <li>
-              Completar la integración de la API de TMDb para obtener tráilers y
-              datos de películas.
-            </li>
-            <li>
-              Implementar funcionalidades avanzadas como búsqueda y filtrado de
-              películas.
+              Desarrollar a futuro la versión de escritorio, siguiendo el diseño
+              previamente elaborado en Figma.
             </li>
             <li>
               Optimizar el rendimiento y la experiencia de usuario de la
@@ -66,19 +74,25 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
         </div>
         <div class="hidden print:block">
           <span class="font-semibold">Tecnologias: </span>
-          React, TailwindCSS.
+          React, CSS, Figma.
         </div>
         <div
           class="flex justify-between items-center my-1 mx-6 h-7 print:hidden">
           <div class="inline-flex items-center gap-4">
             <React />
-            <TailwindCss />
+            <Css />
           </div>
-          <a
-            class="font-bold bg-black text-white rounded-full p-2"
-            href="https://github.com/Alexisxde/CineSpectra"
-            target="_blank"><Github /></a
-          >
+          <div class="flex items-center justify-center gap-4">
+            <a
+              href="https://www.figma.com/design/9Pr62B6UcsxSCQ0n5tqy7c/Movie-Web-Design?m=auto&t=UjCig5eXDin1rxpv-6"
+              target="_blank"><Figma /></a
+            >
+            <a
+              class="bg-black text-white rounded-full p-2"
+              href="https://github.com/Alexisxde/CineSpectra"
+              target="_blank"><Github /></a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -87,16 +101,14 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
     <div class="mb-3">
       <div class="flex justify-between items-center gap-2">
         <span class="font-semibold text-md">Sneakers Store</span>
-        <a
-          href="https://sneakers-test.000webhostapp.com/"
-          class="text-green-600 text-sm text-center text-pretty print:hidden"
-          target="_blank">Online</a
-        >
       </div>
+
       <div class="flex flex-col w-full text-sm">
         <div class="text-pretty">
-          Desarrollo de un ecommerce con funcionalidades completas para la
-          gestión de zapatillas, clientes y pedidos.
+          Desarrollo de un eCommerce con funcionalidades completas para la
+          gestión de zapatillas, clientes y pedidos, como parte de la materia <span
+            class="font-semibold">Taller de Programación I</span
+          > de la Universidad.
         </div>
         <div class="text-pretty">
           <span class="font-semibold">Aspectos destacados:</span>
@@ -113,20 +125,6 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
             <li>Uso ocasional de Bootstrap para componentes y estilos.</li>
             <li>Utilización actual de DataTables para la gestión de datos.</li>
             <li>Diseño responsivo y amigable para el usuario.</li>
-          </ul>
-        </div>
-        <div class="text-pretty">
-          <span class="font-semibold">Objetivos a futuro:</span>
-          <ul class="list-disc pl-5 ml-5">
-            <li>
-              Migración a React para mejorar la experiencia de usuario y
-              optimizar el rendimiento.
-            </li>
-            <li>
-              Implementación de funcionalidades de pago para permitir
-              transacciones en línea.
-            </li>
-            <li>Eliminación progresiva de Bootstrap y DataTables.</li>
           </ul>
         </div>
         <div class="hidden print:block">
@@ -208,8 +206,7 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
         <div class="text-pretty">
           Desarrollo de un proyecto full stack durante mi curso. A pesar de los
           desafíos y la falta de colaboración de algunos compañeros, logramos
-          completar exitosamente el proyecto, lo que me permitió aprobar el
-          curso.
+          completar exitosamente el proyecto, lo que me permitió aprobar.
         </div>
         <div class="text-pretty">
           <span class="font-semibold">Aspectos destacados:</span>
@@ -231,8 +228,8 @@ import Sqlite3 from '@/icons/Sqlite3.astro'
         <div class="flex justify-between items-center my-1 mx-6 h-7">
           <div class="inline-flex items-center gap-4">
             <React />
-            <Django />
             <TailwindCss />
+            <Django />
             <Sqlite3 />
           </div>
           <a

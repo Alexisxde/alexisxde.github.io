@@ -15,8 +15,7 @@ import { certificates } from '@cv'
       return (
         <>
           <h3 class="font-semibold text-md mb-1">{name}</h3>
-          <span class="mb-1">{institution}</span>
-          <div class="flex justify-between items-center w-full text-md">
+          <div class="flex justify-between items-center w-full text-xs">
             <span>{issuer}</span>
             <span class="inline-flex justify-center items-center hover:text-gray-600 cursor-pointer print:hidden">
               <PaperClip />
@@ -25,7 +24,8 @@ import { certificates } from '@cv'
               </a>
             </span>
           </div>
-          <p class="text-sm my-2">{description}</p>
+          <span class="my-2 text-xs">{institution}</span>
+          <p class="text-sm mb-2 text-pretty">{description}</p>
         </>
       )
     })

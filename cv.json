@@ -7,7 +7,7 @@
     "phone": "+54 3795 155659",
     "github": "https://github.com/Alexisxde",
     "summary": "Apasionado por la programación y listo para embarcarme en mi primera aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo increíble junto a un equipo.",
-    "description": "Mi verdadera pasión por el diseño y desarrollo web surgió de manera autodidacta. Me encanta el front-end. Estoy constantemente buscando nuevas formas de mejorar mis habilidades y mantenerme al día con las últimas tendencias en diseño y desarrollo front-end. Mi objetivo es seguir creciendo y desarrollándome profesionalmente, aportando mi creatividad y dedicación.",
+    "description": "Mi verdadera pasión por el diseño y desarrollo web surgió de manera autodidacta. Estoy constantemente buscando nuevas formas de mejorar mis habilidades y mantenerme al día con las últimas tendencias en diseño y desarrollo front-end. Mi objetivo es seguir creciendo y desarrollándome profesionalmente, aportando mi creatividad y dedicación.",
     "location": {
       "city": "Corrientes",
       "region": "Argentina"
@@ -24,7 +24,7 @@
   ],
   "certificates": [
     {
-      "name": "Segundo Tramo - Front End Developer",
+      "name": "Front End Developer",
       "date": "2023-10-04",
       "issuer": "Argentina Programa 4.0",
       "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
@@ -32,7 +32,7 @@
       "description": "Certificado por completar la primer parte del proyecto de desarrollo front-end de una lista de tareas utilizando React y TailwindCSS, este proyecto destacó mi capacidad para diseñar y desarrollar interfaces de usuario dinámicas y modernas."
     },
     {
-      "name": "Tercer Tramo - Back End Developer",
+      "name": "Back End Developer",
       "date": "2023-10-04",
       "issuer": "Argentina Programa 4.0",
       "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
