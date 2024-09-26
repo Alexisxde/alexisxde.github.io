@@ -95,7 +95,6 @@ function formatearFecha(fecha) {
       width: 285px;
       aspect-ratio: 1 / 1;
       object-fit: cover;
-      mask-image: linear-gradient(180deg, #1a1a1a 35%, #1b1b1f00 100%);
       border-radius: 4px;
       transition: transform 150ms ease-in-out;
     }
@@ -149,6 +148,14 @@ function formatearFecha(fecha) {
         }
       }
     }
+  }
+
+  body.dark .card img {
+    mask-image: linear-gradient(180deg, #1a1a1a 35%, #1b1b1f00 100%);
+  }
+
+  body.light .card img {
+    /* Acá va una sombra */
   }
 
   button {

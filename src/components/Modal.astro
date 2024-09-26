@@ -1,0 +1,157 @@
+---
+interface Props {
+  title: string
+  img: string
+}
+
+const { title, img } = Astro.props
+---
+
+<div id="modal-container">
+  <div class="modal-background">
+    <div class="modal">
+      <h2>{title}</h2>
+      <img src={img} alt={title} />
+    </div>
+  </div>
+</div>
+<button
+  class="text-green-600 text-sm text-center text-pretty print:hidden"
+  onclick="handleClick('two')">Vista previa</button
+>
+<script is:inline type="text/javascript">
+  const modal = document.querySelector('#modal-container')
+
+  const handleClick = buttonId => {
+    modal.classList = []
+    modal.classList.add(buttonId)
+    document.body.classList.add('modal-active')
+  }
+
+  modal.addEventListener('click', () => {
+    modal.classList.add('out')
+    document.body.classList.remove('modal-active')
+  })
+</script>
+<style>
+  #modal-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    inset: 0;
+    transform: scale(0);
+    z-index: 1;
+    color: #222222;
+  }
+
+  #modal-container.two {
+    transform: scale(1);
+  }
+
+  #modal-container.two .modal-background {
+    background: rgba(0, 0, 0, 0);
+    animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  #modal-container.two .modal-background .modal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 898px;
+    margin: 0 auto;
+    height: 100dvh;
+    opacity: 0;
+    animation: scaleUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    padding: 32px;
+    gap: 16px;
+
+    > h2 {
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    > p {
+      font-size: 14px;
+      color: #a9a9a9;
+      padding: 16px;
+    }
+
+    > img {
+      border-radius: 16px;
+    }
+  }
+
+  #modal-container.two.out {
+    animation: quickScaleDown 0.85s linear forwards;
+  }
+
+  #modal-container.two.out .modal-background {
+    animation: fadeOut 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  #modal-container.two.out .modal-background .modal {
+    animation: scaleDown 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      background: rgba(0, 0, 0, 0);
+    }
+    100% {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      background: rgba(0, 0, 0, 0.7);
+    }
+    100% {
+      background: rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.8) translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleDown {
+    0% {
+      transform: scale(1) translateY(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.8) translateY(1000px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes scaleBack {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.85);
+    }
+  }
+
+  @keyframes quickScaleDown {
+    0% {
+      transform: scale(1);
+    }
+    99.9% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+</style>

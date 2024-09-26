@@ -73,8 +73,7 @@ const products = [
       background-color 150ms ease-in-out;
 
     &:hover {
-      color: var(--card);
-      background-color: var(--text__color);
+      background-color: var(--card-hover);
     }
   }
 
@@ -91,6 +90,14 @@ const products = [
     }
   }
 
+  .card:hover {
+    .card__body {
+      h2 {
+        color: var(--card);
+      }
+    }
+  }
+
   .card__body {
     display: flex;
     flex-direction: column;
@@ -98,6 +105,7 @@ const products = [
 
     h2 {
       font-size: 20px;
+      transition: color 150ms ease-in-out;
     }
 
     p {

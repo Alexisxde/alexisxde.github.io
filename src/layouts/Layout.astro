@@ -21,27 +21,42 @@ const { title, type, href } = Astro.props
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body>
+  <body class="dark">
     <slot />
   </body>
 </html>
 <style is:global>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
-  * {
-    --text__color: #f2f2f8;
-    --bg__color: #1b1b1f;
+  :root {
+    color-scheme: light dark;
     --text__gray: #c9c9ca;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --background-color: #1b1b1f;
+    --color: #f2f2f8;
     --card: #202127;
+    --card-hover: #fff;
+  }
+
+  .light {
+    color-scheme: light;
+    --color: #1b1b1f;
+    --background-color: #f2f2f8;
+    --card: #fff;
+    --card-hover: #202127;
   }
 
   body {
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins';
-    background-color: var(--bg__color);
-    color: var(--text__color);
+    background-color: var(--background-color);
+    color: var(--color);
+
     max-width: 1395px;
     margin: 0 auto;
+    padding: 0;
   }
 </style>
