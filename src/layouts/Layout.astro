@@ -14,11 +14,21 @@ const { title, type, href } = Astro.props
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="Portafolio donde verás mis proyectos." />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type={type} href={href} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta property="og:title" content="Portafolio - Olivarez Alexis" />
+    <meta
+      property="og:description"
+      content="Portafolio donde verás mis proyectos"
+    />
+    <meta property="og:image" content="https://alexisxde.github.io/me.webp" />
+    <meta property="og:url" content="https://alexisxde.github.io" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:width" content="120" />
+    <meta property="og:image:height" content="64" />
     <ViewTransitions />
   </head>
   <body class="dark">
