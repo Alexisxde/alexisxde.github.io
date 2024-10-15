@@ -1,64 +1,84 @@
 ---
+import AboutMe from '@/components/AboutMe.astro'
+import Certificades from '@/components/Certificades.astro'
 import Hero from '@/components/Hero.astro'
+import Projects from '@/components/Projects.astro'
+import Skills from '@/components/Skills.astro'
+import Study from '@/components/Study.astro'
+import Test from '@/components/Test.astro'
 
-const className = `bg-[#0c0a09] border border-[#292524] rounded-2xl p-6`
+const className = `rounded-2xl p-6 border text-[#1f1f1b] bg-white border-[#e7e5e4] dark:text-[#fafaf9] dark:bg-[#0c0a09] dark:border-[#292524] transition-colors shadow-md`
 ---
 
 <div class="content">
-  <div class=`hero ${className}`><Hero /></div>
-  <div class=`skills ${className}`>5</div>
-  <div class=`proyects ${className}`>6</div>
-  <div class=`study ${className}`>8</div>
-  <div class=`frase ${className}`>9</div>
-  <div class=`about-me ${className}`>10</div>
-  <div class=`certificades ${className}`>11</div>
+  <div style="--i: 1" class=`hero ${className}`><Hero /></div>
+  <div style="--i: 2" class=`skills ${className}`><Skills /></div>
+  <div style="--i: 3" class=`proyects ${className}`><Projects /></div>
+  <div style="--i: 4" class=`study ${className}`><Study /></div>
+  <div style="--i: 5" class=`frase ${className}`><Test /></div>
+  <div style="--i: 6" class=`about-me ${className}`><AboutMe /></div>
+  <div style="--i: 7" class=`certificades ${className}`><Certificades /></div>
 </div>
 
 <style>
   .content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     gap: 16px;
-    padding: 32px;
+    padding: 16px 32px;
+  }
+
+  .content > div {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: fade-in 500ms forwards;
+    animation-delay: calc(0.1s * var(--i));
+  }
+
+  @keyframes fade-in {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   .hero {
     grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
+    grid-row: span 2 / span 3;
   }
 
   .skills {
-    grid-row: span 3 / span 3;
+    grid-row: span 2 / span 3;
     grid-column-start: 3;
   }
 
   .proyects {
     grid-row: span 7 / span 7;
-    grid-row-start: 4;
+    grid-row-start: 3;
   }
 
   .study {
     grid-row: span 2 / span 2;
-    grid-row-start: 4;
-  }
-
-  .frase {
-    grid-row: span 2 / span 2;
-    grid-column-start: 2;
-    grid-row-start: 6;
+    grid-row-start: 3;
   }
 
   .about-me {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 5;
+  }
+
+  .frase {
     grid-row: span 4 / span 4;
     grid-column-start: 3;
-    grid-row-start: 4;
+    grid-row-start: 3;
   }
 
   .certificades {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
     grid-column-start: 2;
-    grid-row-start: 8;
+    grid-row-start: 7;
   }
 </style>

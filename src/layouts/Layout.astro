@@ -1,4 +1,5 @@
 ---
+import Footer from '@/components/Footer.astro'
 import Navegation from '@/components/Navegation.astro'
 import '@fontsource/poppins'
 import ViewTransitions from 'astro/components/ViewTransitions.astro'
@@ -24,41 +25,33 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro'
     <meta property="og:image:height" content="50" />
     <ViewTransitions />
   </head>
-  <body>
+  <body
+    class="text-[#1f1f1b] bg-white dark:text-[#fafaf9] dark:bg-[#0c0a09] transition-colors">
     <Navegation />
     <main>
       <slot />
     </main>
-    <!-- <Footer /> -->
+    <Footer />
   </body>
 </html>
 <style is:global>
-  :root {
-    color-scheme: light dark;
-    --border-radius: 16px;
-    --padding: 24px;
-    --gap: 16px;
-  }
-
-  .dark {
-    color-scheme: dark;
-    --border-color: #292524;
-    --backgrount-color: #0c0a09;
-    --color: #fafaf9;
-    --color-gray: #a8a29e;
-  }
-
-  .light {
-    color-scheme: light;
-    --border-color: #e7e5e4;
-    --backgrount-color: #ffffff;
-    --color: #1f1f1b;
-    --color-gray: #78716c;
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
     max-width: 1156px;
     margin: 0 auto;
-    background-color: var(--backgrount-color);
+  }
+
+  #sobre-mi,
+  #inicio {
+    scroll-margin-top: 100px;
+  }
+
+  button,
+  a,
+  input:focus {
+    outline: none;
   }
 </style>

@@ -1,16 +1,17 @@
 <nav
-  class=`
-    flex items-center gap-4
-    w-[345px] py-2 px-8 mx-auto mt-4
-    border rounded-2xl text-sm
-    dark:bg-[#0c0a09] dark:border-[#292524]`>
+  class="flex items-center gap-4 w-[345px] py-2 px-8 mx-auto mt-4 border rounded-2xl text-sm text-[#1f1f1b] bg-white border-[#e7e5e4] dark:text-[#fafaf9] dark:bg-[#0c0a09] dark:border-[#292524] transition-colors sticky top-[16px] z-50">
   <div class="text-md inline-flex items-center gap-4">
-    <a href="#">Inicio</a>
-    <a href="#">Sobre mí</a>
-    <a href="#">Proyectos</a>
+    <a href="/#inicio">Inicio</a>
+    <a href="/#sobre-mi">Sobre mí</a>
+    <a href="/proyectos">Proyectos</a>
   </div>
   <label class="switch">
-    <input class="switch__input" type="checkbox" role="switch" />
+    <input
+      class="switch__input"
+      type="checkbox"
+      role="switch"
+      id="dark-mode-toggle"
+    />
     <span class="switch__icon">
       <span class="switch__icon-part switch__icon-part--1"></span>
       <span class="switch__icon-part switch__icon-part--2"></span>
@@ -24,7 +25,6 @@
       <span class="switch__icon-part switch__icon-part--10"></span>
       <span class="switch__icon-part switch__icon-part--11"></span>
     </span>
-    <span class="switch__sr">Dark Mode</span>
   </label>
 </nav>
 
@@ -178,13 +178,6 @@
     transform: translateX(-50%) rotate(315deg) translateY(0.25em);
   }
 
-  .switch__sr {
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-  }
-
   /* `:checked` state */
   .switch__input:checked {
     background-color: hsl(var(--hue), 10%, 90%);
@@ -235,4 +228,46 @@
   .switch__input:checked ~ .switch__icon .switch__icon-part--11 {
     transform: translateX(-50%) rotate(315deg) translateY(0.625em) scale(0);
   }
+
+  nav {
+    opacity: 0;
+    animation: fade-in 500ms forwards;
+    transform: translateY(-16px);
+  }
+
+  @keyframes fade-in {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    const htmlElement = document.documentElement
+
+    // Comprobar si la preferencia está guardada en localStorage
+    const darkMode = localStorage.getItem('darkMode')
+
+    if (darkMode === 'enabled') {
+      htmlElement.classList.add('dark')
+      darkModeToggle.checked = true // Sincronizar el checkbox
+    } else {
+      htmlElement.classList.remove('dark')
+      darkModeToggle.checked = false // Asegurarse de que el checkbox esté desmarcado si no está habilitado
+    }
+
+    // Manejar cambios en el checkbox
+    darkModeToggle.addEventListener('change', function () {
+      if (darkModeToggle.checked) {
+        htmlElement.classList.add('dark')
+        localStorage.setItem('darkMode', 'enabled')
+      } else {
+        htmlElement.classList.remove('dark')
+        localStorage.setItem('darkMode', 'disabled')
+      }
+    })
+  })
+</script>
