@@ -1,28 +1,8 @@
 ---
-import About from '@/components/About.astro'
-import Certificates from '@/components/Certificates.astro'
-import Education from '@/components/Education.astro'
-import Header from '@/components/Header.astro'
-import Projects from '@/components/Projects.astro'
+import Content from '@/components/Content.astro'
 import Layout from '@/layouts/Layout.astro'
 ---
 
-<Layout
-  title="Portafolio - Olivarez Alexis"
-  href="/favicon.svg"
-  type="image/svg">
-  <main>
-    <Header />
-    <About />
-    <Projects />
-    <Education />
-    <Certificates />
-  </main>
+<Layout>
+  <Content />
 </Layout>
-
-<style>
-  body {
-    background-color: #fff;
-    color: #202127;
-  }
-</style>

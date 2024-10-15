@@ -1,0 +1,64 @@
+---
+import Hero from '@/components/Hero.astro'
+
+const className = `bg-[#0c0a09] border border-[#292524] rounded-2xl p-6`
+---
+
+<div class="content">
+  <div class=`hero ${className}`><Hero /></div>
+  <div class=`skills ${className}`>5</div>
+  <div class=`proyects ${className}`>6</div>
+  <div class=`study ${className}`>8</div>
+  <div class=`frase ${className}`>9</div>
+  <div class=`about-me ${className}`>10</div>
+  <div class=`certificades ${className}`>11</div>
+</div>
+
+<style>
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 16px;
+    padding: 32px;
+  }
+
+  .hero {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+  }
+
+  .skills {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+  }
+
+  .proyects {
+    grid-row: span 7 / span 7;
+    grid-row-start: 4;
+  }
+
+  .study {
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+  }
+
+  .frase {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 6;
+  }
+
+  .about-me {
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 4;
+  }
+
+  .certificades {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 8;
+  }
+</style>
