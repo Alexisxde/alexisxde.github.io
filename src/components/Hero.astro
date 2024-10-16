@@ -1,0 +1,42 @@
+---
+import Github from '@/icons/Github.astro'
+import LinkedIn from '@/icons/LinkedIn.astro'
+import World from '@/icons/World.astro'
+---
+
+<div id="inicio" class="flex items-center gap-4 mb-2">
+  <img
+    class="w-[50px] aspect-square rounded-full"
+    src="me.webp"
+    alt="Perfil de Alexis"
+    loading="lazy"
+  />
+  <span
+    class="inline-flex cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-3 py-1 text-sm font-medium text-gray-300 backdrop-blur-3xl">
+    <span
+      class="bg-gradient-to-t from-[#fff] to-[#8678f9] bg-clip-text text-transparent">
+      Disponible para trabajar
+    </span>
+  </span>
+</div>
+<h1 class="text-4xl font-bold mb-2">Hey, soy Alexis</h1>
+<p class="text-sm mb-2 text-pretty text-[#78716c] dark:text-[#a8a29e]">
+  Apasionado por la programación y listo para embarcarme en mi primera aventura
+  en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo
+  increíble junto a un equipo.
+</p>
+<div class="flex items-center justify-between">
+  <div
+    class="inline-flex items-center text-xs gap-2 text-[#78716c] dark:text-[#a8a29e]">
+    <World />
+    <span>Corrientes Capital, Argentina</span>
+  </div>
+  <div class="inline-flex items-center gap-4">
+    <a class="hover:opacity-50 transition-opacity" href="#"
+      ><LinkedIn width="24" height="24" /></a
+    >
+    <a class="hover:opacity-50 transition-opacity" href="#"
+      ><Github width="24" height="24" /></a
+    >
+  </div>
+</div>
