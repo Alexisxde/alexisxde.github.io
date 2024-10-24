@@ -1,0 +1,18 @@
+---
+interface Props {
+  class?: string
+  delay?: string
+  slot?: HTMLElement
+}
+
+const { class: className, delay, slot } = Astro.props
+---
+
+<div
+  class:list={[
+    'rounded-2xl p-6 border text-[#1f1f1b] bg-white border-[#e7e5e4] dark:text-[#fafaf9] dark:bg-[#0c0a09] dark:border-[#292524] transition-colors shadow-md opacity-0 translate-y-8 animate-fade-in',
+    className
+  ]}
+  style={`animation-delay: calc(0.1s * ${delay})`}>
+  <slot />
+</div>

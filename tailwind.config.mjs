@@ -8,6 +8,15 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans]
+      },
+      keyframes: {
+        'fade-in': {
+          '0%': { transform: 'translateY(8px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' }
+        }
+      },
+      animation: {
+        'fade-in': 'fade-in 500ms forwards'
       }
     }
   },
