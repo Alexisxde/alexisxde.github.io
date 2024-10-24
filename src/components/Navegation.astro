@@ -245,7 +245,9 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    const darkModeToggle = document.getElementById(
+      'dark-mode-toggle'
+    ) as HTMLInputElement
     const htmlElement = document.documentElement
 
     // Comprobar si la preferencia está guardada en localStorage
@@ -259,8 +261,7 @@
       darkModeToggle.checked = false // Asegurarse de que el checkbox esté desmarcado si no está habilitado
     }
 
-    // Manejar cambios en el checkbox
-    darkModeToggle.addEventListener('change', function () {
+    darkModeToggle?.addEventListener('change', function () {
       if (darkModeToggle.checked) {
         htmlElement.classList.add('dark')
         localStorage.setItem('darkMode', 'enabled')
