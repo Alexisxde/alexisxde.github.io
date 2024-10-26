@@ -8,15 +8,15 @@ import React from '@/icons/React.astro'
 ---
 
 <div class="flex flex-col justify-center gap-1">
-  <h2 class="text-2xl font-bold mb-2">Proyectos</h2>
+  <h2 class="mb-2 text-2xl font-bold">Proyectos</h2>
   <div
     class="flex flex-wrap items-center gap-2 text-sm text-gray-light dark:text-gray-dark">
-    <div class="inline-flex items-center justify-between w-full">
-      <h3 class="text-dark dark:text-light font-bold text-base">
+    <div class="inline-flex w-full items-center justify-between">
+      <h3 class="text-base font-bold text-dark dark:text-light">
         App de Películas
       </h3>
       <a
-        class="inline-flex items-center gap-2 text-dark dark:text-light group"
+        class="group inline-flex items-center gap-2 text-dark dark:text-light"
         href="https://cinespectra-dd8h.onrender.com"
         target="_blank">
         <span class="relative flex h-3 w-3">
@@ -37,21 +37,21 @@ import React from '@/icons/React.astro'
       <span class="mb-2 font-semibold text-dark dark:text-light"
         >Progreso actual:</span
       >
-      <li class="ml-4 mb-1 list-disc">
+      <li class="mb-1 ml-4 list-disc">
         Se desarrolló primero toda la lógica y las peticiones a la API, creando
         una estructura funcional con un diseño preliminar amigable.
       </li>
-      <li class="ml-4 mb-1 list-disc">
+      <li class="mb-1 ml-4 list-disc">
         Posteriormente, diseñé en Figma el modelo visual que quería que la web
         siguiera.
       </li>
-      <li class="ml-4 mb-1 list-disc">
+      <li class="mb-1 ml-4 list-disc">
         Hasta el momento, la aplicación web está implementada solo en su versión
         móvil.
       </li>
     </ul>
   </div>
-  <div class="w-full flex items-center justify-between">
+  <div class="flex w-full items-center justify-between">
     <div class="inline-flex items-center gap-4">
       <React width="32" height="32" />
       <Css width="32" height="32" />
@@ -65,10 +65,10 @@ import React from '@/icons/React.astro'
       </a>
     </div>
   </div>
-  <div class="dark:bg-light/10 bg-dark/10 h-[0.5px] rounded-full m-2"></div>
+  <div class="m-2 h-[0.5px] rounded-full bg-dark/10 dark:bg-light/10"></div>
   <div
     class="flex flex-wrap items-center gap-2 text-sm text-gray-light dark:text-gray-dark">
-    <h3 class="text-dark dark:text-light font-bold text-base">
+    <h3 class="text-base font-bold text-dark dark:text-light">
       eCommerce de Zapatillas
     </h3>
     <p class="text-pretty">
@@ -80,22 +80,22 @@ import React from '@/icons/React.astro'
       <span class="mb-2 font-semibold text-dark dark:text-light"
         >Aspectos destacados:</span
       >
-      <li class="ml-4 mb-1 list-disc">
+      <li class="mb-1 ml-4 list-disc">
         Implementación de funciones CRUD para la gestión de zapatillas, clientes
         y pedidos.
       </li>
-      <li class="ml-4 mb-1 list-disc">
+      <li class="mb-1 ml-4 list-disc">
         Funcionalidades completas de carrito de compras.
       </li>
-      <li class="ml-4 mb-1 list-disc">
+      <li class="mb-1 ml-4 list-disc">
         Sistema de gestión de zapatillas, clientes y pedidos.
       </li>
-      <li class="ml-4 mb-1 list-disc">
+      <li class="mb-1 ml-4 list-disc">
         Utilización actual de DataTables para la gestión de datos.
       </li>
     </ul>
   </div>
-  <div class="w-full flex items-center justify-between">
+  <div class="flex w-full items-center justify-between">
     <div class="inline-flex items-center gap-4">
       <Codeigniter width="35" height="35" />
       <Css width="32" height="32" />
@@ -107,5 +107,5 @@ import React from '@/icons/React.astro'
       </a>
     </div>
   </div>
-  <a class="text-sm hover:underline text-end" href="/proyectos">Ver más</a>
+  <a class="text-end text-sm hover:underline" href="/proyectos">Ver más</a>
 </div>

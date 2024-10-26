@@ -1,6 +1,6 @@
 /** @type {import("prettier").Config} */
 const config = {
-  plugins: ['prettier-plugin-astro'],
+  plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
   overrides: [
     {
       files: '*.astro',
@@ -14,7 +14,8 @@ const config = {
   singleQuote: true,
   trailingComma: 'none',
   bracketSameLine: true,
-  bracketSpacing: true
+  bracketSpacing: true,
+  arrowParens: 'avoid'
 }
 
 export default config
