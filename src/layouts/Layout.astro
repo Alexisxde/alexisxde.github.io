@@ -6,7 +6,7 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro'
 ---
 
 <!doctype html>
-<html class="dark" lang="es">
+<html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Portafolio donde verás mis proyectos." />
@@ -26,7 +26,7 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro'
     <ViewTransitions />
   </head>
   <body
-    class="text-[#1f1f1b] bg-white dark:text-[#fafaf9] dark:bg-[#0c0a09] transition-colors">
+    class="text-dark bg-light dark:text-light dark:bg-dark transition-colors max-w-6xl my-0 mx-auto">
     <Navegation />
     <main>
       <slot />
@@ -37,11 +37,6 @@ import ViewTransitions from 'astro/components/ViewTransitions.astro'
 <style is:global>
   html {
     scroll-behavior: smooth;
-  }
-
-  body {
-    max-width: 1156px;
-    margin: 0 auto;
   }
 
   #sobre-mi,

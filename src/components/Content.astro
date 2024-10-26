@@ -10,12 +10,12 @@ import Test from '@/components/Test.astro'
 ---
 
 <section
-  class="grid grid-cols-1 grid-rows-none lg:grid-rows-9 gap-4 py-4 px-8 lg:grid-cols-3">
+  class="grid grid-cols-1 grid-rows-none lg:grid-rows-9 gap-4 py-4 px-4 lg:grid-cols-3">
   <Card class="row-span-2 lg:col-span-2" delay="1"><Hero /></Card>
-  <Card class="lg:row-span-7 lg:row-start-3" delay="3"><Projects /></Card>
   <Card class="row-span-2 lg:col-start-3 lg:row-start-1" delay="2"
     ><Skills /></Card
   >
+  <Card class="lg:row-span-7 lg:row-start-3" delay="3"><Projects /></Card>
   <Card class="row-span-2 lg:row-start-3" delay="4"><Study /></Card>
   <Card class="row-span-4 lg:col-start-3 lg:row-start-3" delay="5"
     ><Test /></Card
