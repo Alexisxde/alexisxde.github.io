@@ -1,7 +1,7 @@
 ---
+import Badge from '@components/Badge.astro'
 import AstroLogo from '@icons/AstroLogo.astro'
 import Codeigniter from '@icons/Codeigniter.astro'
-import Css from '@icons/Css.astro'
 import Figma from '@icons/Figma.astro'
 import Git from '@icons/Git.astro'
 import MySQL from '@icons/MySQL.astro'
@@ -12,20 +12,33 @@ import TailwindCss from '@icons/TailwindCss.astro'
 <div class="flex flex-col justify-center gap-4">
   <div class="flex flex-col justify-center gap-1">
     <h2 class="mb-2 text-2xl font-bold">Habilidades</h2>
-    <div class="flex w-full flex-wrap items-center gap-4">
-      <React width="32" height="32" />
-      <AstroLogo width="32" height="32" />
-      <Css width="32" height="32" />
-      <TailwindCss width="35" height="35" />
-      <Git width="28" height="28" />
+    <div class="flex w-full flex-wrap items-center gap-2">
+      <Badge name="React.js">
+        <React />
+      </Badge>
+      <Badge name="Astro">
+        <AstroLogo />
+      </Badge>
+      <Badge name="Git">
+        <Git />
+      </Badge>
+      <Badge name="Figma">
+        <Figma />
+      </Badge>
+      <Badge name="Tailwind CSS">
+        <TailwindCss />
+      </Badge>
     </div>
   </div>
   <div class="flex flex-col justify-center gap-1">
     <h2 class="mb-2 text-2xl font-bold">Conocimiento básico</h2>
-    <div class="flex w-full flex-wrap items-center gap-4">
-      <Codeigniter width="28" height="28" />
-      <MySQL width="40" height="40" />
-      <Figma width="28" height="28" />
+    <div class="flex w-full flex-wrap items-center gap-2">
+      <Badge name="Codeigniter">
+        <Codeigniter />
+      </Badge>
+      <Badge name="MySQL">
+        <MySQL />
+      </Badge>
     </div>
   </div>
 </div>

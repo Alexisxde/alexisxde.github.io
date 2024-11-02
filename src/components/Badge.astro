@@ -1,0 +1,9 @@
+---
+const { name } = Astro.props
+---
+
+<div
+  class="inline-flex items-center gap-2 rounded-2xl border border-border-light bg-light px-3 py-1 text-dark transition-colors dark:border-border-dark dark:bg-dark dark:text-light">
+  <slot />
+  <span>{name}</span>
+</div>
