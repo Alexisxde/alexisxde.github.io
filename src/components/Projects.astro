@@ -1,4 +1,6 @@
 ---
+import Badge from '@components/Badge.astro'
+import AstroLogo from '@icons/AstroLogo.astro'
 import Codeigniter from '@icons/Codeigniter.astro'
 import Css from '@icons/Css.astro'
 import Figma from '@icons/Figma.astro'
@@ -52,17 +54,22 @@ import React from '@icons/React.astro'
     </ul>
   </div>
   <div class="flex w-full items-center justify-between">
-    <div class="inline-flex items-center gap-4">
-      <React width="32" height="32" />
-      <Css width="32" height="32" />
-    </div>
-    <div class="inline-flex items-center gap-4">
-      <a href="#">
-        <Figma width="28" height="28" />
-      </a>
-      <a href="#">
-        <Github width="28" height="28" />
-      </a>
+    <div class="flex flex-wrap items-center gap-2">
+      <Badge name="Astro" class="text-xs">
+        <AstroLogo width={20} height={20} />
+      </Badge>
+      <Badge name="React.js" class="text-xs">
+        <React />
+      </Badge>
+      <Badge name="CSS" class="text-xs">
+        <Css />
+      </Badge>
+      <Badge name="Figma" class="text-xs">
+        <Figma width={20} height={20} />
+      </Badge>
+      <Badge name="GitHub" class="text-xs">
+        <Github width={20} height={20} />
+      </Badge>
     </div>
   </div>
   <div class="m-2 h-[0.5px] rounded-full bg-dark/10 dark:bg-light/10"></div>
@@ -96,16 +103,19 @@ import React from '@icons/React.astro'
     </ul>
   </div>
   <div class="flex w-full items-center justify-between">
-    <div class="inline-flex items-center gap-4">
-      <Codeigniter width="35" height="35" />
-      <Css width="32" height="32" />
-      <MySQL width="45" height="45" />
-    </div>
-    <div class="inline-flex items-center gap-4">
-      <a href="#">
-        <Github width="28" height="28" />
-      </a>
+    <div class="flex flex-wrap items-center gap-2">
+      <Badge name="Codeigniter" class="text-xs">
+        <Codeigniter width={20} height={20} />
+      </Badge>
+      <Badge name="CSS" class="text-xs">
+        <Css />
+      </Badge>
+      <Badge name="MySQL" class="text-xs">
+        <MySQL width={20} height={20} />
+      </Badge>
+      <Badge name="GitHub" class="text-xs">
+        <Github width={20} height={20} />
+      </Badge>
     </div>
   </div>
-  <a class="text-end text-sm hover:underline" href="/proyectos">Ver más</a>
 </div>
