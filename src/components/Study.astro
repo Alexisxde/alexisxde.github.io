@@ -1,21 +1,40 @@
+---
+const links = [
+  {
+    title: 'Universidad Nacional del Nordeste',
+    url: 'https://www.unne.edu.ar'
+  },
+  {
+    title: 'Youtube/@midudev',
+    url: 'https://www.youtube.com/@midudev'
+  },
+  {
+    title: 'Youtube/@fazt',
+    url: 'https://www.youtube.com/@fazttech'
+  },
+  {
+    title: 'Argentina Programa 4.0',
+    url: 'https://argentinaprograma.unsam.edu.ar'
+  },
+  {
+    title: 'Udemy',
+    url: 'https://udemy.com'
+  }
+]
+---
+
 <div class="flex flex-col justify-center gap-4">
   <h2 class="mb-2 text-2xl font-bold">Estudios</h2>
   <div class="flex flex-wrap items-center justify-center gap-2 text-sm">
-    <a
-      class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors dark:border-border-dark dark:bg-dark dark:text-light"
-      href="#">Universidad Nacional del Nordeste</a
-    >
-    <a
-      class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors dark:border-border-dark dark:bg-dark dark:text-light"
-      href="#">Udemy</a
-    >
-    <a
-      class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors dark:border-border-dark dark:bg-dark dark:text-light"
-      href="#">Argentina Programa 4.0</a
-    >
-    <a
-      class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors dark:border-border-dark dark:bg-dark dark:text-light"
-      href="#">Youtube</a
-    >
+    {
+      links.map(({ title, url }) => (
+        <a
+          href={url}
+          target="_blank"
+          class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors hover:opacity-75 dark:border-border-dark dark:bg-dark dark:text-light">
+          {title}
+        </a>
+      ))
+    }
   </div>
 </div>
