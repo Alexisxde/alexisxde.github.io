@@ -1,39 +1,57 @@
 ---
 import Badge from '@components/Badge.astro'
-import AstroLogo from '@icons/AstroLogo.astro'
-import Codeigniter from '@icons/Codeigniter.astro'
-import Figma from '@icons/Figma.astro'
-import Git from '@icons/Git.astro'
-import MySQL from '@icons/MySQL.astro'
-import React from '@icons/React.astro'
-import TailwindCss from '@icons/TailwindCss.astro'
+import { Icon } from 'astro-icon/components'
+
+const skills = [
+  {
+    label: 'React',
+    icon: 'react',
+    custom: 'size-6'
+  },
+  {
+    label: 'Astro',
+    icon: 'astro',
+    custom: 'size-6'
+  },
+  {
+    label: 'Git',
+    icon: 'git',
+    custom: 'size-5'
+  },
+  {
+    label: 'Tailwind CSS',
+    icon: 'tailwind-css',
+    custom: 'size-6'
+  },
+  {
+    label: 'Codeigniter',
+    icon: 'codeigniter',
+    custom: 'size-5'
+  },
+  {
+    label: 'MySQL',
+    icon: 'mysql',
+    custom: 'size-6'
+  },
+  {
+    label: 'Figma',
+    icon: 'figma',
+    custom: 'size-4'
+  }
+]
 ---
 
 <div class="flex flex-col justify-center gap-4">
   <div class="flex flex-col justify-center gap-1">
     <h2 class="mb-2 text-2xl font-bold">Habilidades</h2>
     <div class="flex w-full flex-wrap items-center gap-2">
-      <Badge name="React.js">
-        <React />
-      </Badge>
-      <Badge name="Astro">
-        <AstroLogo />
-      </Badge>
-      <Badge name="Git">
-        <Git />
-      </Badge>
-      <Badge name="Tailwind CSS">
-        <TailwindCss />
-      </Badge>
-      <Badge name="Codeigniter">
-        <Codeigniter />
-      </Badge>
-      <Badge name="MySQL">
-        <MySQL />
-      </Badge>
-      <Badge name="Figma">
-        <Figma />
-      </Badge>
+      {
+        skills.map(({ label, icon, custom }) => (
+          <Badge name={label}>
+            <Icon name={icon} class:list={custom} />
+          </Badge>
+        ))
+      }
     </div>
   </div>
 </div>

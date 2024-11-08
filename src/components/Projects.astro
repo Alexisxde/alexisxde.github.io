@@ -1,12 +1,6 @@
 ---
 import Badge from '@components/Badge.astro'
-import AstroLogo from '@icons/AstroLogo.astro'
-import Codeigniter from '@icons/Codeigniter.astro'
-import Css from '@icons/Css.astro'
-import Figma from '@icons/Figma.astro'
-import Github from '@icons/Github.astro'
-import MySQL from '@icons/MySQL.astro'
-import React from '@icons/React.astro'
+import { Icon } from 'astro-icon/components'
 ---
 
 <div class="flex flex-col justify-center gap-1">
@@ -55,20 +49,11 @@ import React from '@icons/React.astro'
   </div>
   <div class="flex w-full items-center justify-between">
     <div class="flex flex-wrap items-center gap-2">
-      <Badge name="Astro" class="text-xs">
-        <AstroLogo width={20} height={20} />
-      </Badge>
       <Badge name="React.js" class="text-xs">
-        <React />
+        <Icon name="react" class="size-5" />
       </Badge>
       <Badge name="CSS" class="text-xs">
-        <Css />
-      </Badge>
-      <Badge name="Figma" class="text-xs">
-        <Figma width={20} height={20} />
-      </Badge>
-      <Badge name="GitHub" class="text-xs">
-        <Github width={20} height={20} />
+        <Icon name="css" class="size-5" />
       </Badge>
     </div>
   </div>
@@ -103,19 +88,6 @@ import React from '@icons/React.astro'
     </ul>
   </div>
   <div class="flex w-full items-center justify-between">
-    <div class="flex flex-wrap items-center gap-2">
-      <Badge name="Codeigniter" class="text-xs">
-        <Codeigniter width={20} height={20} />
-      </Badge>
-      <Badge name="CSS" class="text-xs">
-        <Css />
-      </Badge>
-      <Badge name="MySQL" class="text-xs">
-        <MySQL width={20} height={20} />
-      </Badge>
-      <Badge name="GitHub" class="text-xs">
-        <Github width={20} height={20} />
-      </Badge>
-    </div>
+    <div class="flex flex-wrap items-center gap-2"></div>
   </div>
 </div>

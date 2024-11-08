@@ -1,16 +1,7 @@
----
-interface Props {
-  width?: string | number
-  height?: string | number
-}
-
-const { width = '16', height = '16' } = Astro.props
----
-
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width={width}
-  height={height}
+  width="20"
+  height="20"
   viewBox="-50 0 300 300"
   id="Layer_1">
   <title>Figma.logo</title>

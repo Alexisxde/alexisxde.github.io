@@ -1,16 +1,7 @@
----
-interface Props {
-  width?: string | number
-  height?: string | number
-}
-
-const { width = '16', height = '16' } = Astro.props
----
-
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width={width}
-  height={height}
+  width="20"
+  height="20"
   viewBox="0 0 92 92"
   ><defs
     ><clipPath id="a"><path d="M0 .113h91.887V92H0Zm0 0"></path></clipPath
