@@ -7,6 +7,9 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://alexisxde.github.io',
   trailingSlash: 'never',
+  build: {
+    format: 'file'
+  },
   markdown: {
     shikiConfig: {
       theme: 'catppuccin-mocha',
