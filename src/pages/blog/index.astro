@@ -1,0 +1,18 @@
+---
+import CardBlog from '@components/CardBlog.astro'
+import Layout from '@layouts/Layout.astro'
+import { getCollection } from 'astro:content'
+
+const blog = await getCollection('blog')
+---
+
+<Layout>
+  <section
+    class="grid h-dvh grid-cols-1 grid-rows-none place-items-start gap-4 p-4 lg:grid-cols-3 lg:grid-rows-9">
+    {
+      blog.map((article: unknown, i: number) => (
+        <CardBlog article={article} delay={i} />
+      ))
+    }
+  </section>
+</Layout>

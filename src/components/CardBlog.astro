@@ -1,0 +1,32 @@
+---
+const { article, delay } = Astro.props
+
+const { slug, title, description, tags, date } = article.data
+---
+
+<a href={`/blog/${slug}`}>
+  <article
+    class="flex max-w-sm translate-y-8 animate-fade-in flex-col gap-2 rounded-2xl border border-border-light bg-light p-6 text-dark opacity-0 shadow-md transition-colors dark:border-border-dark dark:bg-dark dark:text-light"
+    style={`animation-delay: calc(0.1s * ${delay})`}>
+    <h2
+      class="text-xl text-dark dark:text-light"
+      transition:name={`title-${slug}`}>
+      {title}
+    </h2>
+    <p class="text-xs text-gray-500">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+      voluptatum quasi. Sint minima atque voluptatum ea, cum modi maiores.
+    </p>
+    {
+      tags.length > 0 && (
+        <div class="flex flex-wrap justify-end gap-2">
+          {tags.map((tag: string) => (
+            <img
+              src={`https://img.shields.io/badge/${tag}-000000?logo=${tag.toLocaleLowerCase()}&logoColor=fff&style=flat`}
+            />
+          ))}
+        </div>
+      )
+    }
+  </article>
+</a>

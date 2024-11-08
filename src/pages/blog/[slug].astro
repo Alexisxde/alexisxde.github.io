@@ -1,0 +1,42 @@
+---
+import LayoutBlog from '@layouts/LayoutBlog.astro'
+import type { CollectionEntry } from 'astro:content'
+import { getCollection, render } from 'astro:content'
+
+interface Props {
+  article: CollectionEntry<'blog'>
+}
+
+const { article } = Astro.props
+const { data } = article
+const { title, tags, slug } = data
+
+const { Content } = await render(article)
+
+export async function getStaticPaths() {
+  const blog = await getCollection('blog')
+  return blog.map((article: CollectionEntry<'blog'>) => ({
+    params: { slug: article.slug },
+    props: { article }
+  }))
+}
+---
+
+<LayoutBlog title={title}>
+  <article
+    class="prose prose-lg dark:prose-invert mx-auto my-4 p-4"
+    transition:name={`title-${slug}`}>
+    <Content />
+  </article>
+  {
+    tags.length > 0 && (
+      <div class="flex flex-wrap justify-end gap-2 px-5">
+        {tags.map((tag: string) => (
+          <img
+            src={`https://img.shields.io/badge/${tag}-000000?logo=${tag.toLocaleLowerCase()}&logoColor=fff&style=flat`}
+          />
+        ))}
+      </div>
+    )
+  }
+</LayoutBlog>
