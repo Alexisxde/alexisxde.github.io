@@ -27,6 +27,5 @@ export default {
         'fade-in': 'fade-in 500ms forwards'
       }
     }
-  },
-  plugins: [require('@tailwindcss/typography')]
+  }
 }

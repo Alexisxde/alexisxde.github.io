@@ -1,51 +1,30 @@
 ---
 import Card from '@components/Card.astro'
+import { education } from '@data'
 
 interface Props {
   class: string
   delay: string
 }
 
-const links = [
-  {
-    title: 'Universidad Nacional del Nordeste',
-    url: 'https://www.unne.edu.ar'
-  },
-  {
-    title: 'Youtube/@midudev',
-    url: 'https://www.youtube.com/@midudev'
-  },
-  {
-    title: 'Youtube/@fazt',
-    url: 'https://www.youtube.com/@fazttech'
-  },
-  {
-    title: 'Argentina Programa 4.0',
-    url: 'https://argentinaprograma.unsam.edu.ar'
-  },
-  {
-    title: 'Udemy',
-    url: 'https://udemy.com'
-  }
-]
-
 const { class: className, delay } = Astro.props
+const { title, data } = education
 ---
 
 <Card class:list={className} delay={delay}>
-<div class="flex flex-col justify-center md:gap-4">
-  <h2 class="mb-2 text-2xl font-bold">Estudios</h2>
-  <div class="flex flex-wrap items-center justify-center gap-2 text-sm">
-    {
-      links.map(({ title, url }) => (
-        <a
-          href={url}
-          target="_blank"
-          class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors hover:opacity-75 dark:border-border-dark dark:bg-dark dark:text-light">
-          {title}
-        </a>
-      ))
-    }
+  <div class="flex flex-col justify-center md:gap-4">
+    <h2 class="mb-2 text-2xl font-bold">{title}</h2>
+    <div class="flex flex-wrap items-center justify-center gap-2 text-sm">
+      {
+        data.map(({ title, url }) => (
+          <a
+            href={url}
+            target="_blank"
+            class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors hover:opacity-75 dark:border-border-dark dark:bg-dark dark:text-light">
+            {title}
+          </a>
+        ))
+      }
+    </div>
   </div>
-</div>
 </Card>

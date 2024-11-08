@@ -1,6 +1,7 @@
 ---
 import Badge from '@components/Badge.astro'
 import Card from '@components/Card.astro'
+import { skills } from '@data'
 import { Icon } from 'astro-icon/components'
 
 interface Props {
@@ -8,53 +9,16 @@ interface Props {
   delay: string
 }
 
-const skills = [
-  {
-    label: 'React',
-    icon: 'react',
-    custom: 'size-6'
-  },
-  {
-    label: 'Astro',
-    icon: 'astro',
-    custom: 'size-6'
-  },
-  {
-    label: 'Git',
-    icon: 'git',
-    custom: 'size-5'
-  },
-  {
-    label: 'Tailwind CSS',
-    icon: 'tailwind-css',
-    custom: 'size-6'
-  },
-  {
-    label: 'MySQL',
-    icon: 'mysql',
-    custom: 'size-6'
-  },
-  {
-    label: 'Codeigniter',
-    icon: 'codeigniter',
-    custom: 'size-5'
-  },
-  {
-    label: 'Figma',
-    icon: 'figma',
-    custom: 'size-4'
-  }
-] as const
-
+const { title, icons } = skills
 const { class: className, delay } = Astro.props
 ---
 
 <Card class:list={className} delay={delay}>
   <div class="flex flex-col justify-center gap-1">
-    <h2 class="mb-2 text-2xl font-bold">Habilidades</h2>
+    <h2 class="mb-2 text-2xl font-bold">{title}</h2>
     <div class="flex w-full flex-wrap items-center gap-2">
       {
-        skills.map(({ label, icon, custom }) => (
+        icons.map(({ label, icon, custom }) => (
           <Badge name={label}>
             <Icon name={icon} class:list={custom} />
           </Badge>

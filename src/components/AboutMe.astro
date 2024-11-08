@@ -1,5 +1,7 @@
 ---
-import Card from './Card.astro'
+import Card from '@components/Card.astro'
+import { aboutMe } from '@data'
+import { Icon } from 'astro-icon/components'
 
 interface Props {
   class: string
@@ -7,21 +9,25 @@ interface Props {
 }
 
 const { class: className, delay } = Astro.props
+const { title, data } = aboutMe
 ---
 
 <Card class:list={className} delay={delay}>
-  <div id="sobre-mi" class="flex flex-col justify-center gap-4">
-    <div class="flex flex-col justify-center gap-1">
-      <h2 class="mb-2 text-2xl font-bold">Sobre mí</h2>
-      <p class="text-pretty text-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis
-        fugiat voluptatem molestiae sapiente modi adipisci. Nemo cumque libero
-        quo?
-      </p>
-    </div>
-    <button
-      class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors dark:border-border-dark dark:bg-dark dark:text-light"
-      >Descargar Cv</button
-    >
+  <div id="sobre-mi" class="flex size-full flex-col gap-2">
+    <h2 class="mb-2 text-2xl font-bold">{title}</h2>
+    {data?.map(p => <p class="text-pretty text-sm">{p}</p>)}
+    <a
+      href="/me.webp"
+      class="group relative mt-2 inline-flex h-12 items-center justify-center self-center overflow-hidden rounded-md bg-dark px-6 font-medium text-light duration-500 dark:bg-light dark:text-dark"
+      download>
+      <div
+        class="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0">
+        Descargar Curriculum
+      </div>
+      <div
+        class="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
+        <Icon name="arrow-down-tray" class="size-6" />
+      </div>
+    </a>
   </div>
 </Card>

@@ -1,0 +1,212 @@
+{
+  "profile": {
+    "src": "me.webp",
+    "name": "Alexis",
+    "badge": "Disponible para trabajar",
+    "description": "Apasionado por la programación y listo para embarcarme en mi primera aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo increíble junto a un equipo.",
+    "location": "Corrientes Capital, Argentina",
+    "github": "https://github.com/tu-usuario",
+    "linkedin": "https://linkedin.com/in/tu-usuario"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "data": [
+      "Mi pasión por el desarrollo web comenzó de forma autodidacta. He dedicado horas a aprender las bases del desarrollo frontend, con el objetivo de crear interfaces web funcionales y atractivas.",
+      "Soy una persona que aprende rápido. Me esfuerzo por mantenerme actualizado con las últimas tendencias y mejores prácticas en desarrollo frontend, aplicando lo aprendido en proyectos que desafían mi creatividad y habilidades técnicas.",
+      "Mi objetivo es dar el siguiente paso en mi carrera como desarrollador front-end, colaborando en proyectos donde pueda seguir aprendiendo, creciendo y aportando valor."
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "icons": [
+      {
+        "label": "React",
+        "icon": "react",
+        "custom": "size-6"
+      },
+      {
+        "label": "Astro",
+        "icon": "astro",
+        "custom": "size-6"
+      },
+      {
+        "label": "Git",
+        "icon": "git",
+        "custom": "size-5"
+      },
+      {
+        "label": "TypeScript",
+        "icon": "typescript",
+        "custom": "size-5"
+      },
+      {
+        "label": "Tailwindcss",
+        "icon": "tailwind-css",
+        "custom": "size-6"
+      },
+      {
+        "label": "Figma",
+        "icon": "figma",
+        "custom": "size-4"
+      },
+      {
+        "label": "MySQL",
+        "icon": "mysql",
+        "custom": "size-5"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "data": [
+      {
+        "name": "App de Películas",
+        "url": "https://peliisplus.vercel.app",
+        "github": "https://github.com/Alexisxde/pelisplus",
+        "figma": "",
+        "description": "Desarrollo de una aplicación web que muestra tráilers de películas utilizando la API de The Movie Database.",
+        "highlights": [
+          "Se desarrolló primero toda la lógica y las peticiones a la API, creando una estructura funcional con un diseño preliminar amigable.",
+          "Posteriormente, diseñé en Figma el modelo visual que quería que la web siguiera.",
+          "Hasta el momento, la aplicación web está implementada solo en su versión móvil."
+        ],
+        "technologies": [
+          {
+            "label": "React",
+            "icon": "react",
+            "custom": "size-5"
+          },
+          {
+            "label": "TypeScript",
+            "icon": "typescript",
+            "custom": "size-5"
+          },
+          {
+            "label": "Axios",
+            "icon": "axios",
+            "custom": "size-5"
+          },
+          {
+            "label": "Tailwindcss",
+            "icon": "tailwind-css",
+            "custom": "size-5"
+          },
+          {
+            "label": "Motion",
+            "icon": "motion",
+            "custom": "size-5"
+          }
+        ]
+      },
+      {
+        "name": "eCommerce de Zapatillas",
+        "github": "https://github.com/Alexisxde/sneakers-store",
+        "description": "Desarrollo de un eCommerce con funcionalidades completas para la gestión de zapatillas, clientes y pedidos, como parte de la materia Taller de Programación I de la Universidad.",
+        "highlights": [
+          "Implementación de funciones CRUD para la gestión de zapatillas, clientes y pedidos.",
+          "Funcionalidades completas de carrito de compras."
+        ],
+        "technologies": [
+          {
+            "label": "Codeigniter",
+            "icon": "codeigniter",
+            "custom": "size-5"
+          },
+          {
+            "label": "PHP",
+            "icon": "php",
+            "custom": "size-5"
+          },
+          {
+            "label": "CSS",
+            "icon": "css",
+            "custom": "size-5"
+          },
+          {
+            "label": "Bootstrap",
+            "icon": "bootstrap",
+            "custom": "size-5"
+          },
+          {
+            "label": "MySQL",
+            "icon": "mysql",
+            "custom": "size-5"
+          }
+        ]
+      },
+      {
+        "name": "App de tareas",
+        "url": "https://tareaplus.vercel.app",
+        "github": "",
+        "description": "",
+        "technologies": [
+          {
+            "label": "React",
+            "icon": "react",
+            "custom": "size-5"
+          },
+          {
+            "label": "TypeScript",
+            "icon": "typescript",
+            "custom": "size-5"
+          },
+          {
+            "label": "Tailwindcss",
+            "icon": "tailwind-css",
+            "custom": "size-5"
+          },
+          {
+            "label": "Motion",
+            "icon": "motion",
+            "custom": "size-5"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Estudios",
+    "data": [
+      {
+        "title": "Universidad Nacional del Nordeste",
+        "url": "https://www.unne.edu.ar"
+      },
+      {
+        "title": "Youtube/@midudev",
+        "url": "https://www.youtube.com/@midudev"
+      },
+      {
+        "title": "Youtube/@fazt",
+        "url": "https://www.youtube.com/@fazttech"
+      },
+      {
+        "title": "Argentina Programa 4.0",
+        "url": "https://argentinaprograma.unsam.edu.ar"
+      },
+      {
+        "title": "Udemy",
+        "url": "https://udemy.com"
+      }
+    ]
+  },
+  "experience": [],
+  "certificates": {
+    "title": "Certificados",
+    "data": [
+      {
+        "rol": "Front End Developer",
+        "program": "Argentina Programa 4.0",
+        "certificateLink": "",
+        "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
+        "description": "Certificado por completar la primera parte del proyecto de desarrollo frontend de una lista de tareas utilizando React y TailwindCSS. Este proyecto destacó mi capacidad para diseñar y desarrollar interfaces de usuario dinámicas y modernas."
+      },
+      {
+        "rol": "Back End Developer",
+        "program": "Argentina Programa 4.0",
+        "certificateLink": "",
+        "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
+        "description": "Certificado de la segunda parte del proyecto de desarrollo backend de una lista de tareas, donde adquirí habilidades básicas en desarrollo back-end. Durante el curso colaboré con compañeros en el uso de Django y SQLite3 para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web completas."
+      }
+    ]
+  }
+}
