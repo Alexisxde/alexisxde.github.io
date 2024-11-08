@@ -24,34 +24,32 @@ const skills = [
     custom: 'size-6'
   },
   {
-    label: 'Codeigniter',
-    icon: 'codeigniter',
-    custom: 'size-5'
-  },
-  {
     label: 'MySQL',
     icon: 'mysql',
     custom: 'size-6'
+  },
+  {
+    label: 'Codeigniter',
+    icon: 'codeigniter',
+    custom: 'size-5'
   },
   {
     label: 'Figma',
     icon: 'figma',
     custom: 'size-4'
   }
-]
+] as const
 ---
 
-<div class="flex flex-col justify-center gap-4">
-  <div class="flex flex-col justify-center gap-1">
-    <h2 class="mb-2 text-2xl font-bold">Habilidades</h2>
-    <div class="flex w-full flex-wrap items-center gap-2">
-      {
-        skills.map(({ label, icon, custom }) => (
-          <Badge name={label}>
-            <Icon name={icon} class:list={custom} />
-          </Badge>
-        ))
-      }
-    </div>
+<div class="flex flex-col justify-center gap-1">
+  <h2 class="mb-2 text-2xl font-bold">Habilidades</h2>
+  <div class="flex w-full flex-wrap items-center gap-2">
+    {
+      skills.map(({ label, icon, custom }) => (
+        <Badge name={label}>
+          <Icon name={icon} class:list={custom} />
+        </Badge>
+      ))
+    }
   </div>
 </div>
