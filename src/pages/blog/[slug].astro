@@ -1,7 +1,7 @@
 ---
 import LayoutBlog from '@layouts/LayoutBlog.astro'
 import type { CollectionEntry } from 'astro:content'
-import { getCollection, render } from 'astro:content'
+import { getCollection } from 'astro:content'
 
 interface Props {
   article: CollectionEntry<'blog'>
@@ -11,7 +11,7 @@ const { article } = Astro.props
 const { data } = article
 const { title, tags, slug } = data
 
-const { Content } = await render(article)
+const { Content } = await article.render()
 
 export async function getStaticPaths() {
   const blog = await getCollection('blog')
@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 
 <LayoutBlog title={title}>
   <article
-    class="prose prose-lg dark:prose-invert mx-auto my-4 p-4"
+    class="prose prose-lg mx-auto my-4 p-4 dark:prose-invert"
     transition:name={`title-${slug}`}>
     <Content />
   </article>
