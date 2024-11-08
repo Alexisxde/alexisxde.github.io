@@ -1,6 +1,12 @@
 ---
 import Badge from '@components/Badge.astro'
+import Card from '@components/Card.astro'
 import { Icon } from 'astro-icon/components'
+
+interface Props {
+  class: string
+  delay: string
+}
 
 const skills = [
   {
@@ -39,17 +45,21 @@ const skills = [
     custom: 'size-4'
   }
 ] as const
+
+const { class: className, delay } = Astro.props
 ---
 
-<div class="flex flex-col justify-center gap-1">
-  <h2 class="mb-2 text-2xl font-bold">Habilidades</h2>
-  <div class="flex w-full flex-wrap items-center gap-2">
-    {
-      skills.map(({ label, icon, custom }) => (
-        <Badge name={label}>
-          <Icon name={icon} class:list={custom} />
-        </Badge>
-      ))
-    }
+<Card class:list={className} delay={delay}>
+  <div class="flex flex-col justify-center gap-1">
+    <h2 class="mb-2 text-2xl font-bold">Habilidades</h2>
+    <div class="flex w-full flex-wrap items-center gap-2">
+      {
+        skills.map(({ label, icon, custom }) => (
+          <Badge name={label}>
+            <Icon name={icon} class:list={custom} />
+          </Badge>
+        ))
+      }
+    </div>
   </div>
-</div>
+</Card>

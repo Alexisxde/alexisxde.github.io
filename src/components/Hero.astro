@@ -1,36 +1,46 @@
 ---
+import Card from '@components/Card.astro'
 import { Icon } from 'astro-icon/components'
+
+interface Props {
+  class: string
+  delay: string
+}
+
+const { class: className, delay } = Astro.props
 ---
 
-<div id="inicio" class="mb-2 flex items-center gap-4">
-  <img
-    class="aspect-square w-[50px] rounded-full"
-    src="me.webp"
-    alt="Perfil de Alexis"
-    loading="lazy"
-  />
-  <span
-    class="inline-flex cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-3 py-1 text-sm font-medium text-gray-300 backdrop-blur-3xl">
+<Card class:list={className} delay={delay}>
+  <div id="inicio" class="mb-2 flex items-center gap-4">
+    <img
+      class="aspect-square w-[50px] rounded-full"
+      src="me.webp"
+      alt="Perfil de Alexis"
+      loading="lazy"
+    />
     <span
-      class="bg-gradient-to-t from-light to-[#8678f9] bg-clip-text text-transparent">
-      Disponible para trabajar
+      class="inline-flex cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-3 py-1 text-sm font-medium text-gray-300 backdrop-blur-3xl">
+      <span
+        class="bg-gradient-to-t from-light to-[#8678f9] bg-clip-text text-transparent">
+        Disponible para trabajar
+      </span>
     </span>
-  </span>
-</div>
-<h1 class="mb-2 text-4xl font-bold">Hey, soy Alexis</h1>
-<p class="mb-2 text-pretty text-sm text-gray-400">
-  Apasionado por la programación y listo para embarcarme en mi primera aventura
-  en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo
-  increíble junto a un equipo.
-</p>
-<div class="flex items-center justify-between">
-  <span class="text-xs text-gray-400"> Corrientes Capital, Argentina </span>
-  <div class="inline-flex items-center gap-4">
-    <a class="transition-opacity hover:opacity-50" href="#"
-      ><Icon name="linkedin" class="size-6" /></a
-    >
-    <a class="transition-opacity hover:opacity-50" href="#">
-      <Icon name="github" class="size-6" /></a
-    >
   </div>
-</div>
+  <h1 class="mb-2 text-4xl font-bold">Hey, soy Alexis</h1>
+  <p class="mb-2 text-pretty text-sm text-gray-400">
+    Apasionado por la programación y listo para embarcarme en mi primera
+    aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear
+    algo increíble junto a un equipo.
+  </p>
+  <div class="flex items-center justify-between">
+    <span class="text-xs text-gray-400"> Corrientes Capital, Argentina </span>
+    <div class="inline-flex items-center gap-4">
+      <a class="transition-opacity hover:opacity-50" href="#"
+        ><Icon name="linkedin" class="size-6" /></a
+      >
+      <a class="transition-opacity hover:opacity-50" href="#">
+        <Icon name="github" class="size-6" /></a
+      >
+    </div>
+  </div>
+</Card>

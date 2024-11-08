@@ -1,4 +1,11 @@
 ---
+import Card from '@components/Card.astro'
+
+interface Props {
+  class: string
+  delay: string
+}
+
 const links = [
   {
     title: 'Universidad Nacional del Nordeste',
@@ -21,8 +28,11 @@ const links = [
     url: 'https://udemy.com'
   }
 ]
+
+const { class: className, delay } = Astro.props
 ---
 
+<Card class:list={className} delay={delay}>
 <div class="flex flex-col justify-center md:gap-4">
   <h2 class="mb-2 text-2xl font-bold">Estudios</h2>
   <div class="flex flex-wrap items-center justify-center gap-2 text-sm">
@@ -38,3 +48,4 @@ const links = [
     }
   </div>
 </div>
+</Card>

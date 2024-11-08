@@ -1,106 +1,119 @@
 ---
 import Badge from '@components/Badge.astro'
+import Card from '@components/Card.astro'
 import { Icon } from 'astro-icon/components'
+
+interface Props {
+  class: string
+  delay: string
+}
+
+const { class: className, delay } = Astro.props
 ---
 
-<div class="flex flex-col justify-center gap-1">
-  <h2 class="mb-2 text-2xl font-bold">Proyectos</h2>
-  <div class="flex flex-wrap items-center gap-2 text-sm text-gray-400">
-    <div class="inline-flex w-full items-center justify-between">
-      <h3 class="text-base font-bold text-dark dark:text-light">
-        App de Películas
-      </h3>
-      <a
-        class="group inline-flex items-center gap-2 text-dark dark:text-light"
-        href="https://cinespectra-dd8h.onrender.com"
-        target="_blank">
-        <span class="relative flex h-3 w-3">
-          <span
-            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"
-          ></span>
-          <span class="relative inline-flex h-3 w-3 rounded-full bg-green-500"
-          ></span>
-        </span>
-        <span class="transition-opacity group-hover:opacity-75">Preview</span>
-      </a>
+<Card class:list={className} delay={delay}>
+  <div class="flex flex-col justify-center gap-1">
+    <h2
+      class="mb-2 inline-flex items-center justify-between text-2xl font-bold">
+      <span>Proyectos</span><Icon name="arrow-top-right" class="size-5" />
+    </h2>
+    <div class="flex flex-wrap items-center gap-2 text-sm text-gray-400">
+      <div class="inline-flex w-full items-center justify-between">
+        <h3 class="text-base font-bold text-dark dark:text-light">
+          App de Películas
+        </h3>
+        <a
+          class="group inline-flex items-center gap-2 text-dark dark:text-light"
+          href="https://cinespectra-dd8h.onrender.com"
+          target="_blank">
+          <span class="relative flex h-3 w-3">
+            <span
+              class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"
+            ></span>
+            <span class="relative inline-flex h-3 w-3 rounded-full bg-green-500"
+            ></span>
+          </span>
+          <span class="transition-opacity group-hover:opacity-75">Preview</span>
+        </a>
+      </div>
+      <p class="text-pretty">
+        Desarrollo de una aplicación web que muestra tráilers de películas
+        utilizando la API de <a>The Movie Database.</a>
+      </p>
+      <ul>
+        <span class="mb-2 font-semibold text-dark dark:text-light"
+          >Progreso actual:</span
+        >
+        <li class="mb-1 ml-4 list-disc">
+          Se desarrolló primero toda la lógica y las peticiones a la API,
+          creando una estructura funcional con un diseño preliminar amigable.
+        </li>
+        <li class="mb-1 ml-4 list-disc">
+          Posteriormente, diseñé en Figma el modelo visual que quería que la web
+          siguiera.
+        </li>
+        <li class="mb-1 ml-4 list-disc">
+          Hasta el momento, la aplicación web está implementada solo en su
+          versión móvil.
+        </li>
+      </ul>
     </div>
-    <p class="text-pretty">
-      Desarrollo de una aplicación web que muestra tráilers de películas
-      utilizando la API de <a>The Movie Database.</a>
-    </p>
-    <ul>
-      <span class="mb-2 font-semibold text-dark dark:text-light"
-        >Progreso actual:</span
-      >
-      <li class="mb-1 ml-4 list-disc">
-        Se desarrolló primero toda la lógica y las peticiones a la API, creando
-        una estructura funcional con un diseño preliminar amigable.
-      </li>
-      <li class="mb-1 ml-4 list-disc">
-        Posteriormente, diseñé en Figma el modelo visual que quería que la web
-        siguiera.
-      </li>
-      <li class="mb-1 ml-4 list-disc">
-        Hasta el momento, la aplicación web está implementada solo en su versión
-        móvil.
-      </li>
-    </ul>
+    <div class="flex flex-wrap items-center gap-2">
+      <Badge name="React" class="text-xs">
+        <Icon name="react" class="size-4" />
+      </Badge>
+      <Badge name="CSS" class="text-xs">
+        <Icon name="css" class="size-4" />
+      </Badge>
+      <Badge name="Figma" class="text-xs">
+        <Icon name="figma" class="size-3" />
+      </Badge>
+      <Badge name="Github" class="text-xs">
+        <Icon name="github" class="size-4" />
+      </Badge>
+    </div>
+    <div class="m-2 h-[0.5px] rounded-full bg-dark/10 dark:bg-light/10"></div>
+    <div class="flex flex-wrap items-center gap-2 text-sm text-gray-400">
+      <h3 class="text-base font-bold text-dark dark:text-light">
+        eCommerce de Zapatillas
+      </h3>
+      <p class="text-pretty">
+        Desarrollo de un eCommerce con funcionalidades completas para la gestión
+        de zapatillas, clientes y pedidos, como parte de la materia Taller de
+        Programación I de la Universidad.
+      </p>
+      <ul>
+        <span class="mb-2 font-semibold text-dark dark:text-light"
+          >Aspectos destacados:</span
+        >
+        <li class="mb-1 ml-4 list-disc">
+          Implementación de funciones CRUD para la gestión de zapatillas,
+          clientes y pedidos.
+        </li>
+        <li class="mb-1 ml-4 list-disc">
+          Funcionalidades completas de carrito de compras.
+        </li>
+        <li class="mb-1 ml-4 list-disc">
+          Sistema de gestión de zapatillas, clientes y pedidos.
+        </li>
+        <li class="mb-1 ml-4 list-disc">
+          Utilización actual de DataTables para la gestión de datos.
+        </li>
+      </ul>
+    </div>
+    <div class="flex flex-wrap items-center gap-2">
+      <Badge name="Codeigniter" class="text-xs">
+        <Icon name="codeigniter" class="size-4" />
+      </Badge>
+      <Badge name="CSS" class="text-xs">
+        <Icon name="css" class="size-4" />
+      </Badge>
+      <Badge name="MySQL" class="text-xs">
+        <Icon name="mysql" class="size-4" />
+      </Badge>
+      <Badge name="Github" class="text-xs">
+        <Icon name="github" class="size-4" />
+      </Badge>
+    </div>
   </div>
-  <div class="flex flex-wrap items-center gap-2">
-    <Badge name="React.js" class="text-xs">
-      <Icon name="react" class="size-4" />
-    </Badge>
-    <Badge name="CSS" class="text-xs">
-      <Icon name="css" class="size-4" />
-    </Badge>
-    <Badge name="Figma" class="text-xs">
-      <Icon name="figma" class="size-3" />
-    </Badge>
-    <Badge name="Github" class="text-xs">
-      <Icon name="github" class="size-4" />
-    </Badge>
-  </div>
-  <div class="m-2 h-[0.5px] rounded-full bg-dark/10 dark:bg-light/10"></div>
-  <div class="flex flex-wrap items-center gap-2 text-sm text-gray-400">
-    <h3 class="text-base font-bold text-dark dark:text-light">
-      eCommerce de Zapatillas
-    </h3>
-    <p class="text-pretty">
-      Desarrollo de un eCommerce con funcionalidades completas para la gestión
-      de zapatillas, clientes y pedidos, como parte de la materia Taller de
-      Programación I de la Universidad.
-    </p>
-    <ul>
-      <span class="mb-2 font-semibold text-dark dark:text-light"
-        >Aspectos destacados:</span
-      >
-      <li class="mb-1 ml-4 list-disc">
-        Implementación de funciones CRUD para la gestión de zapatillas, clientes
-        y pedidos.
-      </li>
-      <li class="mb-1 ml-4 list-disc">
-        Funcionalidades completas de carrito de compras.
-      </li>
-      <li class="mb-1 ml-4 list-disc">
-        Sistema de gestión de zapatillas, clientes y pedidos.
-      </li>
-      <li class="mb-1 ml-4 list-disc">
-        Utilización actual de DataTables para la gestión de datos.
-      </li>
-    </ul>
-  </div>
-  <div class="flex flex-wrap items-center gap-2">
-    <Badge name="Codeigniter" class="text-xs">
-      <Icon name="codeigniter" class="size-4" />
-    </Badge>
-    <Badge name="CSS" class="text-xs">
-      <Icon name="css" class="size-4" />
-    </Badge>
-    <Badge name="MySQL" class="text-xs">
-      <Icon name="mysql" class="size-4" />
-    </Badge>
-    <Badge name="Github" class="text-xs">
-      <Icon name="github" class="size-4" />
-    </Badge>
-  </div>
-</div>
+</Card>

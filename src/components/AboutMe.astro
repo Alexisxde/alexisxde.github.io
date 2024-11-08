@@ -1,14 +1,27 @@
-<div id="sobre-mi" class="flex flex-col justify-center gap-4">
-  <div class="flex flex-col justify-center gap-1">
-    <h2 class="mb-2 text-2xl font-bold">Sobre mí</h2>
-    <p class="text-pretty text-sm">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis
-      fugiat voluptatem molestiae sapiente modi adipisci. Nemo cumque libero
-      quo?
-    </p>
+---
+import Card from './Card.astro'
+
+interface Props {
+  class: string
+  delay: string
+}
+
+const { class: className, delay } = Astro.props
+---
+
+<Card class:list={className} delay={delay}>
+  <div id="sobre-mi" class="flex flex-col justify-center gap-4">
+    <div class="flex flex-col justify-center gap-1">
+      <h2 class="mb-2 text-2xl font-bold">Sobre mí</h2>
+      <p class="text-pretty text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo facilis
+        fugiat voluptatem molestiae sapiente modi adipisci. Nemo cumque libero
+        quo?
+      </p>
+    </div>
+    <button
+      class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors dark:border-border-dark dark:bg-dark dark:text-light"
+      >Descargar Cv</button
+    >
   </div>
-  <button
-    class="rounded-2xl border border-border-light bg-light px-2 py-1 text-dark transition-colors dark:border-border-dark dark:bg-dark dark:text-light"
-    >Descargar Cv</button
-  >
-</div>
+</Card>
