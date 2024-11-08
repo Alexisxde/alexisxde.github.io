@@ -6,6 +6,7 @@ import { defineConfig } from 'astro/config'
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://alexisxde.github.io',
+  trailingSlash: 'never',
   markdown: {
     shikiConfig: {
       theme: 'catppuccin-mocha',
