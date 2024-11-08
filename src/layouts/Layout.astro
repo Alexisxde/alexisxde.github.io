@@ -3,26 +3,33 @@ import Footer from '@components/Footer.astro'
 import Navegation from '@components/Navegation.astro'
 import '@fontsource/poppins'
 import ViewTransitions from 'astro/components/ViewTransitions.astro'
+
+interface Props {
+  title?: string
+  description?: string
+  img?: string
+}
+
+const {
+  title = 'Olivarez Alexis - Front End Developer',
+  description = 'Portafolio donde verás mis proyectos',
+  img = 'me.webp'
+} = Astro.props
 ---
 
 <!doctype html>
 <html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Portafolio donde verás mis proyectos." />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Olivarez Alexis - Front End Developer</title>
-    <meta property="og:title" content="Olivarez Alexis - Front End Developer" />
-    <meta
-      property="og:description"
-      content="Portafolio donde verás mis proyectos"
-    />
-    <meta property="og:image" content="https://alexisxde.github.io/me.webp" />
+    <title>{title}</title>
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={img} />
     <meta property="og:url" content="https://alexisxde.github.io" />
     <meta property="og:type" content="website" />
-    <meta property="og:image:width" content="50" />
-    <meta property="og:image:height" content="50" />
     <ViewTransitions />
   </head>
   <body
