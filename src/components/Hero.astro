@@ -20,13 +20,15 @@ const { class: className, delay } = Astro.props
       alt={`Perfil de ${name}`}
       loading="lazy"
     />
-    <span
+    <a
+      href={linkedin}
+      target="_blank"
       class="inline-flex cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-3 py-1 text-sm font-medium text-gray-300 backdrop-blur-3xl">
       <span
         class="bg-gradient-to-t from-light to-[#8678f9] bg-clip-text text-transparent">
         {badge}
       </span>
-    </span>
+    </a>
   </div>
   <h1 class="mb-2 text-4xl font-bold">Hey, soy {name}</h1>
   <p class="mb-2 flex-grow text-pretty text-sm">
@@ -35,10 +37,16 @@ const { class: className, delay } = Astro.props
   <div class="flex items-center justify-between">
     <span class="text-xs">{location}</span>
     <div class="inline-flex items-center gap-3 px-1">
-      <a class="transition-opacity hover:opacity-50" href={linkedin}
+      <a
+        target="_blank"
+        class="transition-opacity hover:opacity-50"
+        href={linkedin}
         ><Icon name="linkedin" class="size-6" />
       </a>
-      <a class="transition-opacity hover:opacity-50" href={github}>
+      <a
+        target="_blank"
+        class="transition-opacity hover:opacity-50"
+        href={github}>
         <Icon name="github" class="size-6" />
       </a>
     </div>

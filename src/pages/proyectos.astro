@@ -1,7 +1,59 @@
 ---
+import Badge from '@components/Badge.astro'
+import { projects } from '@data'
 import Layout from '@layouts/Layout.astro'
+import { Icon } from 'astro-icon/components'
 ---
 
 <Layout>
-  <h1>Proyectos</h1>
+  <section
+    class="grid grid-cols-1 grid-rows-none place-content-center gap-4 p-4 lg:grid-cols-2">
+    {
+      projects.data.map(
+        ({
+          name,
+          url,
+          image,
+          github,
+          figma,
+          description,
+          highlights,
+          technologies
+        }) => (
+          <article class="group relative w-full">
+            <div class="absolute inset-0 z-10 flex items-center justify-center gap-4 bg-dark/50 text-light opacity-0 transition-opacity duration-150 group-hover:opacity-100">
+              {url && (
+                <a target="_blank" href={url}>
+                  <Icon name="link" class="size-6" />
+                </a>
+              )}
+              <a
+                target="_blank"
+                class="rounded-full bg-black p-2"
+                href={github}>
+                <Icon name="github" class="size-6" />
+              </a>
+              {figma && (
+                <a target="_blank" href={figma}>
+                  <Icon name="figma" class="size-6" />
+                </a>
+              )}
+            </div>
+            <img
+              class="h-auto w-full object-cover lg:h-[368px]"
+              src={url ? `${url}/image.png` : image}
+              alt={name}
+            />
+            <div class="absolute bottom-0 flex w-full flex-wrap items-center gap-2 bg-light/50 p-2 backdrop-blur-lg dark:bg-dark/50">
+              {technologies?.map(({ label, icon, custom }) => (
+                <Badge name={label} class="text-xs">
+                  <Icon name={icon} class:list={custom} />
+                </Badge>
+              ))}
+            </div>
+          </article>
+        )
+      )
+    }
+  </section>
 </Layout>

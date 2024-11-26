@@ -3,6 +3,8 @@ import eslintPluginAstro from 'eslint-plugin-astro'
 export default [
   ...eslintPluginAstro.configs.recommended,
   {
+    parser: '@typescript-eslint/parser',
+    plugins: ['@typescript-eslint'],
     rules: {
       'astro/no-conflict-set-directives': 'error',
       'astro/no-unused-define-vars-in-style': 'error',

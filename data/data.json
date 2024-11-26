@@ -5,8 +5,8 @@
     "badge": "Disponible para trabajar",
     "description": "Apasionado por la programación y listo para embarcarme en mi primera aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo increíble junto a un equipo.",
     "location": "Corrientes Capital, Argentina",
-    "github": "https://github.com/tu-usuario",
-    "linkedin": "https://linkedin.com/in/tu-usuario"
+    "github": "https://github.com/Alexisxde",
+    "linkedin": "https://linkedin.com/in/alexis-olivarez"
   },
   "aboutMe": {
     "title": "Sobre mí",
@@ -90,21 +90,18 @@
             "label": "Tailwindcss",
             "icon": "tailwind-css",
             "custom": "size-5"
-          },
-          {
-            "label": "Motion",
-            "icon": "motion",
-            "custom": "size-5"
           }
         ]
       },
       {
         "name": "eCommerce de Zapatillas",
         "github": "https://github.com/Alexisxde/sneakers-store",
+        "image": "/sneakers_store.png",
         "description": "Desarrollo de un eCommerce con funcionalidades completas para la gestión de zapatillas, clientes y pedidos, como parte de la materia Taller de Programación I de la Universidad.",
         "highlights": [
           "Implementación de funciones CRUD para la gestión de zapatillas, clientes y pedidos.",
-          "Funcionalidades completas de carrito de compras."
+          "Funcionalidades completas de carrito de compras.",
+          "Sistema de gestión de zapatillas, clientes y pedidos."
         ],
         "technologies": [
           {
@@ -161,6 +158,29 @@
             "custom": "size-5"
           }
         ]
+      },
+      {
+        "name": "Coleccion de Inspiraciones de landing pages.",
+        "url": "https://landingfy.vercel.app",
+        "github": "",
+        "description": "",
+        "technologies": [
+          {
+            "label": "React",
+            "icon": "react",
+            "custom": "size-5"
+          },
+          {
+            "label": "TypeScript",
+            "icon": "typescript",
+            "custom": "size-5"
+          },
+          {
+            "label": "Tailwindcss",
+            "icon": "tailwind-css",
+            "custom": "size-5"
+          }
+        ]
       }
     ]
   },
@@ -196,14 +216,14 @@
       {
         "rol": "Front End Developer",
         "program": "Argentina Programa 4.0",
-        "certificateLink": "",
+        "certificateLink": "https://drive.google.com/file/d/1Oa61SheZMXWdqgDZ5rWSfgP8G8-otBxt/view",
         "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
         "description": "Certificado por completar la primera parte del proyecto de desarrollo frontend de una lista de tareas utilizando React y TailwindCSS. Este proyecto destacó mi capacidad para diseñar y desarrollar interfaces de usuario dinámicas y modernas."
       },
       {
         "rol": "Back End Developer",
         "program": "Argentina Programa 4.0",
-        "certificateLink": "",
+        "certificateLink": "https://drive.google.com/file/d/13jSrBjJmljwkc3vNPZFLkTppgGy--5Ua/view",
         "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
         "description": "Certificado de la segunda parte del proyecto de desarrollo backend de una lista de tareas, donde adquirí habilidades básicas en desarrollo back-end. Durante el curso colaboré con compañeros en el uso de Django y SQLite3 para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web completas."
       }
