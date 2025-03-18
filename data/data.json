@@ -1,232 +1,135 @@
 {
-  "profile": {
-    "src": "me.webp",
-    "name": "Alexis",
-    "badge": "Disponible para trabajar",
-    "description": "Apasionado por la programación y listo para embarcarme en mi primera aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo increíble junto a un equipo.",
-    "location": "Corrientes Capital, Argentina",
-    "github": "https://github.com/Alexisxde",
-    "linkedin": "https://linkedin.com/in/alexis-olivarez"
-  },
-  "aboutMe": {
-    "title": "Sobre mí",
-    "data": [
-      "Mi pasión por el desarrollo web comenzó de forma autodidacta. He dedicado horas a aprender las bases del desarrollo frontend, con el objetivo de crear interfaces web funcionales y atractivas.",
-      "Soy una persona que aprende rápido. Me esfuerzo por mantenerme actualizado con las últimas tendencias y mejores prácticas en desarrollo frontend, aplicando lo aprendido en proyectos que desafían mi creatividad y habilidades técnicas.",
-      "Mi objetivo es dar el siguiente paso en mi carrera como desarrollador front-end, colaborando en proyectos donde pueda seguir aprendiendo, creciendo y aportando valor."
-    ]
-  },
-  "skills": {
-    "title": "Habilidades",
-    "icons": [
-      {
-        "label": "React",
-        "icon": "react",
-        "custom": "size-6"
-      },
-      {
-        "label": "Astro",
-        "icon": "astro",
-        "custom": "size-6"
-      },
-      {
-        "label": "Git",
-        "icon": "git",
-        "custom": "size-5"
-      },
-      {
-        "label": "TypeScript",
-        "icon": "typescript",
-        "custom": "size-5"
-      },
-      {
-        "label": "Tailwindcss",
-        "icon": "tailwind-css",
-        "custom": "size-6"
-      },
-      {
-        "label": "Figma",
-        "icon": "figma",
-        "custom": "size-4"
-      },
-      {
-        "label": "MySQL",
-        "icon": "mysql",
-        "custom": "size-5"
-      }
-    ]
-  },
-  "projects": {
-    "title": "Proyectos",
-    "data": [
-      {
-        "name": "App de Películas",
-        "url": "https://peliisplus.vercel.app",
-        "github": "https://github.com/Alexisxde/pelisplus",
-        "figma": "",
-        "description": "Desarrollo de una aplicación web que muestra tráilers de películas utilizando la API de The Movie Database.",
-        "highlights": [
-          "Se desarrolló primero toda la lógica y las peticiones a la API, creando una estructura funcional con un diseño preliminar amigable.",
-          "Posteriormente, diseñé en Figma el modelo visual que quería que la web siguiera.",
-          "Hasta el momento, la aplicación web está implementada solo en su versión móvil."
-        ],
-        "technologies": [
-          {
-            "label": "React",
-            "icon": "react",
-            "custom": "size-5"
-          },
-          {
-            "label": "TypeScript",
-            "icon": "typescript",
-            "custom": "size-5"
-          },
-          {
-            "label": "Axios",
-            "icon": "axios",
-            "custom": "size-5"
-          },
-          {
-            "label": "Tailwindcss",
-            "icon": "tailwind-css",
-            "custom": "size-5"
-          }
-        ]
-      },
-      {
-        "name": "eCommerce de Zapatillas",
-        "github": "https://github.com/Alexisxde/sneakers-store",
-        "image": "/sneakers_store.png",
-        "description": "Desarrollo de un eCommerce con funcionalidades completas para la gestión de zapatillas, clientes y pedidos, como parte de la materia Taller de Programación I de la Universidad.",
-        "highlights": [
-          "Implementación de funciones CRUD para la gestión de zapatillas, clientes y pedidos.",
-          "Funcionalidades completas de carrito de compras.",
-          "Sistema de gestión de zapatillas, clientes y pedidos."
-        ],
-        "technologies": [
-          {
-            "label": "Codeigniter",
-            "icon": "codeigniter",
-            "custom": "size-5"
-          },
-          {
-            "label": "PHP",
-            "icon": "php",
-            "custom": "size-5"
-          },
-          {
-            "label": "CSS",
-            "icon": "css",
-            "custom": "size-5"
-          },
-          {
-            "label": "Bootstrap",
-            "icon": "bootstrap",
-            "custom": "size-5"
-          },
-          {
-            "label": "MySQL",
-            "icon": "mysql",
-            "custom": "size-5"
-          }
-        ]
-      },
-      {
-        "name": "App de tareas",
-        "url": "https://tareaplus.vercel.app",
-        "github": "",
-        "description": "",
-        "technologies": [
-          {
-            "label": "React",
-            "icon": "react",
-            "custom": "size-5"
-          },
-          {
-            "label": "TypeScript",
-            "icon": "typescript",
-            "custom": "size-5"
-          },
-          {
-            "label": "Tailwindcss",
-            "icon": "tailwind-css",
-            "custom": "size-5"
-          },
-          {
-            "label": "Motion",
-            "icon": "motion",
-            "custom": "size-5"
-          }
-        ]
-      },
-      {
-        "name": "Coleccion de Inspiraciones de landing pages.",
-        "url": "https://landingfy.vercel.app",
-        "github": "",
-        "description": "",
-        "technologies": [
-          {
-            "label": "React",
-            "icon": "react",
-            "custom": "size-5"
-          },
-          {
-            "label": "TypeScript",
-            "icon": "typescript",
-            "custom": "size-5"
-          },
-          {
-            "label": "Tailwindcss",
-            "icon": "tailwind-css",
-            "custom": "size-5"
-          }
-        ]
-      }
-    ]
-  },
-  "education": {
-    "title": "Estudios",
-    "data": [
-      {
-        "title": "Universidad Nacional del Nordeste",
-        "url": "https://www.unne.edu.ar"
-      },
-      {
-        "title": "Youtube/@midudev",
-        "url": "https://www.youtube.com/@midudev"
-      },
-      {
-        "title": "Youtube/@fazt",
-        "url": "https://www.youtube.com/@fazttech"
-      },
-      {
-        "title": "Argentina Programa 4.0",
-        "url": "https://argentinaprograma.unsam.edu.ar"
-      },
-      {
-        "title": "Udemy",
-        "url": "https://udemy.com"
-      }
-    ]
-  },
-  "experience": [],
-  "certificates": {
-    "title": "Certificados",
-    "data": [
-      {
-        "rol": "Front End Developer",
-        "program": "Argentina Programa 4.0",
-        "certificateLink": "https://drive.google.com/file/d/1Oa61SheZMXWdqgDZ5rWSfgP8G8-otBxt/view",
-        "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
-        "description": "Certificado por completar la primera parte del proyecto de desarrollo frontend de una lista de tareas utilizando React y TailwindCSS. Este proyecto destacó mi capacidad para diseñar y desarrollar interfaces de usuario dinámicas y modernas."
-      },
-      {
-        "rol": "Back End Developer",
-        "program": "Argentina Programa 4.0",
-        "certificateLink": "https://drive.google.com/file/d/13jSrBjJmljwkc3vNPZFLkTppgGy--5Ua/view",
-        "institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
-        "description": "Certificado de la segunda parte del proyecto de desarrollo backend de una lista de tareas, donde adquirí habilidades básicas en desarrollo back-end. Durante el curso colaboré con compañeros en el uso de Django y SQLite3 para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web completas."
-      }
-    ]
-  }
+	"profile": {
+		"src": "profile.jpeg",
+		"name": "Alexis",
+		"badge": "Disponible para trabajar",
+		"description": "Apasionado por la programación y listo para embarcarme en mi primera aventura en el mundo del desarrollo. Ansioso por aprender, colaborar y crear algo increíble junto a un equipo.",
+		"location": "Corrientes Capital, Argentina",
+		"github": "https://github.com/Alexisxde",
+		"linkedin": "https://linkedin.com/in/alexis-olivarez"
+	},
+	"aboutMe": {
+		"title": "Sobre mí",
+		"data": [
+			"Mi pasión por el desarrollo web comenzó de forma autodidacta. He dedicado horas a aprender las bases del desarrollo frontend, con el objetivo de crear interfaces web funcionales y atractivas.",
+			"Soy una persona que aprende rápido. Me esfuerzo por mantenerme actualizado con las últimas tendencias y mejores prácticas en desarrollo frontend, aplicando lo aprendido en proyectos que desafían mi creatividad y habilidades técnicas.",
+			"Mi objetivo es dar el siguiente paso en mi carrera como desarrollador front-end, colaborando en proyectos donde pueda seguir aprendiendo, creciendo y aportando valor."
+		]
+	},
+	"skills": {
+		"title": "Habilidades",
+		"icons": [
+			{ "label": "Astro", "icon": "astro", "custom": "size-6" },
+			{ "label": "React", "icon": "react", "custom": "size-6" },
+			{ "label": "Nextjs", "icon": "nextjs", "custom": "size-6" },
+			{ "label": "Tailwindcss", "icon": "tailwind-css", "custom": "size-6" },
+			{ "label": "Bootstrap", "icon": "bootstrap-css", "custom": "size-6" },
+			{ "label": "TypeScript", "icon": "typescript", "custom": "size-5" },
+			{ "label": "Git", "icon": "git", "custom": "size-5" },
+			{ "label": "MySQL", "icon": "mysql", "custom": "size-5" },
+			{ "label": "SQL Server", "icon": "sql-server", "custom": "size-5" }
+		]
+	},
+	"projects": {
+		"title": "Proyectos",
+		"data": [
+			{
+				"name": "Web para Gestión de Tareas",
+				"url": "https://tareaplus.vercel.app",
+				"github": "https://github.com/Alexisxde/tareaplus",
+				"description": "Desarrollo de una aplicación web de tareas <strong>Drag and Drop</strong>, para mover tareas entre listas, establecer prioridades y mantener todo bajo control.",
+				"technologies": [
+					{ "label": "Nextjs", "icon": "nextjs", "custom": "size-5" },
+					{ "label": "TypeScript", "icon": "typescript", "custom": "size-4" },
+					{
+						"label": "Tailwindcss",
+						"icon": "tailwind-css",
+						"custom": "size-5"
+					},
+					{ "label": "Motion", "icon": "motion", "custom": "size-4" },
+					{ "label": "Supabase", "icon": "supabase", "custom": "size-5" }
+				]
+			},
+			{
+				"name": "API para guardar Imagenes",
+				"url": "https://image-work.onrender.com",
+				"github": "https://github.com/Alexisxde/image-work",
+				"description": "La API permite subir imágenes desde una aplicación cliente hacia el servicio de almacenamiento en la nube de Cloudinary. La API devuelve detalles relevantes, como la URL pública de la imagen y el ID de la misma.",
+				"technologies": [
+					{ "label": "Express", "icon": "express", "custom": "size-4" },
+					{ "label": "TypeScript", "icon": "typescript", "custom": "size-4" },
+					{ "label": "Cloudinary", "icon": "cloudinary", "custom": "size-5" },
+					{ "label": "Drizzle ORM", "icon": "drizzle-orm", "custom": "size-5" },
+					{ "label": "Turso", "icon": "turso", "custom": "size-5" }
+				]
+			},
+			{
+				"name": "Portfolio personal",
+				"url": "https://alexisxde.github.io",
+				"github": "https://github.com/Alexisxde/alexisxde.github.io",
+				"description": "Donde comparto mis proyectos, habilidades y experiencias en el mundo del desarrollo web.",
+				"technologies": [
+					{ "label": "Astro", "icon": "astro", "custom": "size-5" },
+					{ "label": "TypeScript", "icon": "typescript", "custom": "size-4" },
+					{
+						"label": "Tailwindcss",
+						"icon": "tailwind-css",
+						"custom": "size-5"
+					}
+				]
+			},
+			{
+				"name": "eCommerce de Zapatillas",
+				"github": "https://github.com/Alexisxde/sneakers-store",
+				"image": "/sneakers_store.png",
+				"description": "Desarrollo de un eCommerce con funcionalidades completas para la gestión de zapatillas, clientes y pedidos, como parte de la materia <strong>Taller de Programación I de la Universidad.</strong>",
+				"technologies": [
+					{ "label": "Codeigniter", "icon": "codeigniter", "custom": "size-5" },
+					{ "label": "PHP", "icon": "php", "custom": "size-5" },
+					{ "label": "CSS", "icon": "css", "custom": "size-5" },
+					{ "label": "Bootstrap", "icon": "bootstrap", "custom": "size-5" },
+					{ "label": "MySQL", "icon": "mysql", "custom": "size-5" }
+				]
+			}
+		]
+	},
+	"education": {
+		"title": "Estudios",
+		"data": [
+			{
+				"title": "Universidad Nacional del Nordeste",
+				"url": "https://www.unne.edu.ar"
+			},
+			{
+				"title": "Youtube/@midudev",
+				"url": "https://www.youtube.com/@midudev"
+			},
+			{ "title": "Youtube/@fazt", "url": "https://www.youtube.com/@fazttech" },
+			{
+				"title": "Argentina Programa 4.0",
+				"url": "https://argentinaprograma.unsam.edu.ar"
+			},
+			{ "title": "Udemy", "url": "https://udemy.com" }
+		]
+	},
+	"experience": [],
+	"certificates": {
+		"title": "Certificados",
+		"data": [
+			{
+				"rol": "Front End Developer",
+				"program": "Argentina Programa 4.0",
+				"certificateLink": "https://drive.google.com/file/d/1Oa61SheZMXWdqgDZ5rWSfgP8G8-otBxt/view",
+				"institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
+				"description": "Certificado por completar la primera parte del proyecto de desarrollo frontend de una lista de tareas utilizando React y TailwindCSS. Este proyecto destacó mi capacidad para diseñar y desarrollar interfaces de usuario dinámicas y modernas."
+			},
+			{
+				"rol": "Back End Developer",
+				"program": "Argentina Programa 4.0",
+				"certificateLink": "https://drive.google.com/file/d/13jSrBjJmljwkc3vNPZFLkTppgGy--5Ua/view",
+				"institution": "Facultad de Ingeniería de la Universidad de Buenos Aires",
+				"description": "Certificado de la segunda parte del proyecto de desarrollo backend de una lista de tareas, donde adquirí habilidades básicas en desarrollo back-end. Durante el curso colaboré con compañeros en el uso de Django y SQLite3 para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web completas."
+			}
+		]
+	}
 }

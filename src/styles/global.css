@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+	--animate-fade-in: fade-in 500ms forwards;
+	--default-font-family: "Poppins";
+	--animate-background-shine: background-shine 2s linear infinite;
+
+	@keyframes background-shine {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: -200% 0;
+		}
+	}
+
+	@keyframes fade-in {
+		0% {
+			transform: translateY(8px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+	@apply bg-neutral-900;
+}
+
+button,
+a,
+input:focus {
+	outline: none;
+}

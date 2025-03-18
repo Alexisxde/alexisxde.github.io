@@ -1,34 +1,34 @@
 ---
-import AboutMe from '@components/AboutMe.astro'
-import Certificades from '@components/Certificades.astro'
-import Freelancer from '@components/Freelancer.astro'
-import Hero from '@components/Hero.astro'
-import Projects from '@components/Projects.astro'
-import Sentence from '@components/Sentence.astro'
-import Skills from '@components/Skills.astro'
-import Study from '@components/Study.astro'
-import Layout from '@layouts/Layout.astro'
+import AboutMe from "@/components/AboutMe.astro"
+import Certificades from "@/components/Certificades.astro"
+import Freelancer from "@/components/Freelancer.astro"
+import Hero from "@/components/Hero.astro"
+import Projects from "@/components/Projects.astro"
+import Sentence from "@/components/Sentence.astro"
+import Skills from "@/components/Skills.astro"
+import Study from "@/components/Study.astro"
+import Layout from "@/layouts/Layout.astro"
 ---
 
 <Layout>
-  <section
-    class="grid grid-cols-1 grid-rows-none gap-4 p-4 lg:grid-cols-3 lg:grid-rows-9">
-    <Hero class="row-span-2 lg:col-span-2" delay="1" />
-    <Skills class="row-span-2 lg:col-start-3 lg:row-start-1" delay="2" />
-    <Projects class="lg:row-span-7 lg:row-start-3" delay="3" />
-    <Study class="row-span-2 lg:row-start-3" delay="4" />
-    <Freelancer
-      class="row-span-2 lg:col-start-2 lg:row-start-5 lg:row-end-6"
-      delay="5"
-    />
-    <Sentence
-      class="row-span-2 lg:col-start-2 lg:row-start-6 lg:row-end-7"
-      delay="6"
-    />
-    <AboutMe class="row-span-4 lg:col-start-3 lg:row-start-3" delay="6" />
-    <Certificades
-      class="row-span-3 lg:col-span-2 lg:col-start-2 lg:row-start-7"
-      delay="7"
-    />
-  </section>
+	<section
+		class="grid grid-cols-1 grid-rows-none gap-4 p-4 lg:grid-cols-3 lg:grid-rows-9">
+		<Hero class="row-span-2 lg:col-span-2" delay="1" />
+		<Skills class="row-span-2 lg:col-start-3 lg:row-start-1" delay="2" />
+		<Projects class="lg:row-span-7 lg:row-start-3" delay="3" />
+		<Study class="row-span-2 lg:row-start-3" delay="4" />
+		<Freelancer
+			class="row-span-2 lg:col-start-2 lg:row-start-5 lg:row-end-6"
+			delay="5"
+		/>
+		<Sentence
+			class="row-span-2 lg:col-start-2 lg:row-start-6 lg:row-end-7"
+			delay="6"
+		/>
+		<AboutMe class="row-span-4 lg:col-start-3 lg:row-start-3" delay="6" />
+		<Certificades
+			class="row-span-3 lg:col-span-2 lg:col-start-2 lg:row-start-7"
+			delay="7"
+		/>
+	</section>
 </Layout>

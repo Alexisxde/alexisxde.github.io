@@ -1,56 +1,12 @@
 ---
-import { Icon } from 'astro-icon/components'
+
 ---
 
 <nav
-  class="sticky top-4 z-50 mx-auto mt-4 flex max-w-max items-center justify-center gap-4 rounded-2xl border border-border-light bg-light/50 px-8 py-2 text-sm text-dark backdrop-blur-lg transition-colors dark:border-border-dark dark:bg-dark/50 dark:text-light">
-  <div class="text-md inline-flex items-center gap-4">
-    <a href="/">Inicio</a>
-    <a href="/#sobre-mi">Sobre mí</a>
-    <a href="/proyectos">Proyectos</a>
-  </div>
-  <label class="inline-flex cursor-pointer items-center">
-    <input id="dark-mode-toggle" class="peer sr-only" type="checkbox" />
-    <div
-      class="peer relative h-6 w-11 rounded-full bg-neutral-200 after:absolute after:start-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-neutral-50 after:transition-all after:content-[''] focus:outline-none peer-checked:bg-neutral-800 peer-checked:after:translate-x-full peer-checked:after:border-neutral-50 peer-focus:outline-none rtl:peer-checked:after:-translate-x-full">
-      <span
-        class="absolute left-[6px] top-[6px] z-10 transition-opacity dark:opacity-0">
-        <Icon name="sun" class="size-3 text-yellow-400" />
-      </span>
-      <span
-        class="absolute right-[6px] top-[6px] z-10 opacity-0 transition-opacity dark:opacity-100">
-        <Icon name="moon" class="size-3 text-neutral-800" />
-      </span>
-    </div>
-  </label>
+	class="sticky top-4 z-50 mx-auto mt-4 flex max-w-max items-center justify-center gap-4 rounded-2xl border border-neutral-800 bg-neutral-900 px-8 py-2 text-sm text-neutral-100 backdrop-blur-lg transition-colors">
+	<div class="text-md inline-flex items-center gap-4">
+		<a href="/">Inicio</a>
+		<a href="/#sobre-mi">Sobre mí</a>
+		<a href="/proyectos">Proyectos</a>
+	</div>
 </nav>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const darkModeToggle = document.getElementById(
-      'dark-mode-toggle'
-    ) as HTMLInputElement
-    const htmlElement = document.documentElement
-
-    // Comprobar si la preferencia está guardada en localStorage
-    const darkMode = localStorage.getItem('darkMode')
-
-    if (darkMode === 'enabled') {
-      htmlElement.classList.add('dark')
-      darkModeToggle.checked = true // Sincronizar el checkbox
-    } else {
-      htmlElement.classList.remove('dark')
-      darkModeToggle.checked = false // Asegurarse de que el checkbox esté desmarcado si no está habilitado
-    }
-
-    darkModeToggle?.addEventListener('change', function () {
-      if (darkModeToggle.checked) {
-        htmlElement.classList.add('dark')
-        localStorage.setItem('darkMode', 'enabled')
-      } else {
-        htmlElement.classList.remove('dark')
-        localStorage.setItem('darkMode', 'disabled')
-      }
-    })
-  })
-</script>

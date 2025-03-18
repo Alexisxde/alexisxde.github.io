@@ -1,69 +1,53 @@
 ---
-import Footer from '@components/Footer.astro'
-import Navegation from '@components/Navegation.astro'
-import '@fontsource/poppins'
-import ViewTransitions from 'astro/components/ViewTransitions.astro'
+import Footer from "@/components/Footer.astro"
+// import Navegation from "@/components/Navegation.astro"
+import "@/styles/global.css"
+import "@fontsource/poppins"
+import { ClientRouter as ViewTransitions } from "astro:transitions"
 
 interface Props {
-  title?: string
-  description?: string
-  img?: string
+	title?: string
+	description?: string
+	img?: string
 }
 
 const {
-  title = 'Olivarez Alexis - Front End Developer',
-  description = 'Portafolio donde verás mis proyectos',
-  img = 'me.webp'
+	title = "Olivarez Alexis - Front End Developer",
+	description = "Portafolio donde verás mis proyectos",
+	img = "profile.jpeg"
 } = Astro.props
 ---
 
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={img} />
-    <meta property="og:url" content="https://alexisxde.github.io" />
-    <meta property="og:type" content="website" />
-    <ViewTransitions />
-  </head>
-  <body>
-    <div class="fixed inset-0 -z-10">
-      <div
-        class="relative mx-auto h-dvh w-dvw max-w-screen-2xl bg-light dark:bg-dark">
-        <div
-          class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
-        </div>
-      </div>
-    </div>
-    <div
-      class="mx-auto my-0 h-screen w-full max-w-7xl px-6 text-dark transition-colors md:px-8 lg:px-12 dark:text-light">
-      <Navegation />
-      <main>
-        <slot />
-      </main>
-      <Footer />
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={img} />
+		<meta property="og:url" content="https://alexisxde.github.io" />
+		<meta property="og:type" content="website" />
+		<ViewTransitions />
+	</head>
+	<body>
+		<div class="fixed inset-0 -z-10">
+			<div class="relative mx-auto h-dvh w-dvw max-w-screen-2xl bg-neutral-900">
+				<div
+					class="absolute top-0 right-0 bottom-0 left-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]">
+				</div>
+			</div>
+		</div>
+		<div
+			class="mx-auto my-0 h-screen w-full max-w-7xl px-6 text-neutral-100 transition-colors md:px-8 lg:px-12">
+			<!-- <Navegation /> -->
+			<main>
+				<slot />
+			</main>
+			<Footer />
+		</div>
+	</body>
 </html>
-<style is:global>
-  html {
-    scroll-behavior: smooth;
-  }
-
-  #sobre-mi,
-  #inicio {
-    scroll-margin-top: 100px;
-  }
-
-  button,
-  a,
-  input:focus {
-    outline: none;
-  }
-</style>

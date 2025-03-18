@@ -1,17 +1,19 @@
 ---
+import { cn } from "@/lib/utils"
+
 interface Props {
-  class?: string
-  delay?: string
+	class?: string
+	delay?: string
 }
 
 const { class: className, delay } = Astro.props
 ---
 
 <div
-  class:list={[
-    'translate-y-8 animate-fade-in rounded-2xl border border-border-light bg-light p-5 text-dark opacity-0 shadow-md transition-colors dark:border-border-dark dark:bg-dark dark:text-light',
-    className
-  ]}
-  style={`animation-delay: calc(0.1s * ${delay})`}>
-  <slot />
+	class={cn(
+		"animate-fade-in translate-y-8 rounded-2xl border border-neutral-800 bg-neutral-900 p-5 text-neutral-100 opacity-0 shadow-md transition-colors",
+		className
+	)}
+	style={`animation-delay: calc(0.1s * ${delay})`}>
+	<slot />
 </div>

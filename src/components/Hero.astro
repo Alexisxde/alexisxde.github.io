@@ -1,54 +1,54 @@
 ---
-import Card from '@components/Card.astro'
-import { profile } from '@data'
-import { Icon } from 'astro-icon/components'
+import Card from "@/components/Card.astro"
+import { profile } from "@data"
+import { Icon } from "astro-icon/components"
 
 interface Props {
-  class: string
-  delay: string
+	class: string
+	delay: string
 }
 
 const { description, name, src, location, github, linkedin, badge } = profile
 const { class: className, delay } = Astro.props
 ---
 
-<Card class:list={['flex flex-col', className]} delay={delay}>
-  <div id="inicio" class="mb-2 flex items-center gap-4">
-    <img
-      class="aspect-square w-[50px] rounded-full"
-      src={src}
-      alt={`Perfil de ${name}`}
-      loading="lazy"
-    />
-    <a
-      href={linkedin}
-      target="_blank"
-      class="inline-flex cursor-pointer items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-3 py-1 text-sm font-medium text-gray-300 backdrop-blur-3xl">
-      <span
-        class="bg-gradient-to-t from-light to-[#8678f9] bg-clip-text text-transparent">
-        {badge}
-      </span>
-    </a>
-  </div>
-  <h1 class="mb-2 text-4xl font-bold">Hey, soy {name}</h1>
-  <p class="mb-2 flex-grow text-pretty text-sm">
-    {description}
-  </p>
-  <div class="flex items-center justify-between">
-    <span class="text-xs">{location}</span>
-    <div class="inline-flex items-center gap-3 px-1">
-      <a
-        target="_blank"
-        class="transition-opacity hover:opacity-50"
-        href={linkedin}
-        ><Icon name="linkedin" class="size-6" />
-      </a>
-      <a
-        target="_blank"
-        class="transition-opacity hover:opacity-50"
-        href={github}>
-        <Icon name="github" class="size-6" />
-      </a>
-    </div>
-  </div>
+<Card class:list={["flex flex-col", className]} delay={delay}>
+	<div class="mb-2 flex items-center gap-4">
+		<img
+			class="aspect-square w-[50px] rounded-full"
+			src={src}
+			alt={`Perfil de ${name}`}
+			loading="lazy"
+		/>
+		<a
+			href={linkedin}
+			target="_blank"
+			class="animate-background-shine inline-flex items-center justify-center rounded-full border border-neutral-800 bg-[linear-gradient(110deg,#171717,45%,#262626,55%,#171717)] bg-[length:200%_100%] px-4 py-2 text-sm font-medium text-neutral-400 transition-colors">
+			<span
+				class="bg-gradient-to-t from-neutral-100 to-neutral-500 bg-clip-text text-transparent">
+				{badge}
+			</span>
+		</a>
+	</div>
+	<h1 class="mb-2 text-4xl font-bold">Hey, soy {name}</h1>
+	<p class="mb-2 flex-grow text-sm text-pretty text-neutral-300">
+		{description}
+	</p>
+	<div class="flex items-center justify-between">
+		<span class="text-xs text-neutral-400">{location}</span>
+		<div class="inline-flex items-center gap-3 px-1">
+			<a
+				target="_blank"
+				class="transition-opacity hover:opacity-50"
+				href={linkedin}
+				><Icon name="linkedin" class="size-6" />
+			</a>
+			<a
+				target="_blank"
+				class="transition-opacity hover:opacity-50"
+				href={github}>
+				<Icon name="github" class="size-6" />
+			</a>
+		</div>
+	</div>
 </Card>

@@ -1,11 +1,11 @@
 ---
-import Card from '@components/Card.astro'
-import { aboutMe } from '@data'
-import { Icon } from 'astro-icon/components'
+import Card from "@/components/Card.astro"
+import { aboutMe } from "@data"
+import { Icon } from "astro-icon/components"
 
 interface Props {
-  class: string
-  delay: string
+	class: string
+	delay: string
 }
 
 const { class: className, delay } = Astro.props
@@ -13,21 +13,21 @@ const { title, data } = aboutMe
 ---
 
 <Card class:list={className} delay={delay}>
-  <div id="sobre-mi" class="flex size-full flex-col gap-2">
-    <h2 class="mb-2 text-2xl font-bold">{title}</h2>
-    {data?.map(p => <p class="text-pretty text-sm">{p}</p>)}
-    <a
-      href="/me.webp"
-      class="group relative mt-2 inline-flex h-12 items-center justify-center self-center overflow-hidden rounded-md bg-dark px-6 font-medium text-light duration-500 dark:bg-light dark:text-dark"
-      download>
-      <div
-        class="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0">
-        Descargar Curriculum
-      </div>
-      <div
-        class="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
-        <Icon name="arrow-down-tray" class="size-6" />
-      </div>
-    </a>
-  </div>
+	<div id="sobre-mi" class="flex size-full flex-col gap-2">
+		<h2 class="mb-2 text-2xl font-bold">{title}</h2>
+		{data?.map(p => <p class="text-sm text-pretty text-neutral-300">{p}</p>)}
+		<a
+			href="/olivarez-alexis-front-end-developer.pdf"
+			class="group relative mt-2 inline-flex h-12 items-center justify-center self-center overflow-hidden rounded-md border border-neutral-800 bg-neutral-900 px-6 font-medium text-neutral-100 duration-500"
+			download>
+			<div
+				class="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0">
+				Descargar Curriculum
+			</div>
+			<div
+				class="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
+				<Icon name="arrow-down-tray" class="size-6" />
+			</div>
+		</a>
+	</div>
 </Card>
