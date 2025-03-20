@@ -8,5 +8,6 @@ export default defineConfig({
 	integrations: [icon()],
 	site: "https://alexisxde.github.io",
 	trailingSlash: "never",
-	vite: { plugins: [tailwindcss()] }
+	vite: { plugins: [tailwindcss()] },
+	experimental: { svg: { mode: "sprite" } }
 })

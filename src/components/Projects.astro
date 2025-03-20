@@ -1,6 +1,7 @@
 ---
 import Badge from "@/components/Badge.astro"
 import Card from "@/components/Card.astro"
+import Supabase from "@/icons/supabase.svg"
 import { projects } from "@data"
 import { Icon } from "astro-icon/components"
 
@@ -59,7 +60,11 @@ const { data, title } = projects
 					<div class="flex flex-wrap items-center gap-2">
 						{technologies?.map(({ label, icon, custom }) => (
 							<Badge name={label} class="text-xs">
-								<Icon name={icon} class:list={custom} />
+								{icon === "supabase" ? (
+									<Supabase class={custom} />
+								) : (
+									<Icon name={icon} class={custom} />
+								)}
 							</Badge>
 						))}
 					</div>

@@ -47,7 +47,7 @@
 						"custom": "size-5"
 					},
 					{ "label": "Motion", "icon": "motion", "custom": "size-4" },
-					{ "label": "Supabase", "icon": "supabase", "custom": "size-5" }
+					{ "label": "Supabase", "icon": "supabase", "custom": "size-4" }
 				]
 			},
 			{
@@ -71,11 +71,7 @@
 				"technologies": [
 					{ "label": "Astro", "icon": "astro", "custom": "size-5" },
 					{ "label": "TypeScript", "icon": "typescript", "custom": "size-4" },
-					{
-						"label": "Tailwindcss",
-						"icon": "tailwind-css",
-						"custom": "size-5"
-					}
+					{ "label": "Tailwindcss", "icon": "tailwind-css", "custom": "size-5" }
 				]
 			},
 			{
