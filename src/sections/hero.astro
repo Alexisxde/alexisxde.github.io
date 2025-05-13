@@ -1,0 +1,31 @@
+---
+import { header } from "@/cv.json"
+import { Icon } from "astro-icon/components"
+const { photo, name, socials, rol } = header
+---
+
+<section class="pt-20 md:pt-32 flex items-center justify-center flex-col">
+	<div class="flex flex-wrap items-center justify-center gap-6">
+		<img src={photo} alt="Logo" class="size-40 rounded-full" />
+		<div class="flex flex-col items-center gap-1">
+			<h1 class="text-3xl font-semibold text-center text-neutral-100">
+				{name}
+			</h1>
+			<p class="text-neutral-300 text-sm font-medium">{rol}</p>
+			<div class="flex items-center justify-center mt-2 gap-4">
+				{
+					socials.map(({ href, logo, name }) => (
+						<a
+							{href}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="hover:text-neutral-200 inline-flex gap-2 items-center text-xs text-neutral-400 transition-colors duration-200 ease-in-out">
+							<Icon name={logo} class="size-4" />
+							{name}
+						</a>
+					))
+				}
+			</div>
+		</div>
+	</div>
+</section>

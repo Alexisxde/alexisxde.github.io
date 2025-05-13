@@ -1,0 +1,164 @@
+{
+	"header": {
+		"banner": "banner.svg",
+		"name": "Olivarez Alexis Emanuel",
+		"rol": "Front end Developer",
+		"location": "Corrientes, Argentina",
+		"photo": "/me.png",
+		"socials": [
+			{
+				"logo": "linked-in",
+				"href": "https://linkedin.com/in/alexis-olivarez",
+				"name": "LinkedIn"
+			},
+			{
+				"logo": "mail",
+				"href": "mailto:olivarezalexis749@gmail.com",
+				"name": "E-mail"
+			},
+			{
+				"logo": "github",
+				"href": "https://github.com/Alexisxde",
+				"name": "GitHub"
+			}
+		]
+	},
+	"projects": {
+		"title": "Proyectos",
+		"number": 2,
+		"items": [
+			{
+				"slug": "galler-ia",
+				"name": "GalerIA",
+				"description": "Desarrollé una aplicación web que permite a los usuarios crear imágenes únicas y personalizadas a partir de descripciones textuales.",
+				"url": "https://galler-ia.vercel.app",
+				"github": "https://github.com/Alexisxde/galer-ia",
+				"image": "/projects/galer-ia.jpg",
+				"stack": [
+					{ "logo": "astro", "name": "Astro" },
+					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "leonardo-ai", "name": "Leonardo.AI" },
+					{ "logo": "tailwind-css", "name": "Tailwind" },
+					{ "logo": "drizzle-orm", "name": "Drizzle ORM" },
+					{ "logo": "turso", "name": "Turso" }
+				]
+			},
+			{
+				"slug": "werty-task",
+				"name": "Werty Task",
+				"description": "Desarrollé una aplicación web de tareas <strong>Drag and Drop</strong>, para mover tareas entre listas, con un diseño moderno y atractivo.",
+				"url": "https://wertytask.vercel.app",
+				"github": "https://github.com/Alexisxde/werty-task",
+				"image": "/projects/wertytask.png",
+				"stack": [
+					{ "logo": "react", "name": "React" },
+					{ "logo": "nextjs", "name": "NextJS" },
+					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "tailwind-css", "name": "Tailwind" },
+					{ "logo": "motion", "name": "Motion" },
+					{ "logo": "supabase", "name": "Supabase" }
+				]
+			},
+			{
+				"slug": "astro-ui-kit",
+				"name": "Astro UI Kit",
+				"description": "Página de <strong>componentes estilizados y reutilizables</strong>, con poco JavaScript diseñados para integrarse en Astro con Tailwind CSS.",
+				"url": "https://astrouikit.vercel.app",
+				"github": "https://github.com/Alexisxde/astro-ui-kit",
+				"image": "/projects/astrouikit.png",
+				"stack": [
+					{ "logo": "astro", "name": "Astro" },
+					{ "logo": "javascript", "name": "JavaScript" },
+					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "tailwind-css", "name": "Tailwind" },
+					{ "logo": "mdx", "name": "MDX" }
+				]
+			},
+			{
+				"slug": "sneakers-store",
+				"name": "Sneakers Store",
+				"description": "Desarrollé una <strong>Tienda en línea</strong> con funcionalidades completas para la gestión de zapatillas, clientes y pedidos.",
+				"github": "https://github.com/Alexisxde/sneakers-store",
+				"image": "/projects/sneakersstore.png",
+				"stack": [
+					{ "logo": "codeigniter", "name": "Codeigniter 4" },
+					{ "logo": "php", "name": "php" },
+					{ "logo": "bootstrap-css", "name": "Bootstrap" },
+					{ "logo": "css", "name": "CSS" },
+					{ "logo": "mysql", "name": "MySQL" }
+				]
+			},
+			{
+				"slug": "integrador-proyecto-estudio",
+				"name": "Base de Datos",
+				"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem perferendis autem, dolores deserunt ullam odit.",
+				"github": "#",
+				"image": "/projects/integrador.png",
+				"stack": [
+					{ "logo": "sql-server", "name": "SQL Server" },
+					{ "logo": "sql-server", "name": "Triggers" },
+					{
+						"logo": "sql-server",
+						"name": "Procedimientos y funciones almacenadas"
+					}
+				]
+			}
+		]
+	},
+	"education": [
+		{
+			"title": "Educación",
+			"items": [
+				{
+					"name": "Universidad Nacional del Nordeste",
+					"source": "Lic. en Sistemas de Información",
+					"description": "Actualmente estoy cursando materias de 3er año. Durante mi formación académica, he adquirido conocimientos sólidos en programación, bases de datos y desarrollo web.",
+					"url": ""
+				}
+			]
+		},
+		{
+			"title": "Cursos",
+			"items": [
+				{
+					"name": "Argentina Programa 4.0",
+					"source": "Front End Developer",
+					"description": "Como proyecto de desarrollo front-end de una lista de tareas utilizando React y TailwindCSS. Este proyecto destacó mi capacidad para diseñar y desarrollar interfaces de usuario dinámicas y modernas.",
+					"url": "https://drive.google.com/file/d/1Oa61SheZMXWdqgDZ5rWSfgP8G8-otBxt/view"
+				},
+				{
+					"name": "Argentina Programa 4.0",
+					"source": "Back End Developer",
+					"description": "Donde adquirí habilidades básicas en desarrollo back-end. Durante el curso colaboré con compañeros para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web.",
+					"url": "https://drive.google.com/file/d/13jSrBjJmljwkc3vNPZFLkTppgGy--5Ua/view"
+				}
+			]
+		}
+	],
+	"tools": {
+		"title": "Tecnologías",
+		"items": [
+			{ "logo": "javascript", "name": "JavaScript" },
+			{ "logo": "typescript", "name": "TypeScript" },
+			{ "logo": "react", "name": "React" },
+			{ "logo": "astro", "name": "Astro" },
+			{ "logo": "nextjs", "name": "NextJS" },
+			{ "logo": "tailwind-css", "name": "Tailwind" },
+			{ "logo": "nodejs", "name": "NodeJS" },
+			{ "logo": "express", "name": "Express" },
+			{ "logo": "drizzle-orm", "name": "Drizzle ORM" },
+			{ "logo": "motion", "name": "Motion" },
+			{ "logo": "supabase", "name": "Supabase" },
+			{ "logo": "turso", "name": "Turso" },
+			{ "logo": "mysql", "name": "MySQL" },
+			{ "logo": "sql-server", "name": "SQL Server" }
+		]
+	},
+	"about": {
+		"title": "Sobre mí",
+		"paragraphs": [
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quo eaque temporibus perferendis ratione optio doloribus architecto non cupiditate quas voluptatum maxime unde asperiores sapiente doloremque, voluptatem est molestiae cumque quis accusamus.",
+			"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis quo eaque temporibus perferendis ratione optio doloribus architecto non cupiditate quas voluptatum maxime unde asperiores sapiente doloremque."
+		]
+	}
+}

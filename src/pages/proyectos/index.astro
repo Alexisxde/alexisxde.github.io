@@ -1,0 +1,27 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import ProjectCard from "@/components/project-card.astro"
+import { projects } from "@/cv.json"
+import { Icon } from "astro-icon/components"
+import Link from "@/components/link.astro"
+
+const { title, items } = projects
+---
+
+<Layout title="Alexis | Proyectos">
+	<main class="max-w-3xl mx-auto px-10">
+		<section class="flex flex-col gap-4 mt-8">
+			<div class="flex items-center justify-between">
+				<Link href="/" class="text-xs">
+					<Icon name="arrow-back" class="size-3" />
+					Atras
+				</Link>
+				<div></div>
+			</div>
+			<h1 class="font-semibold text-4xl" transition:name="projects">{title}</h1>
+			<div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4">
+				{items.map(card => <ProjectCard {...card} />)}
+			</div>
+		</section>
+	</main>
+</Layout>

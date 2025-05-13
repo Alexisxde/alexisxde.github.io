@@ -1,0 +1,62 @@
+---
+import NextJSIcon from "@/icons/logos/nextjs.svg"
+import SupabaseIcon from "@/icons/logos/supabase.svg"
+import type { Project } from "@/types"
+import { Icon } from "astro-icon/components"
+
+interface Props extends Project {}
+
+const { slug, name, image, url, stack, description, github } = Astro.props
+---
+
+<article
+	class="group flex flex-col border border-neutral-800 ring-1 ring-inset bg-neutral-600/10 text-neutral-400 ring-neutral-700/30 rounded-md overflow-hidden">
+	<picture class="aspect-video overflow-hidden">
+		<img
+			class="md:group-hover:scale-150 md:group-hover:translate-y-10 md:group-hover:translate-x-12 transition-transform duration-300 ease-in-out"
+			src={image}
+			alt={name}
+		/>
+	</picture>
+	<div class="space-y-2 p-4">
+		<h3 class="font-semibold text-xl">{name}</h3>
+		<p class="text-pretty text-xs text-neutral-400" set:html={description} />
+		<div class="flex flex-wrap gap-2">
+			{
+				stack.map(({ logo, name }) => (
+					<span class="py-1 px-2 rounded-md text-xs pointer-events-none flex items-center justify-center gap-x-1 ring-1 ring-inset bg-neutral-600/10 text-neutral-400 ring-neutral-700/30">
+						{logo === "nextjs" ? (
+							<NextJSIcon class="size-4" />
+						) : logo === "supabase" ? (
+							<SupabaseIcon class="size-4" />
+						) : (
+							<Icon name={`logos/${logo}`} class="size-4" />
+						)}
+						{name}
+					</span>
+				))
+			}
+		</div>
+		<div class="bg-neutral-800 h-0.25 rounded-full"></div>
+		<div class="flex items-center justify-end gap-2">
+			{
+				url && (
+					<a
+						href={url}
+						target="_blank"
+						class="py-1 px-2 rounded-md text-xs flex items-center justify-center gap-x-1 capitalize ring-1 ring-inset bg-neutral-600/10 text-neutral-400 ring-neutral-700/30">
+						<Icon name="globe" class="size-4" />
+						Web
+					</a>
+				)
+			}
+			<a
+				href={github}
+				target="_blank"
+				class="py-1 px-2 rounded-md text-xs flex items-center justify-center gap-x-1 capitalize ring-1 ring-inset bg-neutral-600/10 text-neutral-400 ring-neutral-700/30">
+				<Icon name="github" class="size-3" />
+				GitHub
+			</a>
+		</div>
+	</div>
+</article>

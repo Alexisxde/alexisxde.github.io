@@ -1,10 +1,14 @@
-export interface Articles {
-	id: number
-	title: string
-	description: string
+export interface Project {
 	slug: string
-	tags: Array<string>
-	date: Date
+	name: string
+	description: string
+	url?: string
+	github: string
+	image: string
+	stack: Stack[]
 }
 
-export type BlogArray = Array<Articles>
+export interface Stack {
+	logo: string
+	name: string
+}

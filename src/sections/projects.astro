@@ -1,0 +1,14 @@
+---
+import Link from "@/components/link.astro"
+import ProjectCard from "@/components/project-card.astro"
+import { projects } from "@/cv.json"
+const { title, items, number } = projects
+---
+
+<section class="flex flex-col gap-4 mt-8">
+	<h2 transition:name="projects" class="text-xl font-semibold">{title}</h2>
+	<div class="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] gap-4">
+		{items.slice(0, number).map(card => <ProjectCard {...card} />)}
+	</div>
+	<Link href="/proyectos" class="text-xs pe-5">Ver más</Link>
+</section>

@@ -1,0 +1,29 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import { projects } from "@/cv.json"
+import type { Project } from "@/types"
+
+interface Props {
+	slug: string
+	data: Project
+}
+
+export async function getStaticPaths() {
+	return projects.items.map(data => ({
+		params: { slug: data.slug },
+		props: { data }
+	}))
+}
+
+const { data } = Astro.props
+const { name, image } = data
+---
+
+<Layout title={`Proyecto - ${name}`}>
+	<main class="max-w-3xl mx-auto px-10">
+		<img class="h-72 aspect-video" src={image} alt={name} />
+		<h1>
+			{name}
+		</h1>
+	</main>
+</Layout>
