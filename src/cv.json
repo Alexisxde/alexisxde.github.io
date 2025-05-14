@@ -33,7 +33,7 @@
 				"description": "Desarrollé una aplicación web que permite a los usuarios crear imágenes únicas y personalizadas a partir de descripciones textuales.",
 				"url": "https://galler-ia.vercel.app",
 				"github": "https://github.com/Alexisxde/galer-ia",
-				"image": "/projects/galer-ia.jpg",
+				"image": "/projects/galer-ia.png",
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },
 					{ "logo": "typescript", "name": "TypeScript" },
