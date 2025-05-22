@@ -30,13 +30,13 @@
 			{
 				"slug": "galler-ia",
 				"name": "GalerIA",
-				"description": "Desarrollé una aplicación web que permite a los usuarios crear imágenes únicas y personalizadas a partir de descripciones textuales.",
-				"url": "https://galler-ia.vercel.app",
+				"description": "Desarrollé una aplicación web que permite generar imágenes mediante <strong>Inteligencia Artificial</strong> utilizando prompts personalizados.",
+				"url": "https://galer-ia.vercel.app",
 				"github": "https://github.com/Alexisxde/galer-ia",
 				"image": "/projects/galer-ia.png",
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },
-					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "react", "name": "React" },
 					{ "logo": "leonardo-ai", "name": "Leonardo.AI" },
 					{ "logo": "tailwind-css", "name": "Tailwind" },
 					{ "logo": "drizzle-orm", "name": "Drizzle ORM" },
@@ -47,12 +47,12 @@
 				"slug": "werty-task",
 				"name": "Werty Task",
 				"description": "Desarrollé una aplicación web de tareas <strong>Drag and Drop</strong>, para mover tareas entre listas, con un diseño moderno y atractivo.",
-				"url": "https://wertytask.vercel.app",
+				"url": "https://tareaplus.vercel.app",
 				"github": "https://github.com/Alexisxde/werty-task",
 				"image": "/projects/wertytask.png",
 				"stack": [
-					{ "logo": "react", "name": "React" },
 					{ "logo": "nextjs", "name": "NextJS" },
+					{ "logo": "react", "name": "React" },
 					{ "logo": "typescript", "name": "TypeScript" },
 					{ "logo": "tailwind-css", "name": "Tailwind" },
 					{ "logo": "motion", "name": "Motion" },
@@ -92,16 +92,9 @@
 				"slug": "integrador-proyecto-estudio",
 				"name": "Base de Datos",
 				"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem perferendis autem, dolores deserunt ullam odit.",
-				"github": "#",
+				"github": "https://github.com/Alexisxde/IntegradorDBI",
 				"image": "/projects/integrador.png",
-				"stack": [
-					{ "logo": "sql-server", "name": "SQL Server" },
-					{ "logo": "sql-server", "name": "Triggers" },
-					{
-						"logo": "sql-server",
-						"name": "Procedimientos y funciones almacenadas"
-					}
-				]
+				"stack": [{ "logo": "sql-server", "name": "SQL Server" }]
 			}
 		]
 	},
@@ -145,11 +138,11 @@
 			{ "logo": "nextjs", "name": "NextJS" },
 			{ "logo": "tailwind-css", "name": "Tailwind" },
 			{ "logo": "nodejs", "name": "NodeJS" },
-			{ "logo": "express", "name": "Express" },
+			{ "logo": "express", "name": "ExpressJS" },
 			{ "logo": "drizzle-orm", "name": "Drizzle ORM" },
 			{ "logo": "motion", "name": "Motion" },
-			{ "logo": "supabase", "name": "Supabase" },
 			{ "logo": "turso", "name": "Turso" },
+			{ "logo": "supabase", "name": "Supabase" },
 			{ "logo": "mysql", "name": "MySQL" },
 			{ "logo": "sql-server", "name": "SQL Server" }
 		]
