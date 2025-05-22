@@ -87,14 +87,6 @@
 					{ "logo": "css", "name": "CSS" },
 					{ "logo": "mysql", "name": "MySQL" }
 				]
-			},
-			{
-				"slug": "integrador-proyecto-estudio",
-				"name": "Base de Datos",
-				"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem perferendis autem, dolores deserunt ullam odit.",
-				"github": "https://github.com/Alexisxde/IntegradorDBI",
-				"image": "/projects/integrador.png",
-				"stack": [{ "logo": "sql-server", "name": "SQL Server" }]
 			}
 		]
 	},
