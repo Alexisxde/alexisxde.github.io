@@ -75,9 +75,9 @@
 				]
 			},
 			{
-				"slug": "svgfutbol",
-				"name": "SVG Fútbol",
-				"description": "Colección de <strong>Iconos SVG</strong> de equipos de fútbol, con un diseño moderno y atractivo.",
+				"slug": "futbol-svg",
+				"name": "Fútbol SVG",
+				"description": "Colección de <strong>Iconos SVG</strong> de equipos de fútbol, con un diseño moderno y atractivo. Permite copiar los iconos en formato SVG.",
 				"url": "https://tsvg.vercel.app",
 				"github": "https://github.com/Alexisxde/tsvg",
 				"image": "/projects/tsvg.png",
