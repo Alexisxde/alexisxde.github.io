@@ -25,7 +25,7 @@
 	},
 	"projects": {
 		"title": "Proyectos",
-		"number": 2,
+		"number": 4,
 		"items": [
 			{
 				"slug": "galler-ia",
@@ -44,12 +44,12 @@
 				]
 			},
 			{
-				"slug": "werty-task",
-				"name": "Werty Task",
+				"slug": "toorder",
+				"name": "toOrder",
 				"description": "Desarrollé una aplicación web de tareas <strong>Drag and Drop</strong>, para mover tareas entre listas, con un diseño moderno y atractivo.",
-				"url": "https://tareaplus.vercel.app",
-				"github": "https://github.com/Alexisxde/werty-task",
-				"image": "/projects/wertytask.png",
+				"url": "https://toorder.vercel.app",
+				"github": "https://github.com/Alexisxde/toorder",
+				"image": "/projects/toorder.png",
 				"stack": [
 					{ "logo": "nextjs", "name": "NextJS" },
 					{ "logo": "react", "name": "React" },
@@ -72,6 +72,22 @@
 					{ "logo": "typescript", "name": "TypeScript" },
 					{ "logo": "tailwind-css", "name": "Tailwind" },
 					{ "logo": "mdx", "name": "MDX" }
+				]
+			},
+			{
+				"slug": "svgfutbol",
+				"name": "SVG Fútbol",
+				"description": "Colección de <strong>Iconos SVG</strong> de equipos de fútbol, con un diseño moderno y atractivo.",
+				"url": "https://tsvg.vercel.app",
+				"github": "https://github.com/Alexisxde/tsvg",
+				"image": "/projects/tsvg.png",
+				"stack": [
+					{ "logo": "astro", "name": "Astro" },
+					{ "logo": "react", "name": "React" },
+					{ "logo": "drizzle-orm", "name": "Drizzle ORM" },
+					{ "logo": "authjs", "name": "AuthJS" },
+					{ "logo": "turso", "name": "Turso" },
+					{ "logo": "tailwind-css", "name": "Tailwind" }
 				]
 			},
 			{
