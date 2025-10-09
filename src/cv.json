@@ -28,6 +28,22 @@
 		"number": 4,
 		"items": [
 			{
+				"slug": "toorder",
+				"name": "toOrder",
+				"description": "Desarrollé una aplicación web de notas con carpetas y tareas <strong>Drag and Drop</strong>, con un diseño moderno, atractivo y con bonitas animaciones.",
+				"url": "https://toorder.vercel.app",
+				"github": "https://github.com/Alexisxde/toorder",
+				"image": "/projects/toorder.jpeg",
+				"stack": [
+					{ "logo": "nextjs", "name": "NextJS" },
+					{ "logo": "react", "name": "React" },
+					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "tailwind-css", "name": "Tailwind" },
+					{ "logo": "motion", "name": "Motion" },
+					{ "logo": "supabase", "name": "Supabase" }
+				]
+			},
+			{
 				"slug": "galler-ia",
 				"name": "GalerIA",
 				"description": "Desarrollé una aplicación web que permite generar imágenes mediante <strong>Inteligencia Artificial</strong> utilizando prompts personalizados.",
@@ -44,19 +60,17 @@
 				]
 			},
 			{
-				"slug": "toorder",
-				"name": "toOrder",
-				"description": "Desarrollé una aplicación web de tareas <strong>Drag and Drop</strong>, para mover tareas entre listas, con un diseño moderno y atractivo.",
-				"url": "https://toorder.vercel.app",
-				"github": "https://github.com/Alexisxde/toorder",
-				"image": "/projects/toorder.png",
+				"slug": "sneakers-store",
+				"name": "Sneakers Store",
+				"description": "Desarrollé una <strong>Tienda en línea</strong> con funcionalidades completas para la gestión de zapatillas, clientes y pedidos.",
+				"github": "https://github.com/Alexisxde/sneakers-store",
+				"image": "/projects/sneakersstore.png",
 				"stack": [
-					{ "logo": "nextjs", "name": "NextJS" },
-					{ "logo": "react", "name": "React" },
-					{ "logo": "typescript", "name": "TypeScript" },
-					{ "logo": "tailwind-css", "name": "Tailwind" },
-					{ "logo": "motion", "name": "Motion" },
-					{ "logo": "supabase", "name": "Supabase" }
+					{ "logo": "codeigniter", "name": "Codeigniter 4" },
+					{ "logo": "php", "name": "php" },
+					{ "logo": "bootstrap-css", "name": "Bootstrap" },
+					{ "logo": "css", "name": "CSS" },
+					{ "logo": "mysql", "name": "MySQL" }
 				]
 			},
 			{
@@ -88,20 +102,6 @@
 					{ "logo": "authjs", "name": "AuthJS" },
 					{ "logo": "turso", "name": "Turso" },
 					{ "logo": "tailwind-css", "name": "Tailwind" }
-				]
-			},
-			{
-				"slug": "sneakers-store",
-				"name": "Sneakers Store",
-				"description": "Desarrollé una <strong>Tienda en línea</strong> con funcionalidades completas para la gestión de zapatillas, clientes y pedidos.",
-				"github": "https://github.com/Alexisxde/sneakers-store",
-				"image": "/projects/sneakersstore.png",
-				"stack": [
-					{ "logo": "codeigniter", "name": "Codeigniter 4" },
-					{ "logo": "php", "name": "php" },
-					{ "logo": "bootstrap-css", "name": "Bootstrap" },
-					{ "logo": "css", "name": "CSS" },
-					{ "logo": "mysql", "name": "MySQL" }
 				]
 			}
 		]
