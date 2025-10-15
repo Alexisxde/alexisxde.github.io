@@ -43,8 +43,8 @@
 				]
 			},
 			{
-				"slug": "Lab UI - Personal",
-				"name": "lab",
+				"slug": "lab",
+				"name": "Lab UI - Personal",
 				"description": "Cada componente nace en Figma y cobra vida en React: Diseño intencional, animaciones fluidas y código pensado para escalar.",
 				"url": "https://lab.alexjs.online",
 				"image": "/projects/lab.jpeg",
