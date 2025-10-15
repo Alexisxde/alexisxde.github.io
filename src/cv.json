@@ -31,8 +31,7 @@
 				"slug": "toorder",
 				"name": "toOrder",
 				"description": "Desarrollé una aplicación web de notas con carpetas y tareas <strong>Drag and Drop</strong>, con un diseño moderno, atractivo y con bonitas animaciones.",
-				"url": "https://toorder.vercel.app",
-				"github": "https://github.com/Alexisxde/toorder",
+				"url": "https://toorder.alexjs.online",
 				"image": "/projects/toorder.jpeg",
 				"stack": [
 					{ "logo": "nextjs", "name": "NextJS" },
@@ -44,11 +43,25 @@
 				]
 			},
 			{
+				"slug": "Lab UI - Personal",
+				"name": "lab",
+				"description": "Cada componente nace en Figma y cobra vida en React: Diseño intencional, animaciones fluidas y código pensado para escalar.",
+				"url": "https://lab.alexjs.online",
+				"image": "/projects/lab.jpeg",
+				"stack": [
+					{ "logo": "nextjs", "name": "NextJS" },
+					{ "logo": "react", "name": "React" },
+					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "tailwind-css", "name": "Tailwind" },
+					{ "logo": "motion", "name": "Motion" },
+					{ "logo": "mdx", "name": "MDX" }
+				]
+			},
+			{
 				"slug": "galler-ia",
 				"name": "GalerIA",
 				"description": "Desarrollé una aplicación web que permite generar imágenes mediante <strong>Inteligencia Artificial</strong> utilizando prompts personalizados.",
 				"url": "https://galer-ia.vercel.app",
-				"github": "https://github.com/Alexisxde/galer-ia",
 				"image": "/projects/galer-ia.png",
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },
@@ -63,7 +76,6 @@
 				"slug": "sneakers-store",
 				"name": "Sneakers Store",
 				"description": "Desarrollé una <strong>Tienda en línea</strong> con funcionalidades completas para la gestión de zapatillas, clientes y pedidos.",
-				"github": "https://github.com/Alexisxde/sneakers-store",
 				"image": "/projects/sneakersstore.png",
 				"stack": [
 					{ "logo": "codeigniter", "name": "Codeigniter 4" },
@@ -78,7 +90,6 @@
 				"name": "Astro UI Kit",
 				"description": "Página de <strong>componentes estilizados y reutilizables</strong>, con poco JavaScript diseñados para integrarse en Astro con Tailwind CSS.",
 				"url": "https://astrouikit.vercel.app",
-				"github": "https://github.com/Alexisxde/astro-ui-kit",
 				"image": "/projects/astrouikit.png",
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },
@@ -93,7 +104,6 @@
 				"name": "Fútbol SVG",
 				"description": "Colección de <strong>Iconos SVG</strong> de equipos de fútbol, con un diseño moderno y atractivo. Permite copiar los iconos en formato SVG.",
 				"url": "https://tsvg.vercel.app",
-				"github": "https://github.com/Alexisxde/tsvg",
 				"image": "/projects/tsvg.png",
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },

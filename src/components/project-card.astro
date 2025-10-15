@@ -50,13 +50,17 @@ const { slug, name, image, url, stack, description, github } = Astro.props
 					</a>
 				)
 			}
-			<a
-				href={github}
-				target="_blank"
-				class="py-1 px-2 rounded-md text-xs flex items-center justify-center gap-x-1 capitalize ring-1 ring-inset bg-neutral-600/10 text-neutral-400 ring-neutral-700/30">
-				<Icon name="github" class="size-3" />
-				GitHub
-			</a>
+			{
+				github && (
+					<a
+						href={github}
+						target="_blank"
+						class="py-1 px-2 rounded-md text-xs flex items-center justify-center gap-x-1 capitalize ring-1 	ring-inset bg-neutral-600/10 text-neutral-400 ring-neutral-700/30">
+						<Icon name="github" class="size-3" />
+						GitHub
+					</a>
+				)
+			}
 		</div>
 	</div>
 </article>
