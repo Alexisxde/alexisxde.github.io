@@ -23,31 +23,63 @@
 			}
 		]
 	},
-	"projects": {
-		"title": "Proyectos",
-		"number": 4,
+	"experiences": {
+		"title": "Experiencia Laboral",
 		"items": [
 			{
-				"slug": "toorder",
-				"name": "toOrder",
-				"description": "Desarrollé una aplicación web de notas con carpetas y tareas <strong>Drag and Drop</strong>, con un diseño moderno, atractivo y con bonitas animaciones.",
-				"url": "https://toorder.alexjs.online",
-				"image": "/projects/toorder.jpeg",
+				"logo": "/experiences/zeew-space.webp",
+				"rol": "Full Stack Developer (Pasantia)",
+				"company": "Zeew Space",
+				"url": "",
+				"period": "Nov 2025 - Ene 2026",
+				"description": [
+					"Participé en el desarrollo de Spotlight Profiles, una aplicación web Full‑Stack para la gestión de perfiles profesionales públicos. La gestión del proyecto se realizó bajo la metodología Kanban, organizando tareas mediante issues en GitHub Projects, lo que permitió un flujo de trabajo ágil y transparente entre los miembros del equipo.",
+					"Mi aporte se centró principalmente en el frontend, desarrollando interfaces gráficas con shadcn/ui y siguiendo fielmente los diseños en Figma para asegurar que la aplicación reflejara exactamente la propuesta visual. Además, revisé pull requests para mantener la calidad del código y la coherencia del diseño.",
+					"Aunque mi rol fue mayormente en frontend, también colaboré en el backend utilizando NestJS, trabajando en un entorno con Docker. A pesar de que mi experiencia previa era con ExpressJS, pude completar las tareas asignadas. Todo el trabajo se realizó bajo buenas prácticas de desarrollo y supervisado por un Lider Técnico."
+				],
 				"stack": [
 					{ "logo": "nextjs", "name": "NextJS" },
 					{ "logo": "react", "name": "React" },
 					{ "logo": "typescript", "name": "TypeScript" },
 					{ "logo": "tailwind-css", "name": "Tailwind" },
-					{ "logo": "motion", "name": "Motion" },
+					{ "logo": "tanstack", "name": "TanStack Query" },
+					{ "logo": "shadcn", "name": "ShadCN" },
+					{ "logo": "nestjs", "name": "NestJS" },
+					{ "logo": "prisma", "name": "Prisma ORM" },
+					{ "logo": "postgresql", "name": "PostgreSQL" },
+					{ "logo": "docker", "name": "Docker" }
+				]
+			}
+		]
+
+	},
+	"projects": {
+		"title": "Proyectos",
+		"number": 4,
+		"items": [
+			{
+				"slug": "organzi",
+				"name": "OrganZi",
+				"description": "Aplicación que permite a los usuarios organizar sus notas, tareas, calendario y hábitos. Cuenta con una interfaz moderna y atractiva.",
+				"url": "https://organzi.alexjs.online",
+				"image": "/projects/organzi.jpeg",
+				"github": "https://github.com/Alexisxde/OrganZi",
+				"stack": [
+					{ "logo": "nextjs", "name": "NextJS" },
+					{ "logo": "react", "name": "React" },
+					{ "logo": "tanstack", "name": "TanStack Query" },
+					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "shadcn", "name": "ShadCN" },
 					{ "logo": "supabase", "name": "Supabase" }
 				]
 			},
 			{
 				"slug": "lab",
-				"name": "Lab UI - Personal",
+				"name": "Lab UI",
 				"description": "Cada componente nace en Figma y cobra vida en React: Diseño intencional, animaciones fluidas y código pensado para escalar.",
 				"url": "https://lab.alexjs.online",
 				"image": "/projects/lab.jpeg",
+				"github": "https://github.com/Alexisxde/Lab-UI",
 				"stack": [
 					{ "logo": "nextjs", "name": "NextJS" },
 					{ "logo": "react", "name": "React" },
@@ -63,6 +95,7 @@
 				"description": "Desarrollé una aplicación web que permite generar imágenes mediante <strong>Inteligencia Artificial</strong> utilizando prompts personalizados.",
 				"url": "https://galer-ia.vercel.app",
 				"image": "/projects/galer-ia.png",
+				"github": "https://github.com/Alexisxde/GalerIA",
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },
 					{ "logo": "react", "name": "React" },
@@ -77,6 +110,7 @@
 				"name": "Sneakers Store",
 				"description": "Desarrollé una <strong>Tienda en línea</strong> con funcionalidades completas para la gestión de zapatillas, clientes y pedidos.",
 				"image": "/projects/sneakersstore.png",
+				"github": "https://github.com/Alexisxde/Sneakers-Store",
 				"stack": [
 					{ "logo": "codeigniter", "name": "Codeigniter 4" },
 					{ "logo": "php", "name": "php" },
@@ -86,25 +120,12 @@
 				]
 			},
 			{
-				"slug": "astro-ui-kit",
-				"name": "Astro UI Kit",
-				"description": "Página de <strong>componentes estilizados y reutilizables</strong>, con poco JavaScript diseñados para integrarse en Astro con Tailwind CSS.",
-				"url": "https://astrouikit.vercel.app",
-				"image": "/projects/astrouikit.png",
-				"stack": [
-					{ "logo": "astro", "name": "Astro" },
-					{ "logo": "javascript", "name": "JavaScript" },
-					{ "logo": "typescript", "name": "TypeScript" },
-					{ "logo": "tailwind-css", "name": "Tailwind" },
-					{ "logo": "mdx", "name": "MDX" }
-				]
-			},
-			{
 				"slug": "futbol-svg",
 				"name": "Fútbol SVG",
 				"description": "Colección de <strong>Iconos SVG</strong> de equipos de fútbol, con un diseño moderno y atractivo. Permite copiar los iconos en formato SVG.",
 				"url": "https://tsvg.vercel.app",
 				"image": "/projects/tsvg.png",
+				"github": "https://github.com/Alexisxde/tsvg",
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },
 					{ "logo": "react", "name": "React" },
@@ -121,10 +142,10 @@
 			"title": "Educación",
 			"items": [
 				{
+					"logo": "/experiences/zeew-space.webp",
 					"name": "Universidad Nacional del Nordeste",
-					"source": "Lic. en Sistemas de Información",
-					"description": "Actualmente estoy cursando materias de 3er año. Durante mi formación académica, he adquirido conocimientos sólidos en programación, bases de datos y desarrollo web.",
-					"url": ""
+					"rol": "Lic. en Sistemas de Información",
+					"period": "Marz 2022 - Presente"
 				}
 			]
 		},
@@ -132,37 +153,58 @@
 			"title": "Cursos",
 			"items": [
 				{
-					"name": "Argentina Programa 4.0",
-					"source": "Front End Developer",
-					"description": "Como proyecto de desarrollo front-end de una lista de tareas utilizando React y TailwindCSS. Este proyecto destacó mi capacidad para diseñar y desarrollar interfaces de usuario dinámicas y modernas.",
-					"url": "https://drive.google.com/file/d/1Oa61SheZMXWdqgDZ5rWSfgP8G8-otBxt/view"
+					"logo": "/experiences/zeew-space.webp",
+					"name": "DevLight 4.0",
+					"rol": "Full Stack Developer",
+					"period": "Oct 2025 - Dic 2025"
 				},
 				{
+					"logo": "/experiences/zeew-space.webp",
 					"name": "Argentina Programa 4.0",
-					"source": "Back End Developer",
-					"description": "Donde adquirí habilidades básicas en desarrollo back-end. Durante el curso colaboré con compañeros para crear una API, lo que me brindó una valiosa experiencia en el diseño y desarrollo de aplicaciones web.",
-					"url": "https://drive.google.com/file/d/13jSrBjJmljwkc3vNPZFLkTppgGy--5Ua/view"
+					"rol": "Front End Developer",
+					"period": "May 2023 - Ago 2023"
 				}
 			]
 		}
 	],
 	"tools": {
-		"title": "Tecnologías",
-		"items": [
-			{ "logo": "javascript", "name": "JavaScript" },
-			{ "logo": "typescript", "name": "TypeScript" },
-			{ "logo": "react", "name": "React" },
-			{ "logo": "astro", "name": "Astro" },
-			{ "logo": "nextjs", "name": "NextJS" },
-			{ "logo": "tailwind-css", "name": "Tailwind" },
-			{ "logo": "nodejs", "name": "NodeJS" },
-			{ "logo": "express", "name": "ExpressJS" },
-			{ "logo": "drizzle-orm", "name": "Drizzle ORM" },
-			{ "logo": "motion", "name": "Motion" },
-			{ "logo": "turso", "name": "Turso" },
-			{ "logo": "supabase", "name": "Supabase" },
-			{ "logo": "mysql", "name": "MySQL" },
-			{ "logo": "sql-server", "name": "SQL Server" }
+		"title": "Habilidades",
+		"stack": [
+			{
+				"title": "Frontend",
+				"items": [
+					{ "logo": "nextjs", "name": "NextJS" },
+					{ "logo": "react", "name": "React" },
+					{ "logo": "tailwind-css", "name": "Tailwind" },
+					{ "logo": "shadcn", "name": "ShadCN" },
+					{ "logo": "tanstack", "name": "TanStack Query" },
+					{ "logo": "motion", "name": "Motion" },
+					{ "logo": "astro", "name": "Astro" },
+					{ "logo": "javascript", "name": "JavaScript" },
+					{ "logo": "typescript", "name": "TypeScript" }
+				]
+			},
+			{
+				"title": "Backend",
+				"items": [
+					{ "logo": "nodejs", "name": "NodeJS" },
+					{ "logo": "express", "name": "ExpressJS" },
+					{ "logo": "prisma", "name": "Prisma ORM" },
+					{ "logo": "drizzle-orm", "name": "Drizzle ORM" },
+					{ "logo": "supabase", "name": "Supabase" },
+					{ "logo": "mysql", "name": "MySQL" },
+					{ "logo": "turso", "name": "Turso" }
+				]
+			},
+			{
+				"title": "DevOps & Tools",
+				"items": [
+					{ "logo": "git", "name": "Git" },
+					{ "logo": "github", "name": "GitHub Actions" },
+					{ "logo": "docker", "name": "Docker" },
+					{ "logo": "vercel", "name": "Vercel" }
+				]
+			}
 		]
 	},
 	"about": {

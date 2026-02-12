@@ -21,7 +21,7 @@ const { slug, name, image, url, stack, description, github } = Astro.props
 	<div class="space-y-2 p-4">
 		<h3 class="font-semibold text-xl">{name}</h3>
 		<p class="text-pretty text-xs text-neutral-400" set:html={description} />
-		<div class="flex flex-wrap gap-2">
+		<div class="flex flex-wrap items-center justify-center gap-2">
 			{
 				stack.map(({ logo, name }) => (
 					<span class="py-1 px-2 rounded-md text-xs pointer-events-none flex items-center justify-center gap-x-1 ring-1 ring-inset bg-neutral-600/10 text-neutral-400 ring-neutral-700/30">
