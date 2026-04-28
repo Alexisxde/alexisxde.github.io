@@ -4,7 +4,7 @@ export interface Project {
 	description: string
 	url?: string
 	github: string
-	image: string
+	images: string[]
 	stack: Stack[]
 }
 

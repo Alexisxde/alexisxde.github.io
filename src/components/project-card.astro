@@ -6,18 +6,38 @@ import { Icon } from "astro-icon/components"
 
 interface Props extends Project {}
 
-const { slug, name, image, url, stack, description, github } = Astro.props
+const { slug, name, images, url, stack, description, github } = Astro.props
 ---
 
 <article
 	class="group flex flex-col border border-neutral-800 ring-1 ring-inset bg-neutral-600/10 text-neutral-400 ring-neutral-700/30 rounded-md overflow-hidden">
-	<picture class="aspect-video overflow-hidden">
-		<img
-			class="md:group-hover:scale-150 md:group-hover:translate-y-10 md:group-hover:translate-x-12 transition-transform duration-300 ease-in-out"
-			src={image}
-			alt={name}
-		/>
-	</picture>
+	<div
+		class="carousel aspect-video overflow-hidden relative"
+		data-images={JSON.stringify(images)}>
+		{
+			images.map((image, index) => (
+				<img
+					class="carousel-image absolute inset-0 w-full h-full object-cover transition-all duration-300 md:group-hover:scale-150 md:group-hover:translate-y-10 md:group-hover:translate-x-12"
+					src={image}
+					alt={`${name} - imagen ${index + 1}`}
+					data-index={index}
+				/>
+			))
+		}
+		{
+			images.length > 1 && (
+				<div class="carousel-dots absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+					{images.map((_, index) => (
+						<button
+							class="carousel-dot w-2 h-2 rounded-full bg-white/50 hover:bg-white/80 transition-colors duration-200 cursor-pointer"
+							data-index={index}
+							aria-label={`Ver imagen ${index + 1}`}
+						/>
+					))}
+				</div>
+			)
+		}
+	</div>
 	<div class="space-y-2 p-4">
 		<h3 class="font-semibold text-xl">{name}</h3>
 		<p class="text-pretty text-xs text-neutral-400" set:html={description} />
@@ -64,3 +84,36 @@ const { slug, name, image, url, stack, description, github } = Astro.props
 		</div>
 	</div>
 </article>
+
+<script>
+	document.querySelectorAll(".carousel").forEach(carousel => {
+		const images = carousel.querySelectorAll(
+			".carousel-image"
+		) as NodeListOf<HTMLImageElement>
+		const dots = carousel.querySelectorAll(
+			".carousel-dot"
+		) as NodeListOf<HTMLButtonElement>
+		let currentIndex = 0
+
+		const showImage = (index: number) => {
+			images.forEach((img, i) => {
+				img.style.opacity = i === index ? "1" : "0"
+			})
+			dots.forEach((dot, i) => {
+				dot.classList.toggle("bg-white", i === index)
+				dot.classList.toggle("bg-white/50", i !== index)
+				dot.classList.toggle("scale-110", i === index)
+			})
+			currentIndex = index
+		}
+
+		dots.forEach(dot => {
+			dot.addEventListener("click", () => {
+				const index = parseInt(dot.dataset.index || "0")
+				showImage(index)
+			})
+		})
+
+		showImage(0)
+	})
+</script>

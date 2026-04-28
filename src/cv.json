@@ -51,24 +51,37 @@
 				]
 			}
 		]
-
 	},
 	"projects": {
 		"title": "Proyectos",
 		"number": 4,
 		"items": [
 			{
-				"slug": "organzi",
-				"name": "OrganZi",
-				"description": "Aplicación que permite a los usuarios organizar sus notas, tareas, calendario y hábitos. Cuenta con una interfaz moderna y atractiva.",
-				"url": "https://organzi.alexjs.online",
-				"image": "/projects/organzi.jpeg",
-				"github": "https://github.com/Alexisxde/OrganZi",
+				"slug": "rocco",
+				"name": "Rocco",
+				"description": "Aplicación web de gestión de subscripciones, que permite organizar y controlar sus servicios. Con una interfaz moderna y atractiva.",
+				"url": "https://rocco.alexjs.online",
+				"images": ["/projects/rocco.jpeg"],
 				"stack": [
 					{ "logo": "nextjs", "name": "NextJS" },
 					{ "logo": "react", "name": "React" },
-					{ "logo": "tanstack", "name": "TanStack Query" },
 					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "tailwind-css", "name": "Tailwind" },
+					{ "logo": "motion", "name": "Motion" },
+					{ "logo": "supabase", "name": "Supabase" }
+				]
+			},
+			{
+				"slug": "organzi",
+				"name": "OrganZi",
+				"description": "Aplicación web que permite organizar sus notas, tareas, calendario y hábitos. Cuenta con una interfaz moderna y atractiva.",
+				"url": "https://organzi.alexjs.online",
+				"images": ["/projects/organzi.jpeg"],
+				"stack": [
+					{ "logo": "nextjs", "name": "NextJS" },
+					{ "logo": "react", "name": "React" },
+					{ "logo": "typescript", "name": "TypeScript" },
+					{ "logo": "tailwind-css", "name": "Tailwind" },
 					{ "logo": "shadcn", "name": "ShadCN" },
 					{ "logo": "supabase", "name": "Supabase" }
 				]
@@ -78,15 +91,14 @@
 				"name": "Lab UI",
 				"description": "Cada componente nace en Figma y cobra vida en React: Diseño intencional, animaciones fluidas y código pensado para escalar.",
 				"url": "https://lab.alexjs.online",
-				"image": "/projects/lab.jpeg",
-				"github": "https://github.com/Alexisxde/Lab-UI",
+				"images": ["/projects/lab.jpeg"],
 				"stack": [
 					{ "logo": "nextjs", "name": "NextJS" },
 					{ "logo": "react", "name": "React" },
 					{ "logo": "typescript", "name": "TypeScript" },
 					{ "logo": "tailwind-css", "name": "Tailwind" },
-					{ "logo": "motion", "name": "Motion" },
-					{ "logo": "mdx", "name": "MDX" }
+					{ "logo": "figma", "name": "Figma" },
+					{ "logo": "motion", "name": "Motion" }
 				]
 			},
 			{
@@ -94,8 +106,7 @@
 				"name": "GalerIA",
 				"description": "Desarrollé una aplicación web que permite generar imágenes mediante <strong>Inteligencia Artificial</strong> utilizando prompts personalizados.",
 				"url": "https://galer-ia.vercel.app",
-				"image": "/projects/galer-ia.png",
-				"github": "https://github.com/Alexisxde/GalerIA",
+				"images": ["/projects/galer-ia.png"],
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },
 					{ "logo": "react", "name": "React" },
@@ -109,7 +120,7 @@
 				"slug": "sneakers-store",
 				"name": "Sneakers Store",
 				"description": "Desarrollé una <strong>Tienda en línea</strong> con funcionalidades completas para la gestión de zapatillas, clientes y pedidos.",
-				"image": "/projects/sneakersstore.png",
+				"images": ["/projects/sneakersstore.png"],
 				"github": "https://github.com/Alexisxde/Sneakers-Store",
 				"stack": [
 					{ "logo": "codeigniter", "name": "Codeigniter 4" },
@@ -124,7 +135,7 @@
 				"name": "Fútbol SVG",
 				"description": "Colección de <strong>Iconos SVG</strong> de equipos de fútbol, con un diseño moderno y atractivo. Permite copiar los iconos en formato SVG.",
 				"url": "https://tsvg.vercel.app",
-				"image": "/projects/tsvg.png",
+				"images": ["/projects/tsvg.png"],
 				"github": "https://github.com/Alexisxde/tsvg",
 				"stack": [
 					{ "logo": "astro", "name": "Astro" },
@@ -190,9 +201,15 @@
 					{ "logo": "nodejs", "name": "NodeJS" },
 					{ "logo": "express", "name": "ExpressJS" },
 					{ "logo": "prisma", "name": "Prisma ORM" },
-					{ "logo": "drizzle-orm", "name": "Drizzle ORM" },
+					{ "logo": "drizzle-orm", "name": "Drizzle ORM" }
+				]
+			},
+			{
+				"title": "Databases",
+				"items": [
 					{ "logo": "supabase", "name": "Supabase" },
 					{ "logo": "mysql", "name": "MySQL" },
+					{ "logo": "postgresql", "name": "PostgreSQL" },
 					{ "logo": "turso", "name": "Turso" }
 				]
 			},
@@ -200,6 +217,7 @@
 				"title": "DevOps & Tools",
 				"items": [
 					{ "logo": "git", "name": "Git" },
+					{ "logo": "github", "name": "GitHub" },
 					{ "logo": "github", "name": "GitHub Actions" },
 					{ "logo": "docker", "name": "Docker" },
 					{ "logo": "vercel", "name": "Vercel" }
